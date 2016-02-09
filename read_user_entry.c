@@ -20,7 +20,8 @@ char		*read_entry(char *buff)
 
 	ascii_value = 0;
 	i = 0;
-	term = malloc(sizeof(struct termios));
+	if (!(term = malloc(sizeof(struct termios))))
+		return (NULL);
 	tcgetattr(0, term);
 	term->c_lflag &= ~ICANON;
 	term->c_lflag &= ~ECHO;
@@ -50,7 +51,7 @@ void		read_user_entry(void)
 		return ;
 	//print_color_n_prompt();
 	buffer = read_entry(buffer);
+	// if ret = 1 handle cmd -> prompt again 
 	ft_bzero(buffer, READ_BUFFER);
-	ft_putstr("here");
 	read_user_entry();
 }
