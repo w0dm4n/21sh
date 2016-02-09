@@ -12,10 +12,34 @@
 
 #include "all.h"
 
+char		*read_entry(char *buff)
+{
+	struct termios *term;
+	int 			ascii_value;
+	int				i;
+
+	ascii_value = 0;
+	i = 0;
+	term = malloc(sizeof(struct termios));
+	tcgetattr(0, term);
+	term->c_lflag &= ~ICANON;
+	term->c_lflag &= ~ECHO;
+	tcsetattr(0, TCSANOW, term);
+	read(0, buff, READ_BUFFER);
+	while (buff[i])
+	{
+		ascii_value += buff[i];
+		i++;
+	}
+	if (ft_isprint(ascii_value))
+		write(1, &ascii_value, 1);
+	return (buff);
+}
+
 void		print_color_n_prompt(void)
 {
 	ft_putstr(COLOR_WHITE);
-	ft_putstr("$>");
+	ft_putstr("$> ");
 }
 
 void		read_user_entry(void)
@@ -24,8 +48,9 @@ void		read_user_entry(void)
 
 	if (!(buffer = (char*)malloc(sizeof(char) * READ_BUFFER)))
 		return ;
-	print_color_n_prompt();
-	read(0, buffer, READ_BUFFER);
+	//print_color_n_prompt();
+	buffer = read_entry(buffer);
 	ft_bzero(buffer, READ_BUFFER);
+	ft_putstr("here");
 	read_user_entry();
 }

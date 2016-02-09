@@ -22,6 +22,7 @@
 # include <fcntl.h>
 # include <sys/wait.h>
 # include <signal.h>
+# include <termios.h>
 # define READ_BUFFER 4096
 # define PATH_MAX_SIZE 16192
 # define COLOR_WHITE "\e[1;37m"
