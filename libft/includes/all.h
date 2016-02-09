@@ -23,13 +23,28 @@
 # include <sys/wait.h>
 # include <signal.h>
 # include <termios.h>
+# include <term.h>
+# include <stdio.h>
 # define READ_BUFFER 4096
+# define READ_CHAR 20
 # define PATH_MAX_SIZE 16192
 # define COLOR_WHITE "\e[1;37m"
 # define MAX_EXE_NAME 2048
 # define MAX_ARGV_SIZE 8192
 # define MAX_VAR_ENV_SIZE 4096
 # define COLOR_WHITE "\e[1;37m"
+# define CLEAR_SCREEN "\033[2J"
+# define TRUE 1
+# define FALSE 0
+# define NEW_CMD 10
+# define ARROW_UP 183
+# define ARROW_DOWN 184
+# define ARROW_LEFT 186
+# define ARROW_RIGHT 185
+# define BACKSPACE 127
+# define PRINT_CURSOR_POS "\033[6n"
 
-void		read_user_entry(void);
+void		read_user_entry(int read);
+int			g_new_cmd;
+char		*g_cmd;
 #endif

@@ -18,6 +18,11 @@ int		main(int argc, char **argv, char **env)
 	if (argc != 1 || argv[1])
 		ft_putstr("21sh do not take any argument !\n");
 	else
-		read_user_entry();
+	{
+		if (!(g_cmd = ft_strnew(READ_BUFFER)))
+			return (-1);
+		g_new_cmd = TRUE;
+		read_user_entry(FALSE);
+	}
 	return (0);
 }
