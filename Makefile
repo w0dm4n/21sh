@@ -12,7 +12,7 @@
 
 NAME = 21sh
 
-SRCS_NAME = main.c
+SRCS_NAME = main.c read_user_entry.c
 
 LIB_FOLDER = libft/
 
@@ -28,7 +28,7 @@ $(NAME):
 	@make -C libft/ fclean
 	@make -C libft/
 	@gcc $(FLAGS) -I $(INCLUDE_FOLDER) -c $(SRCS_NAME)
-	@gcc -o $(NAME) $(O_NAME) -L $(LIB_FOLDER) -lft
+	@gcc -o $(NAME) $(O_NAME) -L $(LIB_FOLDER) -lft -ltermcap
 
 clean:
 	@rm -rf $(O_NAME)
