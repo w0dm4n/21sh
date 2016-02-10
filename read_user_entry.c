@@ -18,6 +18,15 @@ int		move_cursor(int to_print)
 	return (to_print);
 }
 
+void	delete_current_character(void)
+{
+	char *res;
+
+	res = tgetstr("dc", NULL);
+	tputs(res, 0, move_cursor);
+	g_cursor_pos--;
+}
+
 void	move_cursor_left(void)
 {
 	char *res;
@@ -34,6 +43,83 @@ void	move_cursor_right(void)
 	res = tgetstr("nd", NULL);
 	tputs(res, 0, move_cursor);
 	g_cursor_pos++;
+}
+
+void	delete_x_characters(int to_del)
+{
+	char *res;
+
+	res = tgetstr("DC", NULL);
+	tputs(tgoto(res, 0, to_del), 1, move_cursor);
+}
+
+void	save_cursor_pos(void)
+{
+	char *res;
+
+	res = tgetstr("sc", NULL);
+	tputs(res, 0, move_cursor);
+}
+
+void	set_saved_cursor(void)
+{
+	char *res;
+
+	res = tgetstr("rc", NULL);
+	tputs(res, 0, move_cursor);
+}
+void	move_cursor_to(int pos)
+{
+	char *res;
+
+	res = tgetstr("cm", NULL);
+	tputs(tgoto(res, 0, pos), 1, move_cursor);
+}
+
+void	refresh_stdout(char *g_cmd)
+{
+	int old_pos;
+
+	old_pos = g_cursor_pos;
+	save_cursor_pos();
+	while (g_cursor_pos >= 1 && g_cmd[g_cursor_pos])
+		move_cursor_left();
+	delete_x_characters(ft_strlen(g_cmd));
+	write(1, g_cmd, ft_strlen(g_cmd));
+	g_cursor_pos = old_pos + 1;
+	set_saved_cursor();
+	g_cursor_pos = old_pos;
+	move_cursor_right();
+	// dl delete line DC delete X char
+}
+
+char	*add_in(char *g_cmd, int pos, char *toadd)
+{
+	char	*new_cmd;
+	int		i;
+	int		i_2;
+
+	i = 0;
+	i_2 = 0;
+	if (!(new_cmd = malloc(sizeof(char) * READ_BUFFER)))
+		return (NULL);
+	while (g_cmd[i] && i != pos)
+	{
+		new_cmd[i] = g_cmd[i];
+		i++;
+	}
+	i--;
+	new_cmd[i] = toadd[0];
+	i_2 = i;
+	i++;
+	while (g_cmd[i_2])
+	{
+		new_cmd[i] = g_cmd[i_2];
+		i++;
+		i_2++;
+	}
+	free(g_cmd);
+	return (new_cmd);
 }
 
 char	*read_entry(char *buff)
@@ -85,9 +171,17 @@ char	*read_entry(char *buff)
 	{
 		if (ft_isprint(ascii_value))
 		{
-			write(1, &ascii_value, 1);
 			g_cursor_pos++;
-			g_cmd = ft_strcat(g_cmd, buff);
+			if (g_cmd[g_cursor_pos + 1])
+			{
+				g_cmd = add_in(g_cmd, g_cursor_pos, buff);
+				refresh_stdout(g_cmd);
+			}
+			else
+			{
+				write(1, &ascii_value, 1);
+				g_cmd = ft_strcat(g_cmd, buff);
+			}
 		}
 	}
 	return (buff);
