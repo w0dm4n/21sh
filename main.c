@@ -19,6 +19,7 @@ int		main(int argc, char **argv, char **env)
 		ft_putstr("21sh do not take any argument !\n");
 	else
 	{
+		g_cursor_pos = 0;
 		if (!(g_cmd = ft_strnew(READ_BUFFER)))
 			return (-1);
 		g_new_cmd = TRUE;

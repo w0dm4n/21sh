@@ -47,4 +47,5 @@
 void		read_user_entry(int read);
 int			g_new_cmd;
 char		*g_cmd;
+int			g_cursor_pos;
 #endif

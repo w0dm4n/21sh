@@ -12,25 +12,31 @@
 
 #include "all.h"
 
-int		my_outc(int to_print)
+int		move_cursor(int to_print)
 {
 	ft_putchar(to_print);
 	return (to_print);
 }
 
-void	move_cursor_left(int x, int y)
+void	move_cursor_left(void)
 {
 	char *res;
 
-	x = 1;
-	y = 1;
 	res = tgetstr("le", NULL);
-	tputs(res, 0, my_outc);
-	//ft_putstr(res);
-	//tputs(tgoto(res, 200, 25), 1, my_outc);
+	tputs(res, 0, move_cursor);
+	g_cursor_pos--;
 }
 
-char		*read_entry(char *buff)
+void	move_cursor_right(void)
+{
+	char *res;
+
+	res = tgetstr("nd", NULL);
+	tputs(res, 0, move_cursor);
+	g_cursor_pos++;
+}
+
+char	*read_entry(char *buff)
 {
 	struct termios *term;
 	int 			ascii_value;
@@ -52,17 +58,19 @@ char		*read_entry(char *buff)
 		ascii_value += buff[i];
 		i++;
 	}
-	if (ft_isprint(ascii_value))
-		write(1, &ascii_value, 1);
 	if (ascii_value == NEW_CMD)
 	{
 		g_new_cmd = TRUE;
 		write(1, "\n", 1);
 		return (buff);
 	}
-	if (ascii_value == BACKSPACE)
+	if (ascii_value == ARROW_LEFT)
 	{
-		move_cursor_left(1, 1);
+		if (g_cursor_pos >= 1)
+		{
+			move_cursor_left();
+			return (buff);
+		}
 		//ft_putstr_fd(PRINT_CURSOR_POS, 2);
 		//term->c_lflag &= ~ECHO;
 		//tcsetattr(0, TCSANOW, term);
@@ -75,7 +83,21 @@ char		*read_entry(char *buff)
 		//move_cursor_left(1, 1);
 		//tputs(res, 0,my_outc); */
 	}
-	g_cmd = ft_strcat(g_cmd, buff);
+	else if (ascii_value == ARROW_RIGHT)
+	{
+		if (ft_isprint(g_cmd[g_cursor_pos + 1]))
+			move_cursor_right();
+		return (buff);
+	}
+	else
+	{
+		if (ft_isprint(ascii_value))
+		{
+			write(1, &ascii_value, 1);
+			g_cursor_pos++;
+			g_cmd = ft_strcat(g_cmd, buff);
+		}
+	}
 	return (buff);
 }
 
@@ -101,6 +123,7 @@ void		read_user_entry(int read)
 		print_color_n_prompt();
 		g_new_cmd = FALSE;
 		ft_bzero(g_cmd, READ_BUFFER);
+		g_cursor_pos = 0;
 	}
 	ft_bzero(buffer, READ_CHAR);
 	read_user_entry(TRUE);
