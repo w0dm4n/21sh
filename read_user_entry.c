@@ -71,21 +71,13 @@ char	*read_entry(char *buff)
 			move_cursor_left();
 			return (buff);
 		}
-		//ft_putstr_fd(PRINT_CURSOR_POS, 2);
-		//term->c_lflag &= ~ECHO;
-		//tcsetattr(0, TCSANOW, term);
-	/*	int fd = open("test", O_RDWR);
-		char test[1024];
-		write(fd, PRINT_CURSOR_POS, 10);
-		read(fd, test, 1024);
-		ft_putchar(test[0]);
-		//write(3, PRINT_CURSOR_POS, 10);
-		//move_cursor_left(1, 1);
-		//tputs(res, 0,my_outc); */
 	}
 	else if (ascii_value == ARROW_RIGHT)
 	{
 		if (ft_isprint(g_cmd[g_cursor_pos + 1]))
+			move_cursor_right();
+		else if (!ft_isprint(g_cmd[g_cursor_pos + 1])
+			&& ft_isprint(g_cmd[g_cursor_pos]))
 			move_cursor_right();
 		return (buff);
 	}
