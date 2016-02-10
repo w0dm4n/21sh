@@ -76,20 +76,39 @@ void	move_cursor_to(int pos)
 	tputs(tgoto(res, 0, pos), 1, move_cursor);
 }
 
+void	refresh_stdout_del(char *g_cmd)
+{
+	int old_pos;
+
+	old_pos = g_cursor_pos;
+	save_cursor_pos();
+	while (g_cursor_pos >= 1)
+		move_cursor_left();
+	if (!ft_strlen(g_cmd))
+		delete_x_characters(1);
+	else
+		delete_x_characters(ft_strlen(g_cmd));
+	write(1, g_cmd, ft_strlen(g_cmd));
+	g_cursor_pos = old_pos;
+	set_saved_cursor();
+	move_cursor_left();
+}
+
 void	refresh_stdout(char *g_cmd)
 {
 	int old_pos;
 
 	old_pos = g_cursor_pos;
 	save_cursor_pos();
-	while (g_cursor_pos >= 1 && g_cmd[g_cursor_pos])
+	while (g_cursor_pos >= 1 && (g_cmd[g_cursor_pos]
+		|| g_cmd[g_cursor_pos - 1]))
 		move_cursor_left();
 	delete_x_characters(ft_strlen(g_cmd));
+	write(1, " ", 1);
 	write(1, g_cmd, ft_strlen(g_cmd));
 	g_cursor_pos = old_pos - 1;
 	set_saved_cursor();
 	move_cursor_right();
-	// dl delete line DC delete X char
 }
 
 char	*add_in(char *g_cmd, int pos, char *toadd)
@@ -118,6 +137,35 @@ char	*add_in(char *g_cmd, int pos, char *toadd)
 		i_2++;
 	}
 	free(g_cmd);
+	new_cmd[i] = '\0';
+	return (new_cmd);
+}
+
+char	*del_in(char *g_cmd, int pos)
+{
+	char	*new_cmd;
+	int		i;
+	int		i_2;
+
+	i = 0;
+	i_2 = 0;
+	if (!(new_cmd = malloc(sizeof(char) * READ_BUFFER)))
+		return (NULL);
+	while (g_cmd[i] && i != (pos - 1))
+	{
+		new_cmd[i] = g_cmd[i];
+		i++;
+	}
+	i_2 = i;
+	i++;
+	while (g_cmd[i])
+	{
+		new_cmd[i_2] = g_cmd[i];
+		i++;
+		i_2++;
+	}
+	free(g_cmd);
+	new_cmd[i_2] = '\0';
 	return (new_cmd);
 }
 
@@ -166,6 +214,12 @@ char	*read_entry(char *buff)
 			move_cursor_right();
 		return (buff);
 	}
+	else if (ascii_value == BACKSPACE && g_cursor_pos >= 1
+		&& g_cmd[g_cursor_pos - 1])
+	{
+		g_cmd = del_in(g_cmd, g_cursor_pos);
+		refresh_stdout_del(g_cmd);
+	}
 	else
 	{
 		if (ft_isprint(ascii_value))
@@ -207,6 +261,9 @@ void		read_user_entry(int read)
 		//handle_cmd(g_cmd);
 		print_color_n_prompt();
 		g_new_cmd = FALSE;
+		free(g_cmd);
+		if (!(g_cmd = (char*)malloc(sizeof(char) * READ_BUFFER)))
+			return ;
 		ft_bzero(g_cmd, READ_BUFFER);
 		g_cursor_pos = 0;
 	}
