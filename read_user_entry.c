@@ -86,9 +86,8 @@ void	refresh_stdout(char *g_cmd)
 		move_cursor_left();
 	delete_x_characters(ft_strlen(g_cmd));
 	write(1, g_cmd, ft_strlen(g_cmd));
-	g_cursor_pos = old_pos + 1;
+	g_cursor_pos = old_pos - 1;
 	set_saved_cursor();
-	g_cursor_pos = old_pos;
 	move_cursor_right();
 	// dl delete line DC delete X char
 }
