@@ -43,6 +43,8 @@
 # define ARROW_RIGHT 185
 # define BACKSPACE 127
 # define PRINT_CURSOR_POS "\033[6n"
+# define HOME 190
+# define END 188
 
 void		read_user_entry(int read);
 char		**alloc_cmd(char **current_cmd);
