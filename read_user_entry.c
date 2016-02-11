@@ -87,19 +87,83 @@ void	delete_current_line(void)
 	g_cursor_pos = 0;
 }
 
+char	*get_args(char *buffer, int i, int i_2)
+{
+	int		size;
+	char	*get_args;
+
+	size = (ft_strlen(buffer + 1) - i);
+	if (size)
+	{
+		if (!(get_args = (char*)malloc(sizeof(char) * size)))
+			return (NULL);
+		ft_bzero(get_args, size);
+		while (buffer[i] != '\0' && buffer[i] != '\n')
+		{
+			if (buffer[i] == ' ')
+			{
+				while (buffer[i] == ' ')
+					i++;
+				i--;
+			}
+			get_args[i_2] = buffer[i];
+			i_2++;
+			i++;
+		}
+		get_args[i_2] = '\0';
+		return (get_args);
+	}
+	return (NULL);
+}
+
+char		*get_real_cmd(char *buffer)
+{
+	char	*get_cmd;
+	char	*cmdnargs;
+	int		pos;
+	int		i;
+	int		res;
+
+	i = 0;
+	res = 0;
+	get_cmd = NULL;
+	cmdnargs = NULL;
+	buffer = ft_strtrim(buffer);
+	pos = ft_strposition(buffer, " ");
+	cmdnargs = ft_strnew(6000);
+	if (pos)
+	{
+		if (!(get_cmd = (char*)malloc(sizeof(char) * pos)))
+			return (NULL);
+		ft_bzero(get_cmd, pos);
+		while (i < pos)
+		{
+			if (buffer[i] != '\n')
+				get_cmd[i] = *ft_strdup(&buffer[i]);
+			i++;
+		}
+	}
+	get_cmd[i] = '\0';
+	cmdnargs = ft_strcat(cmdnargs, get_cmd);
+	cmdnargs = ft_strcat(cmdnargs, get_args(buffer, i, 0));
+	return (cmdnargs);
+}
+
 void	print_logs(char *to_print)
 {
-	int	i;
+	int		i;
+	char	*cmd;
 
+	cmd = get_real_cmd(to_print);
 	i = 0;
 	if (!to_print)
 		return ;
 	if (!g_cursor_pos)
 	{
-		while (to_print[i])
+		while (cmd[i])
 		{
-			ft_putchar(to_print[i]);
-			g_cmd[i] = to_print[i];
+			ft_putchar(cmd[i]);
+			g_cmd[i] = cmd[i];
 			g_cursor_pos++;
 			i++;
 		}
@@ -341,34 +405,6 @@ void		print_color_n_prompt(void)
 {
 	ft_putstr(COLOR_WHITE);
 	ft_putstr("$> ");
-}
-
-char		*get_real_cmd(char *buffer)
-{
-	char	*get_cmd;
-	int		pos;
-	int		i;
-	int		res;
-
-	i = 0;
-	res = 0;
-	get_cmd = NULL;
-	buffer = ft_strtrim(buffer);
-	pos = ft_strposition(buffer, " ");
-	if (pos)
-	{
-		if (!(get_cmd = (char*)malloc(sizeof(char) * pos)))
-			return (NULL);
-		ft_bzero(get_cmd, pos);
-		while (i < pos)
-		{
-			if (buffer[i] != '\n')
-				get_cmd[i] = *ft_strdup(&buffer[i]);
-			i++;
-		}
-	}
-	get_cmd[i] = '\0';
-	return (get_cmd);
 }
 
 void		read_user_entry(int read)
