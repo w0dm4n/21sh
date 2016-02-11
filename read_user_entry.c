@@ -12,6 +12,7 @@
 
 #include "all.h"
 
+
 int		move_cursor(int to_print)
 {
 	ft_putchar(to_print);
@@ -68,12 +69,99 @@ void	set_saved_cursor(void)
 	res = tgetstr("rc", NULL);
 	tputs(res, 0, move_cursor);
 }
+
 void	move_cursor_to(int pos)
 {
 	char *res;
 
 	res = tgetstr("cm", NULL);
 	tputs(tgoto(res, 0, pos), 1, move_cursor);
+}
+
+void	delete_current_line(void)
+{
+	char	*res;
+
+	res = tgetstr("dl", NULL);
+	tputs(res, 0, move_cursor);
+	g_cursor_pos = 0;
+}
+
+void	print_logs(char *to_print)
+{
+	int	i;
+
+	i = 0;
+	if (!to_print)
+		return ;
+	if (!g_cursor_pos)
+	{
+		while (to_print[i])
+		{
+			ft_putchar(to_print[i]);
+			g_cmd[i] = to_print[i];
+			g_cursor_pos++;
+			i++;
+		}
+	}
+	else
+	{
+		// if g_cmd free && get back to start && set in g_cmd to_print and allow to type more
+	}
+	/*delete_current_line();
+	ft_putstr("$> ");
+	while (to_print[i])
+	{
+		ft_putchar(to_print[i]);
+		move_cursor_right();
+		i++;
+	}
+	move_cursor_right();*/
+}
+
+void	free_array(char **array)
+{
+	int	i;
+
+	i = 0;
+	while (array[i])
+	{
+		if (array[i])
+			free(array[i]);
+		i++;
+	}
+	free(array);
+}
+
+char	**alloc_cmd(char **current_cmd)
+{
+	if (!(current_cmd = malloc(sizeof(char*) * LOGS_BUFFER)))
+		return (NULL);
+	current_cmd = ft_set_null(current_cmd);
+	return (current_cmd);
+}
+
+char 	**add_in_front(char **logs, char *cmd)
+{
+	char	**new_logs;
+	int		i;
+	int		i_2;
+
+	i = 0;
+	i_2 = 1;
+	if (!(new_logs = malloc(sizeof(char*) * LOGS_BUFFER)))
+		return (NULL);
+	new_logs[0] = ft_strdup(cmd);
+	while (logs[i])
+	{
+		if (logs[i])
+		{
+			new_logs[i_2] = ft_strdup(logs[i]);
+			i_2++;
+		}
+		i++;
+	}
+	return (new_logs);
 }
 
 void	refresh_stdout_del(char *g_cmd)
@@ -195,6 +283,8 @@ char	*read_entry(char *buff)
 	{
 		g_new_cmd = TRUE;
 		write(1, "\n", 1);
+		g_current_cmd++;
+		g_logs_to_print = 0;
 		return (buff);
 	}
 	if (ascii_value == ARROW_LEFT)
@@ -219,6 +309,13 @@ char	*read_entry(char *buff)
 	{
 		g_cmd = del_in(g_cmd, g_cursor_pos);
 		refresh_stdout_del(g_cmd);
+	}
+	else if (ascii_value == ARROW_UP)
+	{
+		//ft_putstr(g_logs[g_logs_to_print]);
+		print_logs(g_logs[g_logs_to_print]);
+		g_logs_to_print++;
+		return (buff);
 	}
 	else
 	{
@@ -256,9 +353,13 @@ void		read_user_entry(int read)
 		buffer = read_entry(buffer);
 	if (g_new_cmd)
 	{
+		// need strtrim ect here
 		ft_putstr(g_cmd);
 		ft_putstr("\n");
 		//handle_cmd(g_cmd);
+		//g_logs[g_current_cmd] = ft_strdup(g_cmd);
+		if (g_cmd[0])
+			g_logs = add_in_front(g_logs, g_cmd);
 		print_color_n_prompt();
 		g_new_cmd = FALSE;
 		free(g_cmd);

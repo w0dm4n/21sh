@@ -27,7 +27,7 @@
 # include <stdio.h>
 # define READ_BUFFER 4096
 # define READ_CHAR 20
-# define PATH_MAX_SIZE 16192
+# define LOGS_BUFFER 10024
 # define COLOR_WHITE "\e[1;37m"
 # define MAX_EXE_NAME 2048
 # define MAX_ARGV_SIZE 8192
@@ -45,7 +45,11 @@
 # define PRINT_CURSOR_POS "\033[6n"
 
 void		read_user_entry(int read);
+char		**alloc_cmd(char **current_cmd);
 int			g_new_cmd;
 char		*g_cmd;
 int			g_cursor_pos;
+int			g_current_cmd;
+char		**g_logs;
+int			g_logs_to_print;
 #endif

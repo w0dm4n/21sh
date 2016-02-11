@@ -20,6 +20,10 @@ int		main(int argc, char **argv, char **env)
 	else
 	{
 		g_cursor_pos = 0;
+		g_current_cmd = 0;
+		g_logs_to_print = 0;
+		if (!(g_logs = alloc_cmd(g_logs)))
+			return (-1);
 		if (!(g_cmd = ft_strnew(READ_BUFFER)))
 			return (-1);
 		g_new_cmd = TRUE;
