@@ -343,6 +343,34 @@ void		print_color_n_prompt(void)
 	ft_putstr("$> ");
 }
 
+char		*get_real_cmd(char *buffer)
+{
+	char	*get_cmd;
+	int		pos;
+	int		i;
+	int		res;
+
+	i = 0;
+	res = 0;
+	get_cmd = NULL;
+	buffer = ft_strtrim(buffer);
+	pos = ft_strposition(buffer, " ");
+	if (pos)
+	{
+		if (!(get_cmd = (char*)malloc(sizeof(char) * pos)))
+			return (NULL);
+		ft_bzero(get_cmd, pos);
+		while (i < pos)
+		{
+			if (buffer[i] != '\n')
+				get_cmd[i] = *ft_strdup(&buffer[i]);
+			i++;
+		}
+	}
+	get_cmd[i] = '\0';
+	return (get_cmd);
+}
+
 void		read_user_entry(int read)
 {
 	char	*buffer;
@@ -351,9 +379,10 @@ void		read_user_entry(int read)
 		return ;
 	if (read)
 		buffer = read_entry(buffer);
+	else
+		print_color_n_prompt();
 	if (g_new_cmd)
 	{
-		// need strtrim ect here
 		ft_putstr(g_cmd);
 		ft_putstr("\n");
 		//handle_cmd(g_cmd);

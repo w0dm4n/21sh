@@ -26,7 +26,7 @@ int		main(int argc, char **argv, char **env)
 			return (-1);
 		if (!(g_cmd = ft_strnew(READ_BUFFER)))
 			return (-1);
-		g_new_cmd = TRUE;
+		g_new_cmd = FALSE;
 		read_user_entry(FALSE);
 	}
 	return (0);
