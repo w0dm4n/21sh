@@ -145,7 +145,8 @@ char		*get_real_cmd(char *buffer)
 	}
 	get_cmd[i] = '\0';
 	cmdnargs = ft_strcat(cmdnargs, get_cmd);
-	cmdnargs = ft_strcat(cmdnargs, get_args(buffer, i, 0));
+	if (get_args(buffer, i, 0))
+		cmdnargs = ft_strcat(cmdnargs, get_args(buffer, i, 0));
 	return (cmdnargs);
 }
 
@@ -154,10 +155,10 @@ void	print_logs(char *to_print)
 	int		i;
 	char	*cmd;
 
-	cmd = get_real_cmd(to_print);
-	i = 0;
 	if (!to_print)
 		return ;
+	cmd = get_real_cmd(to_print);
+	i = 0;
 	if (!g_cursor_pos)
 	{
 		while (cmd[i])
@@ -378,7 +379,11 @@ char	*read_entry(char *buff)
 	{
 		//ft_putstr(g_logs[g_logs_to_print]);
 		print_logs(g_logs[g_logs_to_print]);
-		g_logs_to_print++;
+		if (g_logs[g_logs_to_print])
+		{
+			if (ft_strlen(g_logs[g_logs_to_print]))
+				g_logs_to_print++;
+		}
 		return (buff);
 	}
 	else
