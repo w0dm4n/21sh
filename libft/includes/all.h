@@ -48,6 +48,8 @@
 # define CTRL_R 18
 # define CTRL_G 7
 # define CTRL_D 4
+# define CTRL_L 12
+# define CLEAR_SCREEN "\033[2J"
 
 void		read_user_entry(int read);
 char		**alloc_cmd(char **current_cmd);

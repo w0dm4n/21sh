@@ -87,6 +87,14 @@ void	delete_current_line(void)
 	g_cursor_pos = 0;
 }
 
+void	reset_cursor(void)
+{
+	char	*res;
+
+	res = tgetstr("cm", NULL);
+	tputs(tgoto(res, 0, 0), 1, move_cursor);
+}
+
 char	*get_args(char *buffer, int i, int i_2)
 {
 	int		size;
@@ -367,9 +375,11 @@ char	*read_entry(char *buff)
 	struct termios *term;
 	int 			ascii_value;
 	int				i;
+	int				cmd_size;
 
 	ascii_value = 0;
 	i = 0;
+	cmd_size = 0;
 	if (!(term = malloc(sizeof(struct termios))))
 		return (NULL);
 	if (!(tgetent(NULL, getenv("TERM"))))
@@ -384,22 +394,46 @@ char	*read_entry(char *buff)
 		ascii_value += buff[i];
 		i++;
 	}
-	//TODO : CTRL L CLEAR (CTRL C CANCEL CMD) OR CTRL C CLOSE SHELL. 
-	// CTRL D if last char " " execve ls -F or new prompt with same cmd
+	// CTRL C CLOSE CHILD IF THERE IS ONE
 	if (ascii_value == NEW_CMD)
 	{
-		g_new_cmd = TRUE;
-		write(1, "\n", 1);
-		g_current_cmd++;
-		g_logs_to_print = 0;
-		return (buff);
+		if (!check_special_chars(g_cmd))
+		{
+			g_new_cmd = TRUE;
+			write(1, "\n", 1);
+			g_current_cmd++:
+			g_logs_to_print = 0;
+			return ("\0");
+		}
+		else
+		{
+			g_new_cmd = TRUE;
+			write(1, "\n", 1);
+			g_current_cmd++;
+			g_logs_to_print = 0;
+			return (buff);
+		}
+	}
+	else if (ascii_value == CTRL_L)
+	{
+		ft_putstr(CLEAR_SCREEN);
+		g_new_cmd = 1;
+		reset_cursor();
 	}
 	else if (ascii_value == CTRL_D)
 	{
-		if (!g_cmd || !ft_strlen(g_cmd))
+		cmd_size = ft_strlen(g_cmd);
+		if (!g_cmd || !cmd_size)
 		{
 			ft_putstr("exit\n");
 			exit(0);
+		}
+		else
+		{
+			if (g_cmd[cmd_size - 1] == ' ')
+				ft_putstr("LS -F");
+			// + print new prompt + current cmd
+			// else print cmd again
 		}
 	}
 	else if (ascii_value == CTRL_G)
@@ -489,10 +523,7 @@ void		read_user_entry(int read)
 
 	if (!(buffer = (char*)malloc(sizeof(char) * READ_CHAR)))
 		return ;
-	if (read)
-		buffer = read_entry(buffer);
-	else
-		print_color_n_prompt();
+	(read) ? (buffer = read_entry(buffer)) : print_color_n_prompt();
 	if (g_new_cmd)
 	{
 		ft_putstr(g_cmd);
