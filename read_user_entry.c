@@ -12,7 +12,6 @@
 
 #include "all.h"
 
-
 int		move_cursor(int to_print)
 {
 	ft_putchar(to_print);
@@ -370,6 +369,147 @@ void	move_cursor_on_the_next_word(char *g_cmd)
 		move_cursor_right();
 }
 
+int		count_char(char *string, char to_find)
+{
+	int		i;
+	int		count;
+
+	i = 0;
+	count = 0;
+	while (string[i])
+	{
+		if (string[i] == to_find)
+			count++;
+		i++;
+	}
+	return (count);
+}
+
+int		check_special_chars(char *g_cmd)
+{
+	int count;
+	int	count_1;
+	int	count_2;
+	int	count_final;
+
+	count = 0;
+	count_2 = 0;
+	count_final = 0;
+	count_1 = 0;
+	if (ft_strchr(g_cmd, '\''))
+	{
+		count = count_char(g_cmd, '\'');
+		if ((count % 2))
+		{
+			ft_putstr_fd("\nUnmatched '.", 2);
+			write(1, "\n$> ", 4);
+			if (g_cmd[0])
+				g_logs = add_in_front(g_logs, g_cmd);
+			ft_bzero(g_cmd, READ_BUFFER);
+			return (0);
+		}
+		else
+			return (1);
+	}
+	if (ft_strchr(g_cmd, '"'))
+	{
+		count = count_char(g_cmd, '"');
+		if ((count % 2))
+		{
+			ft_putstr_fd("\nUnmatched \".", 2);
+			write(1, "\n$> ", 4);
+			if (g_cmd[0])
+				g_logs = add_in_front(g_logs, g_cmd);
+			ft_bzero(g_cmd, READ_BUFFER);
+			return (0);
+		}
+		else
+			return (1);
+	}
+	if (ft_strchr(g_cmd, '`'))
+	{
+		count = count_char(g_cmd, '`');
+		if ((count % 2))
+		{
+			ft_putstr_fd("\nUnmatched `.", 2);
+			write(1, "\n$> ", 4);
+			if (g_cmd[0])
+				g_logs = add_in_front(g_logs, g_cmd);
+			ft_bzero(g_cmd, READ_BUFFER);
+			return (0);
+		}
+		else
+			return (1);
+	}
+	if (ft_strchr(g_cmd, '(') || ft_strchr(g_cmd, ')'))
+	{
+		count_1 = count_char(g_cmd, '(');
+		count_2 = count_char(g_cmd, ')');
+		count_final = (count_1 + count_2);
+		if ((count_final % 2) || !count_2 || !count_1)
+		{
+			if (count_1 > count_2 && count_1 && count_2)
+				ft_putstr_fd("\nToo many ('s.", 2);
+			else if (count_2 > count_1 && count_1 && count_2)
+				ft_putstr_fd("\nToo many )'s.", 2);
+			else
+				ft_putstr_fd("\nBadly placed ()'s.", 2);
+			write(1, "\n$> ", 4);
+			if (g_cmd[0])
+				g_logs = add_in_front(g_logs, g_cmd);
+			ft_bzero(g_cmd, READ_BUFFER);
+			return (0);
+		}
+		else
+			return (1);
+	}
+	if (ft_strchr(g_cmd, '[') || ft_strchr(g_cmd, ']'))
+	{
+		count_1 = count_char(g_cmd, '[');
+		count_2 = count_char(g_cmd, ']');
+		count_final = (count_1 + count_2);
+		if ((count_final % 2) || !count_2 || !count_1)
+		{
+			if (count_1 > count_2 && count_1 && count_2)
+				ft_putstr_fd("\nToo many ['s.", 2);
+			else if (count_2 > count_1 && count_1 && count_2)
+				ft_putstr_fd("\nToo many ]'s.", 2);
+			else
+				ft_putstr_fd("\nBadly placed []'s.", 2);
+			write(1, "\n$> ", 4);
+			if (g_cmd[0])
+				g_logs = add_in_front(g_logs, g_cmd);
+			ft_bzero(g_cmd, READ_BUFFER);
+			return (0);
+		}
+		else
+			return (1);
+	}
+	if (ft_strchr(g_cmd, '{') || ft_strchr(g_cmd, '}'))
+	{
+		count_1 = count_char(g_cmd, '{');
+		count_2 = count_char(g_cmd, '}');
+		count_final = (count_1 + count_2);
+		if ((count_final % 2) || !count_2 || !count_1)
+		{
+			if (count_1 > count_2 && count_1 && count_2)
+				ft_putstr_fd("\nToo many {'s.", 2);
+			else if (count_2 > count_1 && count_1 && count_2)
+				ft_putstr_fd("\nToo many }'s.", 2);
+			else
+				ft_putstr_fd("\nBadly placed {}'s.", 2);
+			write(1, "\n$> ", 4);
+			if (g_cmd[0])
+				g_logs = add_in_front(g_logs, g_cmd);
+			ft_bzero(g_cmd, READ_BUFFER);
+			return (0);
+		}
+		else
+			return (1);
+	}
+	return (1);
+}
+
 char	*read_entry(char *buff)
 {
 	struct termios *term;
@@ -399,11 +539,10 @@ char	*read_entry(char *buff)
 	{
 		if (!check_special_chars(g_cmd))
 		{
-			g_new_cmd = TRUE;
-			write(1, "\n", 1);
-			g_current_cmd++:
-			g_logs_to_print = 0;
-			return ("\0");
+			g_new_cmd = FALSE;
+			g_current_cmd++;
+			g_cursor_pos = 0;
+			return (buff);
 		}
 		else
 		{
