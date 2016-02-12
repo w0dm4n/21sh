@@ -12,6 +12,22 @@
 
 #include "all.h"
 
+void	free_cmd_n_prompt(int signo)
+{
+	if (signo == SIGINT)
+	{
+		ft_bzero(g_cmd, READ_BUFFER);
+		ft_putstr("\n");
+		ft_putstr("$> ");
+		// add case for logs to avoid malloc: *** error for object
+	}
+}
+
+void	grab_signal(void)
+{
+	signal(SIGINT, free_cmd_n_prompt);
+}
+
 int		main(int argc, char **argv, char **env)
 {
 	env = NULL;
@@ -19,6 +35,7 @@ int		main(int argc, char **argv, char **env)
 		ft_putstr("21sh do not take any argument !\n");
 	else
 	{
+		grab_signal();
 		g_cursor_pos = 0;
 		g_current_cmd = 0;
 		g_logs_to_print = 0;

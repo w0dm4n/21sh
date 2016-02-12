@@ -394,6 +394,14 @@ char	*read_entry(char *buff)
 		g_logs_to_print = 0;
 		return (buff);
 	}
+	else if (ascii_value == CTRL_D)
+	{
+		if (!g_cmd || !ft_strlen(g_cmd))
+		{
+			ft_putstr("exit\n");
+			exit(0);
+		}
+	}
 	else if (ascii_value == CTRL_G)
 	{
 		if (g_cmd)
