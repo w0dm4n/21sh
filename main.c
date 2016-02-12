@@ -17,6 +17,8 @@ void	free_cmd_n_prompt(int signo)
 	if (signo == SIGINT)
 	{
 		ft_bzero(g_cmd, READ_BUFFER);
+		g_current_cmd++;
+		g_logs_to_print = 0;
 		ft_putstr("\n");
 		ft_putstr("$> ");
 		// add case for logs to avoid malloc: *** error for object

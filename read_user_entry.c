@@ -94,6 +94,14 @@ void	reset_cursor(void)
 	tputs(tgoto(res, 0, 0), 1, move_cursor);
 }
 
+void	move_cursor_one_line_down(void)
+{
+	char	*res;
+
+	res = tgetstr("do", NULL);
+	tputs(res, 0, move_cursor);
+}
+
 char	*get_args(char *buffer, int i, int i_2)
 {
 	int		size;
@@ -553,10 +561,21 @@ char	*read_entry(char *buff)
 			return (buff);
 		}
 	}
+	else if (ascii_value == CTRL_U)
+	{
+		if (g_cursor_pos <= (g_size.ws_col - 3))
+			return (buff);
+		else
+		{
+			move_cursor_one_line_down();
+		}
+	}
 	else if (ascii_value == CTRL_L)
 	{
 		ft_putstr(CLEAR_SCREEN);
 		g_new_cmd = 1;
+		g_current_cmd++;
+		g_logs_to_print = 0;
 		reset_cursor();
 	}
 	else if (ascii_value == CTRL_D)
@@ -660,6 +679,7 @@ void		read_user_entry(int read)
 {
 	char	*buffer;
 
+	ioctl(0, TIOCGWINSZ, &g_size);
 	if (!(buffer = (char*)malloc(sizeof(char) * READ_CHAR)))
 		return ;
 	(read) ? (buffer = read_entry(buffer)) : print_color_n_prompt();

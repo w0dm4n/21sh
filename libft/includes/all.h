@@ -25,6 +25,7 @@
 # include <termios.h>
 # include <term.h>
 # include <stdio.h>
+# include <sys/ioctl.h>
 # define READ_BUFFER 4096
 # define READ_CHAR 20
 # define LOGS_BUFFER 10024
@@ -50,13 +51,16 @@
 # define CTRL_D 4
 # define CTRL_L 12
 # define CLEAR_SCREEN "\033[2J"
+# define CTRL_U 21
+# define CTRL_B 2
 
-void		read_user_entry(int read);
-char		**alloc_cmd(char **current_cmd);
-int			g_new_cmd;
-char		*g_cmd;
-int			g_cursor_pos;
-int			g_current_cmd;
-char		**g_logs;
-int			g_logs_to_print;
+void			read_user_entry(int read);
+char			**alloc_cmd(char **current_cmd);
+int				g_new_cmd;
+char			*g_cmd;
+int				g_cursor_pos;
+int				g_current_cmd;
+char			**g_logs;
+int				g_logs_to_print;
+struct winsize	g_size;
 #endif
