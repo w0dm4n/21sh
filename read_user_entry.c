@@ -350,6 +350,18 @@ void	go_end(char *g_cmd)
 	}
 }
 
+void	move_cursor_on_the_last_word(char *g_cmd)
+{
+	while (g_cmd[g_cursor_pos] && g_cmd[g_cursor_pos] == ' ')
+		move_cursor_left();
+}
+
+void	move_cursor_on_the_next_word(char *g_cmd)
+{
+	while (g_cmd[g_cursor_pos] && g_cmd[g_cursor_pos] == ' ')
+		move_cursor_right();
+}
+
 char	*read_entry(char *buff)
 {
 	struct termios *term;
@@ -372,6 +384,8 @@ char	*read_entry(char *buff)
 		ascii_value += buff[i];
 		i++;
 	}
+	//TODO : CTRL L CLEAR (CTRL C CANCEL CMD) OR CTRL C CLOSE SHELL. 
+	// CTRL D if last char " " execve ls -F or new prompt with same cmd
 	if (ascii_value == NEW_CMD)
 	{
 		g_new_cmd = TRUE;
@@ -380,7 +394,17 @@ char	*read_entry(char *buff)
 		g_logs_to_print = 0;
 		return (buff);
 	}
-	if (ascii_value == ARROW_LEFT)
+	else if (ascii_value == CTRL_G)
+	{
+		if (g_cmd)
+			move_cursor_on_the_last_word(g_cmd);
+	}
+	else if (ascii_value == CTRL_R)
+	{
+		if (g_cmd)
+			move_cursor_on_the_next_word(g_cmd);
+	}
+	else if (ascii_value == ARROW_LEFT)
 	{
 		if (g_cursor_pos >= 1)
 		{
@@ -405,7 +429,6 @@ char	*read_entry(char *buff)
 	}
 	else if (ascii_value == ARROW_UP)
 	{
-		//ft_putstr(g_logs[g_logs_to_print]);
 		print_logs(g_logs[g_logs_to_print]);
 		if (g_logs[g_logs_to_print])
 		{

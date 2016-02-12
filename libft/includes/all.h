@@ -45,6 +45,8 @@
 # define PRINT_CURSOR_POS "\033[6n"
 # define HOME 190
 # define END 188
+# define CTRL_R 18
+# define CTRL_G 7
 
 void		read_user_entry(int read);
 char		**alloc_cmd(char **current_cmd);
