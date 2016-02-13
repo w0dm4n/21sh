@@ -59,18 +59,13 @@ void	move_cursor_right(void)
 {
 	char	*res;
 
-	//if (g_cursor_pos == (g_size.ws_col - 1))
-	//	move_cursor_one_line_down();
-	//else
-	//{
-		if (((g_cursor_pos) / g_size.ws_col) < ((g_cursor_pos + 1) / g_size.ws_col))
-			move_cursor_one_line_down();
-		else
-		{
-			res = tgetstr("nd", NULL);
-			tputs(res, 0, move_cursor);
-		}
-	//}
+	if (((g_cursor_pos) / g_size.ws_col) < ((g_cursor_pos + 1) / g_size.ws_col))
+		move_cursor_one_line_down();
+	else
+	{
+		res = tgetstr("nd", NULL);
+		tputs(res, 0, move_cursor);
+	}
 	g_cursor_pos++;
 }
 
@@ -587,10 +582,8 @@ char	*read_entry(char *buff)
 		if (g_cursor_pos <= (g_size.ws_col - 3))
 			return (buff);
 		else
-		{
 			if (g_cmd[g_cursor_pos - (g_size.ws_col - 3)])
 				move_cursor_one_line_up();
-		}
 	}
 	else if (ascii_value == CTRL_B)
 	{
