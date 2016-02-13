@@ -18,6 +18,7 @@ void	free_cmd_n_prompt(int signo)
 	{
 		ft_bzero(g_cmd, READ_BUFFER);
 		g_current_cmd++;
+		g_cursor_pos = 0;
 		g_logs_to_print = 0;
 		ft_putstr("\n");
 		ft_putstr("$> ");

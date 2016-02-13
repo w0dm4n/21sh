@@ -27,6 +27,25 @@ void	delete_current_character(void)
 	g_cursor_pos--;
 }
 
+void	move_cursor_one_line_up(void)
+{
+	char	*res;
+
+	res = tgetstr("up", NULL);
+	tputs(res, 0, move_cursor);
+	g_cursor_pos = (g_cursor_pos - (g_size.ws_col - 3));
+}
+
+void	move_cursor_one_line_down(void)
+{
+	char	*res;
+
+	res = tgetstr("do", NULL);
+	tputs(res, 0, move_cursor);
+	//g_cursor_pos = (g_cursor_pos + (g_size.ws_col - 3));
+	// + set good position
+}
+
 void	move_cursor_left(void)
 {
 	char *res;
@@ -38,10 +57,20 @@ void	move_cursor_left(void)
 
 void	move_cursor_right(void)
 {
-	char *res;
+	char	*res;
 
-	res = tgetstr("nd", NULL);
-	tputs(res, 0, move_cursor);
+	//if (g_cursor_pos == (g_size.ws_col - 1))
+	//	move_cursor_one_line_down();
+	//else
+	//{
+		if (((g_cursor_pos) / g_size.ws_col) < ((g_cursor_pos + 1) / g_size.ws_col))
+			move_cursor_one_line_down();
+		else
+		{
+			res = tgetstr("nd", NULL);
+			tputs(res, 0, move_cursor);
+		}
+	//}
 	g_cursor_pos++;
 }
 
@@ -92,14 +121,6 @@ void	reset_cursor(void)
 
 	res = tgetstr("cm", NULL);
 	tputs(tgoto(res, 0, 0), 1, move_cursor);
-}
-
-void	move_cursor_one_line_down(void)
-{
-	char	*res;
-
-	res = tgetstr("do", NULL);
-	tputs(res, 0, move_cursor);
 }
 
 char	*get_args(char *buffer, int i, int i_2)
@@ -567,8 +588,14 @@ char	*read_entry(char *buff)
 			return (buff);
 		else
 		{
-			move_cursor_one_line_down();
+			if (g_cmd[g_cursor_pos - (g_size.ws_col - 3)])
+				move_cursor_one_line_up();
 		}
+	}
+	else if (ascii_value == CTRL_B)
+	{
+		if (g_cmd[g_cursor_pos + (g_size.ws_col - 3)])
+			move_cursor_one_line_down();
 	}
 	else if (ascii_value == CTRL_L)
 	{
