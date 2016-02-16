@@ -24,10 +24,12 @@ void	refresh_stdout_del(char *g_cmd)
 		delete_x_characters(1);
 	else
 		delete_x_characters(ft_strlen(g_cmd));
-	write(1, g_cmd, ft_strlen(g_cmd));
+	ft_putstr_fd(g_cmd, 1);
 	g_cursor_pos = old_pos;
 	set_saved_cursor();
 	move_cursor_left();
+	if (!ft_strlen(g_cmd))
+		g_cursor_pos = 0;
 }
 
 void	refresh_stdout(char *g_cmd)

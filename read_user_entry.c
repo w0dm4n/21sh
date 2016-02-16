@@ -26,7 +26,7 @@ void		go_end(char *g_cmd)
 	}
 }
 
-char		*read_entry_suite_ext(char *buff)
+char		*read_entry_suite_ext(char *buff, int ascii_value)
 {
 	if (ascii_value == CTRL_E)
 		control_e();
@@ -40,9 +40,10 @@ char		*read_entry_suite_ext(char *buff)
 		control_s();
 	else
 		print_or_add_in_stdout(ascii_value, buff);
+	return (buff);
 }
 
-char		*read_entry_suite(char *buff)
+char		*read_entry_suite(char *buff, int ascii_value)
 {
 	if (ascii_value == CTRL_G && g_cmd)
 		move_cursor_on_the_last_word(g_cmd);
@@ -61,7 +62,7 @@ char		*read_entry_suite(char *buff)
 		clear_screen_term();
 	else if (ascii_value == CTRL_D)
 		control_d(ft_strlen(g_cmd));
-	return (read_entry_suite_ext(buff));
+	return (read_entry_suite_ext(buff, ascii_value));
 }
 
 char		*read_entry(char *buff)
@@ -88,7 +89,7 @@ char		*read_entry(char *buff)
 		move_up();
 	else if (ascii_value == CTRL_B)
 		move_down();
-	return (read_entry_suite(buff));
+	return (read_entry_suite(buff, ascii_value));
 }
 
 void		read_user_entry(int read)

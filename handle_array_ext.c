@@ -12,6 +12,24 @@
 
 #include "all.h"
 
+char	*meurs_en_enfer(char *satan)
+{
+	int i;
+
+	if (!satan)
+		return (NULL);
+	if (!satan[0])
+		return (NULL);
+	i = ft_strlen(satan);
+	while (i)
+	{
+		satan[i] = '\0';
+		i--;
+	}
+	satan[i] = '\0';
+	return (satan);
+}
+
 char	**alloc_cmd(char **current_cmd)
 {
 	if (!(current_cmd = malloc(sizeof(char*) * LOGS_BUFFER)))
@@ -43,7 +61,7 @@ char	*del_in(char *g_cmd, int pos)
 		i++;
 		i_2++;
 	}
-	free(g_cmd);
+	g_cmd = meurs_en_enfer(g_cmd);
 	new_cmd[i_2] = '\0';
 	return (new_cmd);
 }

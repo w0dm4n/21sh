@@ -45,15 +45,19 @@ void		print_or_add_in_stdout(int ascii_value, char *buff)
 {
 	if (ft_isprint(ascii_value))
 	{
-		g_cursor_pos++;
 		if (g_cmd[g_cursor_pos + 1])
 		{
+			if ((ft_strlen(g_cmd) / (g_size.ws_col - 2)) <
+				((ft_strlen(g_cmd) + 1) / (g_size.ws_col - 2)))
+				return ;
+			g_cursor_pos++;
 			g_cmd = add_in(g_cmd, g_cursor_pos, buff, 0);
 			refresh_stdout(g_cmd);
 		}
 		else
 		{
-			write(1, &ascii_value, 1);
+			g_cursor_pos++;
+			ft_putchar((char)ascii_value);
 			g_cmd = ft_strcat(g_cmd, buff);
 		}
 	}
