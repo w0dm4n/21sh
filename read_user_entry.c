@@ -12,418 +12,7 @@
 
 #include "all.h"
 
-int		move_cursor(int to_print)
-{
-	ft_putchar(to_print);
-	return (to_print);
-}
-
-void	delete_current_character(void)
-{
-	char *res;
-
-	res = tgetstr("dc", NULL);
-	tputs(res, 0, move_cursor);
-	g_cursor_pos--;
-}
-
-void	move_cursor_one_line_up(void)
-{
-	char	*res;
-
-	res = tgetstr("up", NULL);
-	tputs(res, 0, move_cursor);
-	g_cursor_pos = (g_cursor_pos - (g_size.ws_col - 3));
-}
-
-void	move_cursor_left(void)
-{
-	char *res;
-
-	res = tgetstr("le", NULL);
-	tputs(res, 0, move_cursor);
-	g_cursor_pos--;
-}
-
-void	move_cursor_one_line_down(void)
-{
-	char	*res;
-	int		old_pos;
-
-	old_pos = g_cursor_pos;
-	res = tgetstr("do", NULL);
-	tputs(res, 0, move_cursor);
-	while (g_cursor_pos)
-	{
-		if (((old_pos) / g_size.ws_col) < ((g_cursor_pos) / g_size.ws_col))
-			break;
-		g_cursor_pos++;
-	}
-}
-
-void	move_cursor_right(void)
-{
-	char	*res;
-
-	if (((g_cursor_pos) / g_size.ws_col) < ((g_cursor_pos + 1) / g_size.ws_col))
-		move_cursor_one_line_down();
-	else
-	{
-		res = tgetstr("nd", NULL);
-		tputs(res, 0, move_cursor);
-	}
-	g_cursor_pos++;
-}
-
-void	delete_x_characters(int to_del)
-{
-	char *res;
-
-	res = tgetstr("DC", NULL);
-	tputs(tgoto(res, 0, to_del), 1, move_cursor);
-}
-
-void	save_cursor_pos(void)
-{
-	char *res;
-
-	res = tgetstr("sc", NULL);
-	tputs(res, 0, move_cursor);
-}
-
-void	set_saved_cursor(void)
-{
-	char *res;
-
-	res = tgetstr("rc", NULL);
-	tputs(res, 0, move_cursor);
-}
-
-void	move_cursor_to(int pos)
-{
-	char *res;
-
-	res = tgetstr("cm", NULL);
-	tputs(tgoto(res, 0, pos), 1, move_cursor);
-}
-
-void	delete_current_line(void)
-{
-	char	*res;
-
-	res = tgetstr("dl", NULL);
-	tputs(res, 0, move_cursor);
-	g_cursor_pos = 0;
-}
-
-void	reset_cursor(void)
-{
-	char	*res;
-
-	res = tgetstr("cm", NULL);
-	tputs(tgoto(res, 0, 0), 1, move_cursor);
-}
-
-char	*get_args(char *buffer, int i, int i_2)
-{
-	int		size;
-	char	*get_args;
-
-	size = (ft_strlen(buffer + 1) - i);
-	if (size)
-	{
-		if (!(get_args = (char*)malloc(sizeof(char) * size)))
-			return (NULL);
-		ft_bzero(get_args, size);
-		while (buffer[i] != '\0' && buffer[i] != '\n')
-		{
-			if (buffer[i] == ' ')
-			{
-				while (buffer[i] == ' ')
-					i++;
-				i--;
-			}
-			get_args[i_2] = buffer[i];
-			i_2++;
-			i++;
-		}
-		get_args[i_2] = '\0';
-		return (get_args);
-	}
-	return (NULL);
-}
-
-char		*get_real_cmd(char *buffer)
-{
-	char	*get_cmd;
-	char	*cmdnargs;
-	int		pos;
-	int		i;
-	int		res;
-
-	i = 0;
-	res = 0;
-	get_cmd = NULL;
-	cmdnargs = NULL;
-	buffer = ft_strtrim(buffer);
-	pos = ft_strposition(buffer, " ");
-	cmdnargs = ft_strnew(READ_BUFFER);
-	if (pos)
-	{
-		if (!(get_cmd = (char*)malloc(sizeof(char) * pos)))
-			return (NULL);
-		ft_bzero(get_cmd, pos);
-		while (i < pos)
-		{
-			if (buffer[i] != '\n')
-				get_cmd[i] = *ft_strdup(&buffer[i]);
-			i++;
-		}
-	}
-	get_cmd[i] = '\0';
-	cmdnargs = ft_strcat(cmdnargs, get_cmd);
-	if (get_args(buffer, i, 0))
-		cmdnargs = ft_strcat(cmdnargs, get_args(buffer, i, 0));
-	return (cmdnargs);
-}
-
-void	print_logs(char *to_print)
-{
-	int		i;
-	char	*cmd;
-
-	if (!to_print)
-		return ;
-	cmd = get_real_cmd(to_print);
-	i = 0;
-	if (!g_cursor_pos)
-	{
-		while (cmd[i])
-		{
-			ft_putchar(cmd[i]);
-			g_cmd[i] = cmd[i];
-			g_cursor_pos++;
-			i++;
-		}
-	}
-	else
-	{
-		while (g_cursor_pos >= 1 && (g_cmd[g_cursor_pos]
-		|| g_cmd[g_cursor_pos - 1]))
-			move_cursor_left();
-		delete_x_characters(ft_strlen(g_cmd));
-		g_cursor_pos = 0;
-		if (g_cmd)
-			free(g_cmd);
-		g_cmd = ft_strdup(cmd);
-		while (g_cmd[i])
-		{
-			ft_putchar(g_cmd[i]);
-			g_cursor_pos++;
-			i++;
-		}
-	}
-}
-
-void	free_array(char **array)
-{
-	int	i;
-
-	i = 0;
-	while (array[i])
-	{
-		if (array[i])
-			free(array[i]);
-		i++;
-	}
-	free(array);
-}
-
-char	**alloc_cmd(char **current_cmd)
-{
-	if (!(current_cmd = malloc(sizeof(char*) * LOGS_BUFFER)))
-		return (NULL);
-	current_cmd = ft_set_null(current_cmd);
-	return (current_cmd);
-}
-
-char 	**add_in_front(char **logs, char *cmd)
-{
-	char	**new_logs;
-	int		i;
-	int		i_2;
-
-	i = 0;
-	i_2 = 1;
-	if (!(new_logs = malloc(sizeof(char*) * LOGS_BUFFER)))
-		return (NULL);
-	new_logs[0] = ft_strdup(cmd);
-	while (logs[i])
-	{
-		if (logs[i])
-		{
-			new_logs[i_2] = ft_strdup(logs[i]);
-			i_2++;
-		}
-		i++;
-	}
-	return (new_logs);
-}
-
-void	refresh_stdout_del(char *g_cmd)
-{
-	int old_pos;
-
-	old_pos = g_cursor_pos;
-	save_cursor_pos();
-	while (g_cursor_pos >= 1)
-		move_cursor_left();
-	if (!ft_strlen(g_cmd))
-		delete_x_characters(1);
-	else
-		delete_x_characters(ft_strlen(g_cmd));
-	write(1, g_cmd, ft_strlen(g_cmd));
-	g_cursor_pos = old_pos;
-	set_saved_cursor();
-	move_cursor_left();
-}
-
-void	refresh_stdout(char *g_cmd)
-{
-	int old_pos;
-
-	old_pos = g_cursor_pos;
-	save_cursor_pos();
-	while (g_cursor_pos >= 1 && (g_cmd[g_cursor_pos]
-		|| g_cmd[g_cursor_pos - 1]))
-		move_cursor_left();
-	delete_x_characters(ft_strlen(g_cmd));
-	write(1, " ", 1);
-	write(1, g_cmd, ft_strlen(g_cmd));
-	g_cursor_pos = old_pos - 1;
-	set_saved_cursor();
-	move_cursor_right();
-}
-
-void	refresh_stdout_selected(char *g_cmd)
-{
-	int old_pos;
-	int	i;
-
-	i = 0;
-	old_pos = g_cursor_pos;
-	save_cursor_pos();
-	while (g_cursor_pos >= 1 && (g_cmd[g_cursor_pos]
-		|| g_cmd[g_cursor_pos - 1]))
-		move_cursor_left();
-	delete_x_characters(ft_strlen(g_cmd));
-	while (g_cmd[i])
-	{
-		if (g_selected_position[g_cursor_pos])
-			ft_putstr(PRINT_SELECTED);
-		ft_putchar(g_cmd[i]);
-		ft_putstr(RESET);
-		ft_putstr(DEFAULT_COLOR);
-		g_cursor_pos++;
-		i++;
-	}
-}
-
-char	*add_in(char *g_cmd, int pos, char *toadd)
-{
-	char	*new_cmd;
-	int		i;
-	int		i_2;
-
-	i = 0;
-	i_2 = 0;
-	if (!(new_cmd = malloc(sizeof(char) * READ_BUFFER)))
-		return (NULL);
-	while (g_cmd[i] && i != pos)
-	{
-		new_cmd[i] = g_cmd[i];
-		i++;
-	}
-	i--;
-	new_cmd[i] = toadd[0];
-	i_2 = i;
-	i++;
-	while (g_cmd[i_2])
-	{
-		new_cmd[i] = g_cmd[i_2];
-		i++;
-		i_2++;
-	}
-	free(g_cmd);
-	new_cmd[i] = '\0';
-	return (new_cmd);
-}
-
-char	*get_new_cmdncopy(char *g_cmd, int *selected_pos)
-{
-	char	*tmp;
-	int		i;
-	int		i_2;
-
-	i = 0;
-	i_2 = 0;
-	if (!(tmp = malloc(sizeof(char) * READ_BUFFER)))
-		return (NULL);
-	while (i <= READ_BUFFER)
-	{
-		if (selected_pos[i])
-		{
-			tmp[i_2] = g_cmd[i];
-			i_2++;
-			g_cursor_pos++;
-		}			
-		i++;
-	}
-	tmp[i_2] = '\0';
-	ft_putstr(tmp);
-	g_cmd = ft_strcat(g_cmd, tmp);
-	return(g_cmd);
-}
-
-char	*del_in(char *g_cmd, int pos)
-{
-	char	*new_cmd;
-	int		i;
-	int		i_2;
-
-	i = 0;
-	i_2 = 0;
-	if (!(new_cmd = malloc(sizeof(char) * READ_BUFFER)))
-		return (NULL);
-	while (g_cmd[i] && i != (pos - 1))
-	{
-		new_cmd[i] = g_cmd[i];
-		i++;
-	}
-	i_2 = i;
-	i++;
-	while (g_cmd[i])
-	{
-		new_cmd[i_2] = g_cmd[i];
-		i++;
-		i_2++;
-	}
-	free(g_cmd);
-	new_cmd[i_2] = '\0';
-	return (new_cmd);
-}
-
-void	go_home(char *g_cmd)
-{
-	if (g_cmd)
-	{
-		while (g_cursor_pos >= 1 && (g_cmd[g_cursor_pos]
-		|| g_cmd[g_cursor_pos - 1]))
-			move_cursor_left();
-	}
-}
-
-void	go_end(char *g_cmd)
+void		go_end(char *g_cmd)
 {
 	if (g_cmd)
 	{
@@ -432,168 +21,15 @@ void	go_end(char *g_cmd)
 			while (g_cmd[g_cursor_pos]
 			|| g_cmd[g_cursor_pos - 1])
 				move_cursor_right();
-			move_cursor_left(); // cuz of one more
+			move_cursor_left();
 		}
 	}
 }
 
-void	move_cursor_on_the_last_word(char *g_cmd)
+char		*read_entry(char *buff)
 {
-	while (g_cmd[g_cursor_pos] && g_cmd[g_cursor_pos] == ' ')
-		move_cursor_left();
-}
-
-void	move_cursor_on_the_next_word(char *g_cmd)
-{
-	while (g_cmd[g_cursor_pos] && g_cmd[g_cursor_pos] == ' ')
-		move_cursor_right();
-}
-
-int		count_char(char *string, char to_find)
-{
-	int		i;
-	int		count;
-
-	i = 0;
-	count = 0;
-	while (string[i])
-	{
-		if (string[i] == to_find)
-			count++;
-		i++;
-	}
-	return (count);
-}
-
-int		check_special_chars(char *g_cmd)
-{
-	int count;
-	int	count_1;
-	int	count_2;
-	int	count_final;
-
-	count = 0;
-	count_2 = 0;
-	count_final = 0;
-	count_1 = 0;
-	if (ft_strchr(g_cmd, '\''))
-	{
-		count = count_char(g_cmd, '\'');
-		if ((count % 2))
-		{
-			ft_putstr_fd("\nUnmatched '.", 2);
-			write(1, "\n$> ", 4);
-			if (g_cmd[0])
-				g_logs = add_in_front(g_logs, g_cmd);
-			ft_bzero(g_cmd, READ_BUFFER);
-			return (0);
-		}
-		else
-			return (1);
-	}
-	if (ft_strchr(g_cmd, '"'))
-	{
-		count = count_char(g_cmd, '"');
-		if ((count % 2))
-		{
-			ft_putstr_fd("\nUnmatched \".", 2);
-			write(1, "\n$> ", 4);
-			if (g_cmd[0])
-				g_logs = add_in_front(g_logs, g_cmd);
-			ft_bzero(g_cmd, READ_BUFFER);
-			return (0);
-		}
-		else
-			return (1);
-	}
-	if (ft_strchr(g_cmd, '`'))
-	{
-		count = count_char(g_cmd, '`');
-		if ((count % 2))
-		{
-			ft_putstr_fd("\nUnmatched `.", 2);
-			write(1, "\n$> ", 4);
-			if (g_cmd[0])
-				g_logs = add_in_front(g_logs, g_cmd);
-			ft_bzero(g_cmd, READ_BUFFER);
-			return (0);
-		}
-		else
-			return (1);
-	}
-	if (ft_strchr(g_cmd, '(') || ft_strchr(g_cmd, ')'))
-	{
-		count_1 = count_char(g_cmd, '(');
-		count_2 = count_char(g_cmd, ')');
-		count_final = (count_1 + count_2);
-		if ((count_final % 2) || !count_2 || !count_1)
-		{
-			if (count_1 > count_2 && count_1 && count_2)
-				ft_putstr_fd("\nToo many ('s.", 2);
-			else if (count_2 > count_1 && count_1 && count_2)
-				ft_putstr_fd("\nToo many )'s.", 2);
-			else
-				ft_putstr_fd("\nBadly placed ()'s.", 2);
-			write(1, "\n$> ", 4);
-			if (g_cmd[0])
-				g_logs = add_in_front(g_logs, g_cmd);
-			ft_bzero(g_cmd, READ_BUFFER);
-			return (0);
-		}
-		else
-			return (1);
-	}
-	if (ft_strchr(g_cmd, '[') || ft_strchr(g_cmd, ']'))
-	{
-		count_1 = count_char(g_cmd, '[');
-		count_2 = count_char(g_cmd, ']');
-		count_final = (count_1 + count_2);
-		if ((count_final % 2) || !count_2 || !count_1)
-		{
-			if (count_1 > count_2 && count_1 && count_2)
-				ft_putstr_fd("\nToo many ['s.", 2);
-			else if (count_2 > count_1 && count_1 && count_2)
-				ft_putstr_fd("\nToo many ]'s.", 2);
-			else
-				ft_putstr_fd("\nBadly placed []'s.", 2);
-			write(1, "\n$> ", 4);
-			if (g_cmd[0])
-				g_logs = add_in_front(g_logs, g_cmd);
-			ft_bzero(g_cmd, READ_BUFFER);
-			return (0);
-		}
-		else
-			return (1);
-	}
-	if (ft_strchr(g_cmd, '{') || ft_strchr(g_cmd, '}'))
-	{
-		count_1 = count_char(g_cmd, '{');
-		count_2 = count_char(g_cmd, '}');
-		count_final = (count_1 + count_2);
-		if ((count_final % 2) || !count_2 || !count_1)
-		{
-			if (count_1 > count_2 && count_1 && count_2)
-				ft_putstr_fd("\nToo many {'s.", 2);
-			else if (count_2 > count_1 && count_1 && count_2)
-				ft_putstr_fd("\nToo many }'s.", 2);
-			else
-				ft_putstr_fd("\nBadly placed {}'s.", 2);
-			write(1, "\n$> ", 4);
-			if (g_cmd[0])
-				g_logs = add_in_front(g_logs, g_cmd);
-			ft_bzero(g_cmd, READ_BUFFER);
-			return (0);
-		}
-		else
-			return (1);
-	}
-	return (1);
-}
-
-char	*read_entry(char *buff)
-{
-	struct termios *term;
-	int 			ascii_value;
+	struct termios	*term;
+	int				ascii_value;
 	int				i;
 	int				cmd_size;
 
@@ -603,7 +39,7 @@ char	*read_entry(char *buff)
 	if (!(term = malloc(sizeof(struct termios))))
 		return (NULL);
 	if (!(tgetent(NULL, getenv("TERM"))))
-     return (NULL);
+		return (NULL);
 	tcgetattr(0, term);
 	term->c_lflag &= ~ICANON;
 	term->c_lflag &= ~ECHO;
@@ -614,7 +50,6 @@ char	*read_entry(char *buff)
 		ascii_value += buff[i];
 		i++;
 	}
-	// CTRL C CLOSE CHILD IF THERE IS ONE
 	if (ascii_value == NEW_CMD)
 	{
 		if (!check_special_chars(g_cmd))
@@ -637,9 +72,8 @@ char	*read_entry(char *buff)
 	{
 		if (g_cursor_pos <= (g_size.ws_col - 3))
 			return (buff);
-		else
-			if (g_cmd[g_cursor_pos - (g_size.ws_col - 3)])
-				move_cursor_one_line_up();
+		else if (g_cmd[g_cursor_pos - (g_size.ws_col - 3)])
+			move_cursor_one_line_up();
 	}
 	else if (ascii_value == CTRL_B)
 	{
@@ -666,8 +100,6 @@ char	*read_entry(char *buff)
 		{
 			if (g_cmd[cmd_size - 1] == ' ')
 				ft_putstr("LS -F");
-			// + print new prompt + current cmd
-			// else print cmd again
 		}
 	}
 	else if (ascii_value == CTRL_G)
@@ -691,7 +123,6 @@ char	*read_entry(char *buff)
 	else if (ascii_value == ARROW_RIGHT)
 	{
 		if (ft_isprint(g_cmd[g_cursor_pos + 1]))
-			
 			move_cursor_right();
 		else if (!ft_isprint(g_cmd[g_cursor_pos + 1])
 			&& ft_isprint(g_cmd[g_cursor_pos]))
@@ -730,7 +161,7 @@ char	*read_entry(char *buff)
 	else if (ascii_value == CTRL_E)
 	{
 		g_cmd = get_new_cmdncopy(g_cmd, g_selected_position);
-		g_selected_position = set_array_as_zero(g_selected_position, READ_BUFFER);
+		g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
 	}
 	else if (ascii_value == HOME)
 		go_home(g_cmd);
@@ -743,7 +174,7 @@ char	*read_entry(char *buff)
 			g_cursor_pos++;
 			if (g_cmd[g_cursor_pos + 1])
 			{
-				g_cmd = add_in(g_cmd, g_cursor_pos, buff);
+				g_cmd = add_in(g_cmd, g_cursor_pos, buff, 0);
 				refresh_stdout(g_cmd);
 			}
 			else
@@ -754,12 +185,6 @@ char	*read_entry(char *buff)
 		}
 	}
 	return (buff);
-}
-
-void		print_color_n_prompt(void)
-{
-	ft_putstr(COLOR_WHITE);
-	ft_putstr("$> ");
 }
 
 void		read_user_entry(int read)
@@ -784,7 +209,7 @@ void		read_user_entry(int read)
 			return ;
 		ft_bzero(g_cmd, READ_BUFFER);
 		g_cursor_pos = 0;
-		g_selected_position = set_array_as_zero(g_selected_position, READ_BUFFER);
+		g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
 	}
 	ft_bzero(buffer, READ_CHAR);
 	read_user_entry(TRUE);

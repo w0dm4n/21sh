@@ -53,8 +53,8 @@
 # define CLEAR_SCREEN "\033[2J"
 # define CTRL_U 21
 # define CTRL_B 2
-# define CTRL_S 19 // selectionner
-# define CTRL_E 5 // coller
+# define CTRL_S 19
+# define CTRL_E 5
 # define COLOR_RED "\e[0;31m"
 # define PRINT_SELECTED "\e[1;37m\e[46m"
 # define RESET "\e[0;37m"
@@ -62,7 +62,41 @@
 
 void			read_user_entry(int read);
 char			**alloc_cmd(char **current_cmd);
-int				*set_array_as_zero(int *array, int to_set);
+int				*set_arr_zero(int *array, int to_set);
+void			grab_signal(void);
+void			free_cmd_n_prompt(int signo);
+int				move_cursor(int to_print);
+void			delete_current_character(void);
+void			move_cursor_one_line_up(void);
+void			move_cursor_left(void);
+void			move_cursor_one_line_down(void);
+void			move_cursor_to(int pos);
+void			set_saved_cursor(void);
+void			save_cursor_pos(void);
+void			delete_x_characters(int to_del);
+void			move_cursor_right(void);
+void			delete_current_line(void);
+void			reset_cursor(void);
+void			free_array(char **array);
+void			refresh_stdout_del(char *g_cmd);
+void			refresh_stdout(char *g_cmd);
+void			refresh_stdout_selected(char *g_cmd);
+void			print_logs(char *to_print);
+void			move_cursor_on_the_last_word(char *g_cmd);
+void			move_cursor_on_the_next_word(char *g_cmd);
+char			*get_args(char *buffer, int i, int i_2);
+char			*get_real_cmd(char *buffer, int i, int res, char *get_cmd);
+char			**add_in_front(char **logs, char *cmd);
+char			*add_in(char *g_cmd, int pos, char *toadd, int i);
+char			*get_new_cmdncopy(char *g_cmd, int *selected_pos);
+void			go_home(char *g_cmd);
+int				count_char(char *string, char to_find);
+char			*del_in(char *g_cmd, int pos);
+char			**alloc_cmd(char **current_cmd);
+int				check_special_chars(char *g_cmd);
+void			print_color_n_prompt(void);
+int				check_hook(char *g_cmd, int count_1, int count_2, int count_f);
+int				check_accolade(char *g_cmd, int count_1, int count_2, int c);
 int				g_new_cmd;
 char			*g_cmd;
 int				g_cursor_pos;
