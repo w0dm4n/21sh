@@ -30,11 +30,9 @@ char		*read_entry(char *buff)
 {
 	struct termios	*term;
 	int				ascii_value;
-	int				i;
 	int				cmd_size;
 
 	ascii_value = 0;
-	i = 0;
 	cmd_size = 0;
 	if (!(term = malloc(sizeof(struct termios))))
 		return (NULL);
@@ -45,29 +43,9 @@ char		*read_entry(char *buff)
 	term->c_lflag &= ~ECHO;
 	tcsetattr(0, TCSANOW, term);
 	read(0, buff, READ_BUFFER);
-	while (buff[i])
-	{
-		ascii_value += buff[i];
-		i++;
-	}
+	ascii_value = get_ascii_value(buff);
 	if (ascii_value == NEW_CMD)
-	{
-		if (!check_special_chars(g_cmd))
-		{
-			g_new_cmd = FALSE;
-			g_current_cmd++;
-			g_cursor_pos = 0;
-			return (buff);
-		}
-		else
-		{
-			g_new_cmd = TRUE;
-			write(1, "\n", 1);
-			g_current_cmd++;
-			g_logs_to_print = 0;
-			return (buff);
-		}
-	}
+		enter_key();
 	else if (ascii_value == CTRL_U)
 	{
 		if (g_cursor_pos <= (g_size.ws_col - 3))
@@ -81,54 +59,17 @@ char		*read_entry(char *buff)
 			move_cursor_one_line_down();
 	}
 	else if (ascii_value == CTRL_L)
-	{
-		ft_putstr(CLEAR_SCREEN);
-		g_new_cmd = 1;
-		g_current_cmd++;
-		g_logs_to_print = 0;
-		reset_cursor();
-	}
+		clear_screen_term();
 	else if (ascii_value == CTRL_D)
-	{
-		cmd_size = ft_strlen(g_cmd);
-		if (!g_cmd || !cmd_size)
-		{
-			ft_putstr("exit\n");
-			exit(0);
-		}
-		else
-		{
-			if (g_cmd[cmd_size - 1] == ' ')
-				ft_putstr("LS -F");
-		}
-	}
-	else if (ascii_value == CTRL_G)
-	{
-		if (g_cmd)
-			move_cursor_on_the_last_word(g_cmd);
-	}
-	else if (ascii_value == CTRL_R)
-	{
-		if (g_cmd)
-			move_cursor_on_the_next_word(g_cmd);
-	}
+		control_d(ft_strlen(g_cmd));
+	else if (ascii_value == CTRL_G && g_cmd)
+		move_cursor_on_the_last_word(g_cmd);
+	else if (ascii_value == CTRL_R && g_cmd)
+		move_cursor_on_the_next_word(g_cmd);
 	else if (ascii_value == ARROW_LEFT)
-	{
-		if (g_cursor_pos >= 1)
-		{
-			move_cursor_left();
-			return (buff);
-		}
-	}
+		arrow_left();
 	else if (ascii_value == ARROW_RIGHT)
-	{
-		if (ft_isprint(g_cmd[g_cursor_pos + 1]))
-			move_cursor_right();
-		else if (!ft_isprint(g_cmd[g_cursor_pos + 1])
-			&& ft_isprint(g_cmd[g_cursor_pos]))
-			move_cursor_right();
-		return (buff);
-	}
+		arrow_right();
 	else if (ascii_value == BACKSPACE && g_cursor_pos >= 1
 		&& g_cmd[g_cursor_pos - 1])
 	{
@@ -136,54 +77,19 @@ char		*read_entry(char *buff)
 		refresh_stdout_del(g_cmd);
 	}
 	else if (ascii_value == ARROW_UP)
-	{
-		print_logs(g_logs[g_logs_to_print]);
-		if (g_logs[g_logs_to_print])
-		{
-			if (ft_strlen(g_logs[g_logs_to_print]))
-				g_logs_to_print++;
-		}
-		return (buff);
-	}
+		arrow_up();
 	else if (ascii_value == ARROW_DOWN)
-	{
-		if (g_logs_to_print)
-		{
-			g_logs_to_print--;
-			print_logs(g_logs[g_logs_to_print]);
-		}
-	}
+		arrow_down();
 	else if (ascii_value == CTRL_S)
-	{
-		g_selected_position[g_cursor_pos] = 1;
-		refresh_stdout_selected(g_cmd);
-	}
+		control_s();
 	else if (ascii_value == CTRL_E)
-	{
-		g_cmd = get_new_cmdncopy(g_cmd, g_selected_position);
-		g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
-	}
+		control_e();
 	else if (ascii_value == HOME)
 		go_home(g_cmd);
 	else if (ascii_value == END)
 		go_end(g_cmd);
 	else
-	{
-		if (ft_isprint(ascii_value))
-		{
-			g_cursor_pos++;
-			if (g_cmd[g_cursor_pos + 1])
-			{
-				g_cmd = add_in(g_cmd, g_cursor_pos, buff, 0);
-				refresh_stdout(g_cmd);
-			}
-			else
-			{
-				write(1, &ascii_value, 1);
-				g_cmd = ft_strcat(g_cmd, buff);
-			}
-		}
-	}
+		print_or_add_in_stdout(ascii_value, buff);
 	return (buff);
 }
 
