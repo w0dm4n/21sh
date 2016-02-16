@@ -36,16 +36,6 @@ void	move_cursor_one_line_up(void)
 	g_cursor_pos = (g_cursor_pos - (g_size.ws_col - 3));
 }
 
-void	move_cursor_one_line_down(void)
-{
-	char	*res;
-
-	res = tgetstr("do", NULL);
-	tputs(res, 0, move_cursor);
-	//g_cursor_pos = (g_cursor_pos + (g_size.ws_col - 3));
-	// + set good position
-}
-
 void	move_cursor_left(void)
 {
 	char *res;
@@ -53,6 +43,22 @@ void	move_cursor_left(void)
 	res = tgetstr("le", NULL);
 	tputs(res, 0, move_cursor);
 	g_cursor_pos--;
+}
+
+void	move_cursor_one_line_down(void)
+{
+	char	*res;
+	int		old_pos;
+
+	old_pos = g_cursor_pos;
+	res = tgetstr("do", NULL);
+	tputs(res, 0, move_cursor);
+	while (g_cursor_pos)
+	{
+		if (((old_pos) / g_size.ws_col) < ((g_cursor_pos) / g_size.ws_col))
+			break;
+		g_cursor_pos++;
+	}
 }
 
 void	move_cursor_right(void)
@@ -161,7 +167,7 @@ char		*get_real_cmd(char *buffer)
 	cmdnargs = NULL;
 	buffer = ft_strtrim(buffer);
 	pos = ft_strposition(buffer, " ");
-	cmdnargs = ft_strnew(6000);
+	cmdnargs = ft_strnew(READ_BUFFER);
 	if (pos)
 	{
 		if (!(get_cmd = (char*)malloc(sizeof(char) * pos)))
@@ -299,6 +305,30 @@ void	refresh_stdout(char *g_cmd)
 	move_cursor_right();
 }
 
+void	refresh_stdout_selected(char *g_cmd)
+{
+	int old_pos;
+	int	i;
+
+	i = 0;
+	old_pos = g_cursor_pos;
+	save_cursor_pos();
+	while (g_cursor_pos >= 1 && (g_cmd[g_cursor_pos]
+		|| g_cmd[g_cursor_pos - 1]))
+		move_cursor_left();
+	delete_x_characters(ft_strlen(g_cmd));
+	while (g_cmd[i])
+	{
+		if (g_selected_position[g_cursor_pos])
+			ft_putstr(PRINT_SELECTED);
+		ft_putchar(g_cmd[i]);
+		ft_putstr(RESET);
+		ft_putstr(DEFAULT_COLOR);
+		g_cursor_pos++;
+		i++;
+	}
+}
+
 char	*add_in(char *g_cmd, int pos, char *toadd)
 {
 	char	*new_cmd;
@@ -327,6 +357,32 @@ char	*add_in(char *g_cmd, int pos, char *toadd)
 	free(g_cmd);
 	new_cmd[i] = '\0';
 	return (new_cmd);
+}
+
+char	*get_new_cmdncopy(char *g_cmd, int *selected_pos)
+{
+	char	*tmp;
+	int		i;
+	int		i_2;
+
+	i = 0;
+	i_2 = 0;
+	if (!(tmp = malloc(sizeof(char) * READ_BUFFER)))
+		return (NULL);
+	while (i <= READ_BUFFER)
+	{
+		if (selected_pos[i])
+		{
+			tmp[i_2] = g_cmd[i];
+			i_2++;
+			g_cursor_pos++;
+		}			
+		i++;
+	}
+	tmp[i_2] = '\0';
+	ft_putstr(tmp);
+	g_cmd = ft_strcat(g_cmd, tmp);
+	return(g_cmd);
 }
 
 char	*del_in(char *g_cmd, int pos)
@@ -635,6 +691,7 @@ char	*read_entry(char *buff)
 	else if (ascii_value == ARROW_RIGHT)
 	{
 		if (ft_isprint(g_cmd[g_cursor_pos + 1]))
+			
 			move_cursor_right();
 		else if (!ft_isprint(g_cmd[g_cursor_pos + 1])
 			&& ft_isprint(g_cmd[g_cursor_pos]))
@@ -664,6 +721,16 @@ char	*read_entry(char *buff)
 			g_logs_to_print--;
 			print_logs(g_logs[g_logs_to_print]);
 		}
+	}
+	else if (ascii_value == CTRL_S)
+	{
+		g_selected_position[g_cursor_pos] = 1;
+		refresh_stdout_selected(g_cmd);
+	}
+	else if (ascii_value == CTRL_E)
+	{
+		g_cmd = get_new_cmdncopy(g_cmd, g_selected_position);
+		g_selected_position = set_array_as_zero(g_selected_position, READ_BUFFER);
 	}
 	else if (ascii_value == HOME)
 		go_home(g_cmd);
@@ -717,6 +784,7 @@ void		read_user_entry(int read)
 			return ;
 		ft_bzero(g_cmd, READ_BUFFER);
 		g_cursor_pos = 0;
+		g_selected_position = set_array_as_zero(g_selected_position, READ_BUFFER);
 	}
 	ft_bzero(buffer, READ_CHAR);
 	read_user_entry(TRUE);

@@ -22,6 +22,7 @@ void	free_cmd_n_prompt(int signo)
 		g_logs_to_print = 0;
 		ft_putstr("\n");
 		ft_putstr("$> ");
+		g_selected_position = set_array_as_zero(g_selected_position, READ_BUFFER);
 		// add case for logs to avoid malloc: *** error for object
 	}
 }
@@ -29,6 +30,20 @@ void	free_cmd_n_prompt(int signo)
 void	grab_signal(void)
 {
 	signal(SIGINT, free_cmd_n_prompt);
+}
+
+int		*set_array_as_zero(int *array, int to_set)
+{
+	int		i;
+
+	i = 0;
+
+	while (i <= to_set)
+	{
+		array[i] = 0;
+		i++;
+	}
+	return (array);
 }
 
 int		main(int argc, char **argv, char **env)
@@ -39,6 +54,9 @@ int		main(int argc, char **argv, char **env)
 	else
 	{
 		grab_signal();
+		if (!(g_selected_position = malloc(sizeof(int*) * READ_BUFFER)))
+			return (-1);
+		g_selected_position = set_array_as_zero(g_selected_position, READ_BUFFER);
 		g_cursor_pos = 0;
 		g_current_cmd = 0;
 		g_logs_to_print = 0;

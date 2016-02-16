@@ -53,9 +53,16 @@
 # define CLEAR_SCREEN "\033[2J"
 # define CTRL_U 21
 # define CTRL_B 2
+# define CTRL_S 19 // selectionner
+# define CTRL_E 5 // coller
+# define COLOR_RED "\e[0;31m"
+# define PRINT_SELECTED "\e[1;37m\e[46m"
+# define RESET "\e[0;37m"
+# define DEFAULT_COLOR "\e[1;37m"
 
 void			read_user_entry(int read);
 char			**alloc_cmd(char **current_cmd);
+int				*set_array_as_zero(int *array, int to_set);
 int				g_new_cmd;
 char			*g_cmd;
 int				g_cursor_pos;
@@ -63,4 +70,5 @@ int				g_current_cmd;
 char			**g_logs;
 int				g_logs_to_print;
 struct winsize	g_size;
+int				*g_selected_position;
 #endif
