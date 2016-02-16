@@ -26,6 +26,44 @@ void		go_end(char *g_cmd)
 	}
 }
 
+char		*read_entry_suite_ext(char *buff)
+{
+	if (ascii_value == CTRL_E)
+		control_e();
+	else if (ascii_value == HOME)
+		go_home(g_cmd);
+	else if (ascii_value == END)
+		go_end(g_cmd);
+	else if (ascii_value == ARROW_DOWN)
+		arrow_down();
+	else if (ascii_value == CTRL_S)
+		control_s();
+	else
+		print_or_add_in_stdout(ascii_value, buff);
+}
+
+char		*read_entry_suite(char *buff)
+{
+	if (ascii_value == CTRL_G && g_cmd)
+		move_cursor_on_the_last_word(g_cmd);
+	else if (ascii_value == CTRL_R && g_cmd)
+		move_cursor_on_the_next_word(g_cmd);
+	else if (ascii_value == ARROW_LEFT)
+		arrow_left();
+	else if (ascii_value == ARROW_RIGHT)
+		arrow_right();
+	else if (ascii_value == BACKSPACE && g_cursor_pos >= 1
+		&& g_cmd[g_cursor_pos - 1])
+		backspace();
+	else if (ascii_value == ARROW_UP)
+		arrow_up();
+	else if (ascii_value == CTRL_L)
+		clear_screen_term();
+	else if (ascii_value == CTRL_D)
+		control_d(ft_strlen(g_cmd));
+	return (read_entry_suite_ext(buff));
+}
+
 char		*read_entry(char *buff)
 {
 	struct termios	*term;
@@ -47,50 +85,10 @@ char		*read_entry(char *buff)
 	if (ascii_value == NEW_CMD)
 		enter_key();
 	else if (ascii_value == CTRL_U)
-	{
-		if (g_cursor_pos <= (g_size.ws_col - 3))
-			return (buff);
-		else if (g_cmd[g_cursor_pos - (g_size.ws_col - 3)])
-			move_cursor_one_line_up();
-	}
+		move_up();
 	else if (ascii_value == CTRL_B)
-	{
-		if (g_cmd[g_cursor_pos + (g_size.ws_col - 3)])
-			move_cursor_one_line_down();
-	}
-	else if (ascii_value == CTRL_L)
-		clear_screen_term();
-	else if (ascii_value == CTRL_D)
-		control_d(ft_strlen(g_cmd));
-	else if (ascii_value == CTRL_G && g_cmd)
-		move_cursor_on_the_last_word(g_cmd);
-	else if (ascii_value == CTRL_R && g_cmd)
-		move_cursor_on_the_next_word(g_cmd);
-	else if (ascii_value == ARROW_LEFT)
-		arrow_left();
-	else if (ascii_value == ARROW_RIGHT)
-		arrow_right();
-	else if (ascii_value == BACKSPACE && g_cursor_pos >= 1
-		&& g_cmd[g_cursor_pos - 1])
-	{
-		g_cmd = del_in(g_cmd, g_cursor_pos);
-		refresh_stdout_del(g_cmd);
-	}
-	else if (ascii_value == ARROW_UP)
-		arrow_up();
-	else if (ascii_value == ARROW_DOWN)
-		arrow_down();
-	else if (ascii_value == CTRL_S)
-		control_s();
-	else if (ascii_value == CTRL_E)
-		control_e();
-	else if (ascii_value == HOME)
-		go_home(g_cmd);
-	else if (ascii_value == END)
-		go_end(g_cmd);
-	else
-		print_or_add_in_stdout(ascii_value, buff);
-	return (buff);
+		move_down();
+	return (read_entry_suite(buff));
 }
 
 void		read_user_entry(int read)

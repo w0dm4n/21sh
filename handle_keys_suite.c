@@ -49,8 +49,5 @@ void	arrow_right(void)
 void	arrow_left(void)
 {
 	if (g_cursor_pos >= 1)
-	{
 		move_cursor_left();
-		return (buff);
-	}
 }
