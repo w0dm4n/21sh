@@ -117,7 +117,7 @@ char		*add_in(char *g_cmd, int pos, char *toadd, int i)
 		i++;
 		i_2++;
 	}
-	free(g_cmd);
+	g_cmd = meurs_en_enfer(g_cmd);
 	new_cmd[i] = '\0';
 	return (new_cmd);
 }

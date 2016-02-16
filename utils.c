@@ -16,7 +16,7 @@ void	free_cmd_n_prompt(int signo)
 {
 	if (signo == SIGINT)
 	{
-		ft_bzero(g_cmd, READ_BUFFER);
+		g_cmd = meurs_en_enfer(g_cmd);
 		g_current_cmd++;
 		g_cursor_pos = 0;
 		g_logs_to_print = 0;
@@ -29,6 +29,8 @@ void	free_cmd_n_prompt(int signo)
 void	grab_signal(void)
 {
 	signal(SIGINT, free_cmd_n_prompt);
+	/*if (ft_strlen(g_cmd) && g_cmd[ft_strlen(g_cmd)] != ' ')
+		signal(SIGCTRLD, REPROMPT);*/
 }
 
 void	free_array(char **array)
