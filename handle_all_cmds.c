@@ -12,6 +12,30 @@
 
 #include "all.h"
 
+int		pipe_number(char *str, int i)
+{
+	int pipe_number;
+
+	pipe_number = 0;
+	while (str[i])
+	{
+		if (str[i] == '|')
+			pipe_number++;
+		i++;
+	}
+	return (pipe_number);
+}
+
+void	handle_all_cmds_suite(char *cmd)
+{
+	int i;
+	int	pipe;
+
+	i = 0;
+	pipe = pipe_number(cmd, 0);
+	ft_putnbr(pipe);
+}
+
 void	handle_all_cmds(char *buffer)
 {
 	char	**command_nbr;
@@ -22,8 +46,10 @@ void	handle_all_cmds(char *buffer)
 	buffer = ft_strtrim(buffer);
 	command_nbr = ft_strsplit(buffer, ';');
 	array_size = ft_lenarray((void**)command_nbr);
-	while (i < array_size)
+	while (i < array_size && command_nbr[i])
 	{
+		handle_all_cmds_suite(command_nbr[i]);
+		(command_nbr[i + 1] ? ft_putstr("\n") : (i = 0));
 		i++;
 	}
 }
