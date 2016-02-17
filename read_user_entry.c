@@ -100,11 +100,10 @@ void		read_user_entry(int read)
 	if (!(buffer = (char*)malloc(sizeof(char) * READ_CHAR)))
 		return ;
 	(read) ? (buffer = read_entry(buffer)) : print_color_n_prompt();
-	if (g_new_cmd)
+	if (g_new_cmd && buffer)
 	{
-		ft_putstr(g_cmd);
+		handle_all_cmds(g_cmd);
 		ft_putstr("\n");
-		//handle_cmd(g_cmd);
 		if (g_cmd[0])
 			g_logs = add_in_front(g_logs, g_cmd);
 		print_color_n_prompt();

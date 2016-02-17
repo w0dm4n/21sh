@@ -112,6 +112,8 @@ void			backspace(void);
 void			move_up(void);
 void			move_down(void);
 char			*meurs_en_enfer(char *satan);
+void			prompt_again_with_cmd(void);
+void			handle_all_cmds(char *buffer);
 int				g_new_cmd;
 char			*g_cmd;
 int				g_cursor_pos;

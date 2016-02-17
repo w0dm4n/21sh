@@ -31,3 +31,13 @@ void	move_down(void)
 	if (g_cmd[g_cursor_pos + (g_size.ws_col - 3)])
 		move_cursor_one_line_down();
 }
+
+void	prompt_again_with_cmd(void)
+{
+	g_logs_to_print = 0;
+	ft_putstr_fd("\n", 1);
+	ft_putstr_fd("$> ", 1);
+	ft_putstr_fd(g_cmd, 1);
+	g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
+	g_cursor_pos = ft_strlen(g_cmd);
+}

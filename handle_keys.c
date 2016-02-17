@@ -37,7 +37,20 @@ void		control_d(int size)
 	else
 	{
 		if (g_cmd[size - 1] == ' ')
-			ft_putstr("LS -F");
+			ft_putstr("\nLS -F");
+		else if (g_cursor_pos >= (int)ft_strlen(g_cmd))
+			prompt_again_with_cmd();
+		else
+		{
+			if (ft_strlen(g_cmd) != 1)
+				backspace();
+			else
+			{
+				g_cmd = meurs_en_enfer(g_cmd);
+				refresh_stdout_del(g_cmd);
+				ft_putstr_fd(" ", 1);
+			}
+		}
 	}
 }
 
