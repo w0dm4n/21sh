@@ -28,12 +28,18 @@ int		pipe_number(char *str, int i)
 
 void	handle_all_cmds_suite(char *cmd)
 {
-	int i;
-	int	pipe;
+	int		i;
+	int		pipe;
+	char	**cmd_pipe;
 
 	i = 0;
 	pipe = pipe_number(cmd, 0);
-	ft_putnbr(pipe);
+	cmd_pipe = ft_strsplit(cmd, '|');
+	while (cmd_pipe[i])
+	{
+		ft_putstr(cmd_pipe[i]);
+		i++;
+	}
 }
 
 void	handle_all_cmds(char *buffer)
@@ -49,7 +55,7 @@ void	handle_all_cmds(char *buffer)
 	while (i < array_size && command_nbr[i])
 	{
 		handle_all_cmds_suite(command_nbr[i]);
-		(command_nbr[i + 1] ? ft_putstr("\n") : (i = 0));
+		(command_nbr[i + 1] ? ft_putstr("\n") : (i = array_size));
 		i++;
 	}
 }
