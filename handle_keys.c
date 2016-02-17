@@ -21,10 +21,11 @@ void		control_e(void)
 void		clear_screen_term(void)
 {
 	ft_putstr(CLEAR_SCREEN);
-	g_new_cmd = 1;
 	g_current_cmd++;
 	g_logs_to_print = 0;
 	reset_cursor();
+	ft_putstr("$> ");
+	g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
 }
 
 void		control_d(int size)

@@ -49,6 +49,10 @@ void	handle_all_cmds(char *buffer)
 	int		i;
 
 	i = 0;
+	if (!buffer)
+		return ;
+	if (!buffer[0] || !ft_strlen(buffer))
+		return ;
 	buffer = ft_strtrim(buffer);
 	command_nbr = ft_strsplit(buffer, ';');
 	array_size = ft_lenarray((void**)command_nbr);

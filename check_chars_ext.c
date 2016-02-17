@@ -28,7 +28,7 @@ int		check_hook(char *g_cmd, int count_1, int count_2, int count_f)
 		write(1, "\n$> ", 4);
 		if (g_cmd[0])
 			g_logs = add_in_front(g_logs, g_cmd);
-		ft_bzero(g_cmd, READ_BUFFER);
+		meurs_en_enfer(g_cmd);
 		return (0);
 	}
 	else
@@ -51,7 +51,7 @@ int		check_accolade(char *g_cmd, int count_1, int count_2, int c)
 		write(1, "\n$> ", 4);
 		if (g_cmd[0])
 			g_logs = add_in_front(g_logs, g_cmd);
-		ft_bzero(g_cmd, READ_BUFFER);
+		meurs_en_enfer(g_cmd);
 		return (0);
 	}
 	else
