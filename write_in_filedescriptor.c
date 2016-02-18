@@ -19,6 +19,8 @@ void	write_in_filedescriptor(char *cmd, int nbr, char to_find)
 
 	cmd_to_exec = get_separated_by_char(cmd, to_find, 0, nbr);
 	file_to_write_in = get_separated_by_char(cmd, to_find, 1, nbr);
+	ft_putstr(cmd_to_exec);
+	ft_putstr(" TO : ");
 	ft_putstr(file_to_write_in);
 	ft_putstr("\n");
 	/*if (nbr == 1)
