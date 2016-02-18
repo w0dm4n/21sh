@@ -35,6 +35,26 @@ char	*get_before(char *cmd, char to_find, int nbr, char *new_cmd)
 	return (new_cmd);
 }
 
+char	*get_after(char *cmd, char to_find, int nbr, char *new_cmd)
+{
+	int i;
+	int	occ;
+
+	i = 0;
+	occ = 0;
+	while (cmd[i])
+	{
+		if (cmd[i] == to_find)
+			occ++;
+		if (occ == nbr)
+			break ;
+		i++;
+	}
+	i += nbr;
+	ft_putchar(cmd[i]);
+	return (new_cmd);
+}
+
 char	*get_separated_by_char(char *cmd, char to_find, int pos, int nbr)
 {
 	char	*new_cmd;
@@ -45,7 +65,7 @@ char	*get_separated_by_char(char *cmd, char to_find, int pos, int nbr)
 		return (NULL);
 	if (!pos)
 		new_cmd = get_before(cmd, to_find, nbr, new_cmd);
-	//else
-	//	new_cmd = get_after(cmd, to_find, nbr);
-	return (new_cmd);
+	else
+		new_cmd = get_after(cmd, to_find, nbr, new_cmd);
+	return (ft_strtrim(new_cmd));
 }

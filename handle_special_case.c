@@ -17,6 +17,13 @@ int		check_position(char *str, char to_count, int nbr)
 	int i;
 
 	i = 0;
+	while (str[i])
+	{
+		if (str[i] == to_count && str[i + 1] == to_count)
+			return (nbr);
+		i++;
+	}
+	return (3);
 }
 
 int		count_char_number(char *str, char to_count)

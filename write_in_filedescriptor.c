@@ -15,10 +15,12 @@
 void	write_in_filedescriptor(char *cmd, int nbr, char to_find)
 {
 	char	*cmd_to_exec;
+	char	*file_to_write_in;
 
 	cmd_to_exec = get_separated_by_char(cmd, to_find, 0, nbr);
-	ft_putstr(cmd_to_exec);
-	ft_putstr("\n");
+	file_to_write_in = get_separated_by_char(cmd, to_find, 1, nbr);
+	//ft_putstr(file_to_write_in);
+	//ft_putstr("\n");
 	/*if (nbr == 1)
 		cmd_to_exec = 
 	else if (nbr == 2)
