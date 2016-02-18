@@ -66,7 +66,7 @@ void		launch_process_ext(char *get_path, char **argv, char **env)
 	else
 	{
 		g_current_process = 1;
-		signal(SIGINT, sig_handler);
+		signal(SIGINT, free_cmd_n_prompt);
 		tpid = wait(&child_status);
 		g_current_process = 0;
 	}

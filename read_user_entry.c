@@ -103,7 +103,7 @@ void		read_user_entry(int read)
 	if (g_new_cmd && buffer)
 	{
 		handle_all_cmds(g_cmd);
-		ft_putstr("\n");
+		//ft_putstr("\n");
 		if (g_cmd[0])
 			g_logs = add_in_front(g_logs, g_cmd);
 		print_color_n_prompt();

@@ -31,7 +31,7 @@ int		check_cmd(char *cmd)
 		return (res);
 	else if (res < 0)
 	{
-		ft_putstr("minishell: command not found: ");
+		ft_putstr("21sh: command not found: ");
 		ft_putstr(cmd);
 		return (-1);
 	}
