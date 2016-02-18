@@ -12,7 +12,7 @@
 
 #include "all.h"
 
-char	**add_path( char **argv, char *path)
+char	**add_path(char **argv, char *path)
 {
 	char	**new;
 	int		size;
@@ -50,13 +50,6 @@ void	launch_process_from_asked_dir(char *path, char *args, char **env)
 	}
 	else
 		argv = set_argv(argv, path);
-	/*int i = 0;
-	while (argv[i])
-	{
-		ft_putstr(argv[i]);
-		ft_putstr("\n");
-		i++;
-	}*/
 	launch_process_ext(path, argv, env);
 }
 

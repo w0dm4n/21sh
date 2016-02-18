@@ -33,7 +33,7 @@ int			get_ascii_value(char *buff)
 	return (ascii_value);
 }
 
-void	free_argv(char **argv)
+void		free_argv(char **argv)
 {
 	int i;
 
@@ -47,7 +47,7 @@ void	free_argv(char **argv)
 	free(argv);
 }
 
-char	**set_argv(char **argv, char *name)
+char		**set_argv(char **argv, char *name)
 {
 	if (!argv)
 	{
