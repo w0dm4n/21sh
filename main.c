@@ -14,7 +14,7 @@
 
 int		main(int argc, char **argv, char **env)
 {
-	env = NULL;
+	g_env = env;
 	if (argc != 1 || argv[1])
 		ft_putstr("21sh do not take any argument !\n");
 	else
