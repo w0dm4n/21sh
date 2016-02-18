@@ -6,40 +6,11 @@
 /*   By: frmarinh <frmarinh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/16 02:11:37 by frmarinh          #+#    #+#             */
-/*   Updated: 2016/02/16 02:11:38 by frmarinh         ###   ########.fr       */
+/*   Updated: 2016/02/18 01:37:38 by frmarinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "all.h"
-
-char		*get_args(char *buffer, int i, int i_2)
-{
-	int		size;
-	char	*get_args;
-
-	size = (ft_strlen(buffer + 1) - i);
-	if (size)
-	{
-		if (!(get_args = (char*)malloc(sizeof(char) * size)))
-			return (NULL);
-		ft_bzero(get_args, size);
-		while (buffer[i] != '\0' && buffer[i] != '\n')
-		{
-			if (buffer[i] == ' ')
-			{
-				while (buffer[i] == ' ')
-					i++;
-				i--;
-			}
-			get_args[i_2] = buffer[i];
-			i_2++;
-			i++;
-		}
-		get_args[i_2] = '\0';
-		return (get_args);
-	}
-	return (NULL);
-}
 
 char		*get_real_cmd(char *buffer, int i, int res, char *get_cmd)
 {
