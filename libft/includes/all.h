@@ -33,6 +33,7 @@
 # define MAX_EXE_NAME 2048
 # define MAX_ARGV_SIZE 8192
 # define MAX_VAR_ENV_SIZE 4096
+# define PATH_MAX_SIZE 16192
 # define COLOR_WHITE "\e[1;37m"
 # define CLEAR_SCREEN "\033[2J"
 # define TRUE 1
@@ -123,6 +124,11 @@ void			set_env(char *env, char *value_to_set);
 void			print_all_env(void);
 void			chdir_command_ext(char *args, char *path, int args_nbr);
 int				check_execve(char *file_name, char *all_path);
+int				get_path(char *path, char *args);
+int				get_args_nbr(char *args);
+void			change_folder(char *path, int change_path);
+char			*get_subdir(char *path);
+int				check_access_folder(char *real_path, char *args);
 int				g_new_cmd;
 char			*g_cmd;
 int				g_cursor_pos;
