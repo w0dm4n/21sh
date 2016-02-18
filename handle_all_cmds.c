@@ -34,11 +34,19 @@ void	handle_all_cmds_suite(char *cmd)
 
 	i = 0;
 	pipe = pipe_number(cmd, 0);
-	cmd_pipe = ft_strsplit(cmd, '|');
-	while (cmd_pipe[i])
+	if (pipe)
 	{
-		ft_putstr(cmd_pipe[i]);
-		i++;
+		cmd_pipe = ft_strsplit(cmd, '|');
+		while (cmd_pipe[i])
+		{
+			ft_putstr(cmd_pipe[i]);
+			// do dup2 ect here
+			i++;
+		}
+	}
+	else
+	{
+		
 	}
 }
 
