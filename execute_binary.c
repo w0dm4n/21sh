@@ -20,6 +20,7 @@ char		*get_name(char *name)
 	size = (ft_strlen(name) + 3);
 	if (!(new = malloc(sizeof(char) * size)))
 		return (NULL);
+	new[0] = '\0';
 	new = ft_strcat(new, "./");
 	new = ft_strcat(new, name);
 	free(name);
