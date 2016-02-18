@@ -23,6 +23,8 @@ void	write_in_filedescriptor(char *cmd, int nbr, char to_find)
 	ft_putstr(" TO : ");
 	ft_putstr(file_to_write_in);
 	ft_putstr("\n");
+	//TODO ARGUMENT AFTER CMD (STRSPLIT AND CHECK CASE && STRSPLIT FILE SEE IF CASE IF
+	//CASE ADD IN SPLIT OF CMD IF LEN ARRAY)
 	/*if (nbr == 1)
 		cmd_to_exec = 
 	else if (nbr == 2)
