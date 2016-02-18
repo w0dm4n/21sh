@@ -130,6 +130,7 @@ void			overwrite_in(char *cmd, char *file, char **args, int res)
 
 	test = open(file, O_RDWR);
 	write(test, tamer, ft_strlen(tamer));
+	ft_bzero(tamer, 40096);
 }
 
 void			write_in_filedescriptor(char *cmd, int nbr, char to_find)

@@ -1,0 +1,41 @@
+total 219
+drwxr-xr-x  42 root      wheel          1496 Feb 18 22:14 .
+drwxr-xr-x  42 root      wheel          1496 Feb 18 22:14 ..
+-rw-rw-r--   1 root      admin         10244 Nov  9 16:18 .DS_Store
+d--x--x--x   9 root      wheel           306 Feb 18 16:49 .DocumentRevisions-V100
+d--x--x--x   8 frmarinh  2015_paris      272 Oct 21 14:08 .DocumentRevisions-V100-bad-1
+-rw-r--r--   1 root      wheel          2089 Oct 18 16:37 .OSInstallerMessages
+drwx------   5 root      wheel           170 Oct  6 14:25 .Spotlight-V100
+drwxrwxrwt@  3 frmarinh  2015_paris      102 Oct 21 14:08 .TemporaryItems
+d-wx-wx-wt  10 root      wheel           340 Feb 18 22:14 .Trashes
+-rw-r--r--@  1 frmarinh  2015_paris        0 Oct 21 09:15 .com.apple.timemachine.donotpresent
+----------   1 root      admin             0 Sep 16 05:00 .file
+drwx------  66 root      wheel          2244 Feb 19 00:49 .fseventsd
+drwxr-xr-x   3 root      wheel           102 Dec 29 04:03 .gem
+-rw-------   1 root      wheel         65536 Oct 18 16:37 .hotfiles.btree
+drwxr-xr-x@  2 root      wheel            68 Oct 18 16:28 .vol
+drwxrwxr-x+ 63 root      admin          2142 Feb 18 10:34 Applications
+drwxr-xr-x+ 66 root      wheel          2244 Jan 15 17:53 Library
+drwxr-xr-x@  2 root      wheel            68 Oct 18 16:28 Network
+drwxr-xr-x@  4 root      wheel           136 Jan 25 10:35 System
+drwxr-xr-x   7 root      admin           238 Dec 29 03:09 Users
+drwxrwxrwt@  9 root      admin           306 Feb 18 22:15 Volumes
+drwx------  15 frmarinh  2015_paris     4096 Feb 17 21:46 backup
+drwxr-xr-x@ 40 root      wheel          1360 Jan 25 10:34 bin
+drwxr-xr-x   2 root      wheel            68 Dec  1 11:44 cdn
+drwxrwxr-t@  2 root      admin            68 Oct 18 16:28 cores
+dr-xr-xr-x   3 root      wheel          4488 Feb 18 16:49 dev
+lrwxr-xr-x@  1 root      wheel            11 Oct 18 16:27 etc -> private/etc
+drwx------  17 exam      applications    578 Feb 16 12:31 exam
+drwxrwxrwt  34 root      wheel          1156 Feb 16 14:12 goinfre
+dr-xr-xr-x@  2 root      wheel            68 Oct 18 16:38 home
+-rw-r--r--@  1 root      wheel           313 Aug 23 04:35 installer.failurerequests
+dr-xr-xr-x@  2 root      wheel            68 Oct  6 14:25 net
+drwxr-xr-x   8 frmarinh  2015_paris     4096 Feb 18 17:26 nfs
+drwxr-xr-x@  4 root      wheel           136 Jan 18 06:08 opt
+drwxr-xr-x@  6 root      wheel           204 Oct 18 16:28 private
+drwxr-xr-x@ 60 root      wheel          2040 Jan 25 10:34 sbin
+dr-xr-xr-x   2 root      wheel             1 Feb 18 16:49 sgoinfre
+lrwxr-xr-x@  1 root      wheel            11 Oct 18 16:27 tmp -> private/tmp
+drwxr-xr-x@ 11 root      wheel           374 Nov 16 15:51 usr
+lrwxr-xr-x@  1 root      wheel            11 Oct 18 16:27 var -> private/var

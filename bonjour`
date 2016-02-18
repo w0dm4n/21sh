@@ -1,0 +1,345 @@
+coucou
+™˜Škÿwxr-x+ 63 root      admin         2142 Feb 18 10:34 Applications
+drwxr-xr-x+ 66 root      wheel         2244 Jan 15 17:53 Library
+drwxr-xr-x@  2 root      wheel           68 Oct 18 16:28 Network
+drwxr-xr-x@  4 root      wheel          136 Jan 25 10:35 System
+drwxr-xr-x   7 root      admin          238 Dec 29 03:09 Users
+drwxrwxrwt@  9 root      admin          306 Feb 18 22:15 Volumes
+drwx------  15 frmarinh  2015_paris    4096 Feb 17 21:46 backup
+drwxr-xr-x@ 40 root      wheel         1360 Jan 25 10:34 bin
+drwxr-xr-x   2 root      wheel           68 Dec  1 11:44 cdn
+drwxrwxr-t@  2 root      admin           68 Oct 18 16:28 cores
+dr-xr-xr-x   3 root      wheel         4488 Feb 18 16:49 dev
+lrwxr-xr-x@  1 root      wheel           11 Oct 18 16:27 etc -> private/etc
+drwx------  17 exam      applications   578 Feb 16 12:31 exam
+drwxrwxrwt  34 root      wheel         1156 Feb 16 14:12 goinfre
+dr-xr-xr-x@  2 root      wheel           68 Oct 18 16:38 home
+-rw-r--r--@  1 root      wheel          313 Aug 23 04:35 installer.failurerequests
+dr-xr-xr-x@  2 root      wheel           68 Oct  6 14:25 net
+drwxr-xr-x   8 frmarinh  2015_paris    4096 Feb 18 17:26 nfs
+drwxr-xr-x@  4 root      wheel          136 Jan 18 06:08 opt
+drwxr-xr-x@  6 root      wheel          204 Oct 18 16:28 private
+drwxr-xr-x@ 60 root      wheel         2040 Jan 25 10:34 sbin
+dr-xr-xr-x   2 root      wheel            1 Feb 18 16:49 sgoinfre
+lrwxr-xr-x@  1 root      wheel           11 Oct 18 16:27 tmp -> private/tmp
+drwxr-xr-x@ 11 root      wheel          374 Nov 16 15:51 usr
+lrwxr-xr-x@  1 root      wheel           11 Oct 18 16:27 var -> private/var
+
+/Applications:
+total 0
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 App Store.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Automator.app
+drwxr-xr-x   3 root  admin  102 Dec 13 22:46 BetterTouchTool.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Calculator.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Calendar.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Chess.app
+drwxr-xr-x   3 root  admin  102 Apr 27  2006 CocoaDialog.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 Contacts.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 DVD Player.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Dashboard.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Dictionary.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 FaceTime.app
+drwxr-xr-x   3 root  admin  102 Nov  2 05:34 Flux.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Font Book.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Game Center.app
+drwxr-xr-x@  3 root  admin  102 Dec 11 03:20 Google Chrome.app
+drwxr-xr-x   3 root  admin  102 Sep 22 10:31 Hopper Disassembler v3.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Image Capture.app
+drwxr-xr-x   3 root  wheel  102 Jan 17 17:44 Install OS X El Capitan.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Launchpad.app
+drwxr-xr-x   3 root  admin  102 Dec  9 13:27 MacDown.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 Mail.app
+drwxr-xr-x   3 root  admin  102 Jan 18 20:05 Managed Software Center.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Maps.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 Messages.app
+drwxrwxr-x   3 root  wheel  102 Jan 15 17:53 Microsoft Lync.app
+drwxrwxr-x   3 root  wheel  102 Jan 15 17:53 Microsoft Messenger.app
+drwxrwxrwx@ 12 root  wheel  408 Jan 15 17:52 Microsoft Office 2011
+drwxr-xr-x   3 root  admin  102 Sep 16 14:48 Minecraft.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Mission Control.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 Notes.app
+drwxr-xr-x   3 root  admin  102 Nov 29 12:37 Pashua.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Photo Booth.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 Photos.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 Preview.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 QuickTime Player.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Reminders.app
+drwxrwxr-x   3 root  wheel  102 Jan 15 17:53 Remote Desktop Connection.app
+drwxr-xr-x@  3 root  wheel  102 Jan 25 10:35 Safari.app
+drwxr-xr-x   3 root  admin  102 Dec 18 14:17 Skype.app
+drwxr-xr-x   3 root  admin  102 Oct 21 10:12 Slack.app
+drwxr-xr-x   3 root  admin  102 Sep 11 02:19 Spectacle.app
+drwxr-xr-x   3 root  admin  102 Dec 15 17:18 Spotify.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Stickies.app
+drwxr-xr-x   3 root  admin  102 Mar 26  2015 Sublime Text.app
+drwxrwxr-x@  3 root  wheel  102 Dec 29 03:50 System Preferences.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 TextEdit.app
+drwxr-xr-x   3 root  admin  102 Sep 16  2014 Thingz Arduino.app
+drwxr-xr-x@  3 root  wheel  102 Dec 29 03:50 Time Machine.app
+drwxrwxr-x   7 root  admin  238 Jan 25 14:22 Unity
+drwxr-xr-x+ 22 root  admin  748 Jan 18 20:05 Utilities
+drwxr-xr-x   3 root  admin  102 Apr 14  2015 VLC.app
+drwxr-xr-x   3 root  admin  102 Dec  9 15:17 Xcode.app
+drwxr-xr-x+  3 root  wheel  102 Jan 25 10:35 iBooks.app
+drwxr-xr-x   3 root  admin  102 Oct  4 21:18 iTerm 2.app
+drwxr-xr-x   3 root  admin  102 Oct  4 21:18 iTerm.app
+drwxr-xr-x+  3 root  wheel  102 Dec 29 03:50 iTunes.app
+drwxr-xr-x   3 root  admin  102 Dec 28 16:14 macreport.app
+drwxr-xr-x   3 root  admin  102 Jan 27  2015 terminal-notifier.app
+
+/Applications/App Store.app:
+total 0
+drwxr-xr-x  9 root  wheel  306 Jan 25 10:34 Contents
+
+/Applications/App Store.app/Contents:
+total 0
+-rw-r--r--   1 root  wheel  2460 Nov 17 10:23 Info.plist
+drwxr-xr-x   3 root  wheel   102 Jan 25 10:34 MacOS
+-rw-r--r--   1 root  wheel     8 Aug 23 06:47 PkgInfo
+drwxr-xr-x   3 root  wheel   102 Aug 23 06:47 PlugIns
+drwxr-xr-x  69 root  wheel  2346 Sep 17 08:54 Resources
+drwxr-xr-x   3 root  wheel   102 Jan 25 10:34 _CodeSignature
+-rw-r--r--   1 root  wheel   455 Nov 17 10:24 version.plist
+
+/Applications/App Store.app/Contents/MacOS:
+total 32
+-rwxr-xr-x  1 root  wheel  41536 Jan 14 03:23 App Store
+
+/Applications/App Store.app/Contents/PlugIns:
+total 0
+drwxr-xr-x  3 root  wheel  102 Aug 23 06:47 DockTile.docktileplugin
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin:
+total 0
+drwxr-xr-x  7 root  wheel  238 Jan 25 10:34 Contents
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents:
+total 0
+-rw-r--r--   1 root  wheel  1317 Nov 17 10:23 Info.plist
+drwxr-xr-x   3 root  wheel   102 Jan 25 10:34 MacOS
+drwxr-xr-x  36 root  wheel  1224 Sep 17 08:54 Resources
+drwxr-xr-x   3 root  wheel   102 Jan 25 10:34 _CodeSignature
+-rw-r--r--   1 root  wheel   457 Nov 17 10:24 version.plist
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/MacOS:
+total 16
+-rwxr-xr-x  1 root  wheel  23472 Jan 14 03:19 DockTile
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources:
+total 0
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 ar.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 ca.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 cs.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 21 03:26 da.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 de.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 el.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 23 06:48 en.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 es.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 21 03:26 es_MX.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 21 03:26 fi.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 fr.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 he.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 21 03:26 hr.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 hu.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 id.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 21 03:26 it.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 ja.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 ko.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 ms.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 nl.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 no.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 pl.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 pt.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 pt_PT.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 ro.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 ru.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 sk.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 sv.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 21 03:25 th.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 tr.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 uk.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 vi.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 zh_CN.lproj
+drwxr-xr-x  3 root  wheel  102 Aug 20  2015 zh_TW.lproj
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/ar.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/ca.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/cs.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/da.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 21 03:26 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/de.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/el.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/en.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 23 06:48 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/es.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/es_MX.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 21 03:26 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/fi.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 21 03:26 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/fr.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/he.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/hr.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 21 03:26 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/hu.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/id.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/it.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 21 03:26 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/ja.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/ko.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/ms.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/nl.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/no.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/pl.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/pt.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/pt_PT.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/ro.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/ru.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/sk.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/sv.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/th.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 21 03:25 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/tr.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/uk.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/vi.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/zh_CN.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/Resources/zh_TW.lproj:
+total 0
+-rw-r--r--  1 root  wheel  42 Aug 20  2015 InfoPlist.strings
+
+/Applications/App Store.app/Contents/PlugIns/DockTile.docktileplugin/Contents/_CodeSignature:
+total 0
+-rw-r--r--  1 root  wheel  14098 Jan 14 03:19 CodeResources
+
+/Applications/App Store.app/Contents/Resources:
+total 3368
+-rw-r--r--  1 root  wheel    13020 Aug 23 06:47 0.tiff
+-rw-r--r--  1 root  wheel    12914 Aug 23 06:47 1.tiff
+-rw-r--r--  1 root  wheel    12856 Aug 23 06:47 10.tiff
+-rw-r--r--  1 root  wheel    12848 Aug 23 06:47 11.tiff
+-rw-r--r--  1 root  wheel    12866 Aug 23 06:47 12.tiff
+-rw-r--r--  1 root  wheel    12852 Aug 23 06:47 13.tiff
+-rw-r--r--  1 root  wheel    12788 Aug 23 06:47 14.tiff
+-rw-r--r--  1 root  wheel    12818 Aug 23 06:47 15.tiff
+-rw-r--r--  1 root  wheel    12798 Aug 23 06:47 16.tiff
+-rw-r--r--  1 root  wheel    12858 Aug 23 06:47 17.tiff
+-rw-r--r--  1 root  wheel    12808 Aug 23 06:47 18.tiff
+-rw-r--r--  1 root  wheel    12838 Aug 23 06:47 19.tiff
+-rw-r--r--  1 root  wheel    12872 Aug 23 06:47 2.tiff
+-rw-r--r--  1 root  wheel    12874 Aug 23 06:47 20.tiff
+-rw-r--r--  1 root  wheel    12836 Aug 23 06:47 21.tiff
+-rw-r--r--  1 root  wheel    12840 Aug 23 06:47 22.tiff
+-rw-r--r--  1 root  wheel    12862 Aug 23 06:47 23.tiff
+-rw-r--r--  1 root  wheel    12826 Aug 23 06:47 3.tiff
+-rw-r--r--  1 root  wheel    12856 Aug 23 06:47 4.tiff
+-rw-r--r--  1 root  wheel    12812 Aug 23 06:47 5.tiff
+-rw-r--r--  1 root  wheel    12830 Aug 23 06:47 6.tiff
+-rw-r--r--  1 root  wheel    12824 Aug 23 06:47 7.tiff
+-rw-r--r--  1 root  wheel    12844 Aug 23 06:47 8.tiff
+-rw-r--r--  1 root  wheel    12870 Aug 23 06:47 9.tiff
+drwxr-xr-x  3 root  wheel      102 Jun 17  2015 AppStore.help
+drwxr-xr-x  4 root  wheel      136 Dec 29 03:47 Base.lproj
+-rw-r--r--  1 root  wheel  1103802 Aug 23 06:47 appStore.icns
+-rw-r--r--  1 root  wheel    85042 Aug 23 06:47 appstore.tiff
+drwxr-xr-x  4 root  wheel      136 Aug 20  2015 ar.lproj
+-rw-r--r--  1 root  wheel    30072 Aug 23 06:47 background.tiff
+-rw-r--r--  1 root  wheel   190420 Aug 23 06:47 backgroundTile.tiff
+drwxr-xr-x  4 root  wheel      136 Aug 20  2015 ca.lproj
+drwxr-xr-x  4 root  wheel      136 Aug 20  2015 cs.lproj
+drwxr-xr-x rw-r--r--  1 root  wheel   190420 Aug 23 06:47 backgroundTile.tiff
+drwxr-xr-x  4 root  wheel      136 Aug 20  2015 ca.lproj
+drwxr-xr-x  4 root  wheel      136 Aug 20  2015 cs.lproj
+drwxr-xr-x   136 Aug 20  2015 ca.lproj
+drwxr-xr-x  4 root  wheel      136 Aug 20  2015 cs.lproj
+drwxr-xr-x 
