@@ -12,20 +12,30 @@
 
 #include "all.h"
 
+void	reset_all_value(void)
+{
+	g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
+	g_cursor_pos = 0;
+	g_current_cmd = 0;
+	g_logs_to_print = 0;
+}
+
 int		main(int argc, char **argv, char **env)
 {
 	g_env = env;
+	if (!g_env || !g_env[0])
+	{
+		ft_putstr_fd("21sh can't work without environment !\n", 2);
+		return (0);
+	}
 	if (argc != 1 || argv[1])
-		ft_putstr("21sh do not take any argument !\n");
+		ft_putstr_fd("21sh do not take any argument !\n", 2);
 	else
 	{
 		grab_signal();
 		if (!(g_selected_position = malloc(sizeof(int*) * READ_BUFFER)))
 			return (-1);
-		g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
-		g_cursor_pos = 0;
-		g_current_cmd = 0;
-		g_logs_to_print = 0;
+		reset_all_value();
 		if (!(g_logs = alloc_cmd(g_logs)))
 			return (-1);
 		if (!(g_cmd = ft_strnew(READ_BUFFER)))
