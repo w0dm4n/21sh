@@ -45,7 +45,7 @@ void	handle_all_cmds_suite(char *cmd)
 		}
 	}
 	else
-		handle_cmd(cmd);
+		handle_special_case(cmd);
 }
 
 void	handle_all_cmds(char *buffer)
