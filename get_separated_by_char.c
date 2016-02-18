@@ -10,4 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "all.h"
 
+char	*get_before(char *cmd, char to_find, int nbr, char *new_cmd)
+{
+	int	i;
+	int	occ;
+
+	i = 0;
+	occ = 0;
+
+	while (cmd[i])
+	{
+		if (cmd[i] == to_find)
+			occ++;
+		if (occ >= nbr)
+			break ;
+		new_cmd[i] = cmd[i];
+		i++;
+	}
+	return (new_cmd);
+}
+
+char	*get_separated_by_char(char *cmd, char to_find, int pos, int nbr)
+{
+	char	*new_cmd;
+	int		i;
+
+	i = 0;
+	if (!(new_cmd = malloc(sizeof(char) * READ_BUFFER)))
+		return (NULL);
+	if (!pos)
+		new_cmd = get_before(cmd, to_find, nbr, new_cmd);
+	//else
+	//	new_cmd = get_after(cmd, to_find, nbr);
+	return (new_cmd);
+}

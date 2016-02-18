@@ -142,6 +142,7 @@ char			**set_argv(char **argv, char *name);
 void			launch_process_ext(char *get_path, char **argv, char **env);
 char			*get_name(char *name);
 void			handle_special_case(char *cmd);
+char			*get_separated_by_char(char *cmd, char to_find, int pos, int nbr);
 int				g_new_cmd;
 char			*g_cmd;
 int				g_cursor_pos;
