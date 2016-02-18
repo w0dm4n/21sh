@@ -39,9 +39,11 @@ char	*get_after(char *cmd, char to_find, int nbr, char *new_cmd)
 {
 	int i;
 	int	occ;
+	int	i_2;
 
 	i = 0;
 	occ = 0;
+	i_2 = 0;
 	while (cmd[i])
 	{
 		if (cmd[i] == to_find)
@@ -50,8 +52,14 @@ char	*get_after(char *cmd, char to_find, int nbr, char *new_cmd)
 			break ;
 		i++;
 	}
-	i += nbr;
-	ft_putchar(cmd[i]);
+	i++;
+	while (cmd[i])
+	{
+		new_cmd[i_2] = cmd[i];
+		i++;
+		i_2++;
+	}
+	new_cmd[i_2] = '\0';
 	return (new_cmd);
 }
 
