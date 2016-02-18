@@ -19,16 +19,19 @@ char	*get_before(char *cmd, char to_find, int nbr, char *new_cmd)
 
 	i = 0;
 	occ = 0;
-
 	while (cmd[i])
 	{
 		if (cmd[i] == to_find)
 			occ++;
-		if (occ >= nbr)
+		if (occ == nbr)
 			break ;
 		new_cmd[i] = cmd[i];
 		i++;
 	}
+	if (nbr == 2)
+		new_cmd[i - 1] = '\0';
+	else
+		new_cmd[i] = '\0';
 	return (new_cmd);
 }
 

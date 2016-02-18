@@ -12,6 +12,13 @@
 
 #include "all.h"
 
+int		check_position(char *str, char to_count, int nbr)
+{
+	int i;
+
+	i = 0;
+}
+
 int		count_char_number(char *str, char to_count)
 {
 	int i;
@@ -25,6 +32,8 @@ int		count_char_number(char *str, char to_count)
 			nbr++;
 		i++;
 	}
+	if (nbr == 2)
+		nbr = check_position(str, to_count, nbr);
 	return (nbr);
 }
 
@@ -33,7 +42,7 @@ void	handle_special_case(char *cmd)
 	if (count_char_number(cmd, '>')) // write on file (overwriting if one add if two)
 	{
 		if (count_char_number(cmd, '>') <= 2)
-			write_in_filedescriptor(cmd, count_char_number(cmd, '>'));
+			write_in_filedescriptor(cmd, count_char_number(cmd, '>'), '>');
 		else
 			ft_putstr_fd("21sh: parse error near `>'\n", 2);
 	}
