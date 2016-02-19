@@ -16,6 +16,8 @@ int		check_cmd(char *cmd)
 {
 	int res;
 
+	if (!cmd)
+		return (-1);
 	res = 0;
 	if (!ft_strcmp(cmd, "cd") ||
 		!ft_strcmp(cmd, "setenv") ||

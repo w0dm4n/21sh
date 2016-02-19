@@ -51,6 +51,8 @@ char		*get_only_name(char *cmd_to_exec)
 	int		i;
 	char	*name;
 
+	if (!cmd_to_exec)
+		return (NULL);
 	i = 0;
 	if (!(name = malloc(sizeof(char) * MAX_EXE_NAME)))
 		return (NULL);
