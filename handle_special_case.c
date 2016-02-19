@@ -46,14 +46,14 @@ int		count_char_number(char *str, char to_count)
 
 void	handle_special_case(char *cmd)
 {
-	if (count_char_number(cmd, '>')) // write on file (overwriting if one add if two)
+	if (count_char_number(cmd, '>'))
 	{
 		if (count_char_number(cmd, '>') <= 2)
 			write_in_filedescriptor(cmd, count_char_number(cmd, '>'), '>');
 		else
 			ft_putstr_fd("21sh: parse error near `>'\n", 2);
 	}
-	else if (count_char_number(cmd, '<')) // sending file fd to the cmd stdin
+	else if (count_char_number(cmd, '<'))
 	{
 		if (count_char_number(cmd, '<') <= 2)
 			handle_cmd(cmd);

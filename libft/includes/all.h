@@ -34,6 +34,7 @@
 # define MAX_ARGV_SIZE 8192
 # define MAX_VAR_ENV_SIZE 4096
 # define PATH_MAX_SIZE 16192
+# define FILE_BUFFER 161920
 # define COLOR_WHITE "\e[1;37m"
 # define CLEAR_SCREEN "\033[2J"
 # define TRUE 1
