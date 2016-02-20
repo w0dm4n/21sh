@@ -174,4 +174,5 @@ struct winsize	g_size;
 int				*g_selected_position;
 char			**g_env;
 int				g_current_process;
+int				g_multi_line;
 #endif

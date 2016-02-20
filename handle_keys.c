@@ -87,9 +87,20 @@ void		enter_key(void)
 	}
 	else
 	{
-		g_new_cmd = TRUE;
-		write(1, "\n", 1);
-		g_current_cmd++;
-		g_logs_to_print = 0;
+		if (g_cmd[(ft_strlen(g_cmd) - 1)] == '\\')
+		{
+			g_new_cmd = FALSE;
+			g_multi_line = true;
+			g_cursor_pos = 0;
+			ft_putstr_fd("\n", 1);
+		}
+		else
+		{
+			g_new_cmd = TRUE;
+			ft_putstr_fd("\n", 1);
+			g_current_cmd++;
+			g_logs_to_print = 0;
+			g_multi_line = false;
+		}
 	}
 }
