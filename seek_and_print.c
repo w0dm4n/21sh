@@ -19,9 +19,7 @@ int		interesting(char *cmd, char *occurence, int array_len)
 	if (array_len == 1)
 		return (1);
 	extension = get_occur_extension(occurence);
-	//if (!extension)
-	// check that is not a folder if its not send it
-	if (!ft_strcmp(cmd, "cat") || 
+	if (!ft_strcmp(cmd, "cat") ||
 		!ft_strcmp(cmd, "vim") ||
 		!ft_strcmp(cmd, "emacs") ||
 		!ft_strcmp(cmd, "nano") ||
@@ -39,6 +37,8 @@ void	delete_from_stdout(char *args)
 	int		i;
 	char	*res;
 
+	if (!args)
+		return ;
 	i = 0;
 	while (args[i])
 	{
@@ -56,6 +56,8 @@ void	print_char_and_move_pos(char *to_print)
 {
 	int i;
 
+	if (!to_print)
+		return ;
 	i = 0;
 	while (to_print[i])
 	{
@@ -70,33 +72,26 @@ void	seek_and_print(char *cmd)
 {
 	char			**args;
 	int				i;
-	int				i_2;
-	int				pos;
 	char			**all_files;
 	int				size_until_dot;
-	char			**all_occur;
+	char			**a_oc;
 
 	i = 0;
-	pos = -1;
-	i_2 = 0;
-	all_occur = NULL;
+	a_oc = NULL;
 	args = ft_strsplit(cmd, ' ');
 	if (args[1] && !args[2])
 	{
 		size_until_dot = get_size(args[1]);
 		all_files = get_all_files_from_current_directory(opendir("."));
-		all_occur = alloc_array(all_files, all_occur);
-		all_occur = get_all_occur(all_files, all_occur, args[1], size_until_dot);
-		while (all_occur[i])
+		a_oc = alloc_array(all_files, a_oc);
+		a_oc = get_all_occur(all_files, a_oc, args[1], size_until_dot);
+		while (a_oc[i])
 		{
-			if (interesting(args[0], all_occur[i], ft_lenarray((void**)all_occur)))
+			if (interesting(args[0], a_oc[i], ft_lenarray((void**)a_oc)))
 				break ;
 			i++;
 		}
-		if (all_occur[i])
-		{
-			delete_from_stdout(args[1]);
-			print_char_and_move_pos(all_occur[i]);
-		}
+		delete_from_stdout(args[1]);
+		print_char_and_move_pos(a_oc[i]);
 	}
 }

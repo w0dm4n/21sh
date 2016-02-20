@@ -43,6 +43,7 @@ void		get_file_n_exec(char *cmd, char *file_name, char **args, int res)
 	int		fd_dup[2];
 	pid_t	pid;
 	int		child;
+	//int		new;		
 
 	if (!(file_content = malloc(sizeof(char) * FILE_BUFFER)))
 		return ;
