@@ -41,14 +41,14 @@ void		overwrite_in(char *cmd, char *file, char **args, int res)
 	char	buffer[FILE_BUFFER];
 	int		child_status;
 
-	args = add_file_name(args, get_path_and_name(res, cmd));
+	args = add_full_name(args, get_path_and_name(res, cmd));
 	pipe(fd);
 	pid = fork();
 	if (pid == 0)
 	{
 		dup2(fd[1], 1);
-		close(fd[1]);
 		execve(get_path_and_name(res, cmd), args, g_env);
+		close(fd[1]);
 	}
 	else
 	{
@@ -93,14 +93,14 @@ void		add_in_file(char *cmd, char *file, char **args, int res)
 		return ;
 	if (!(buffer_2 = ft_strnew(FILE_BUFFER)))
 		return ;
-	args = add_file_name(args, get_path_and_name(res, cmd));
+	args = add_full_name(args, get_path_and_name(res, cmd));
 	pipe(fd);
 	pid = fork();
 	if (pid == 0)
 	{
 		dup2(fd[1], 1);
-		close(fd[1]);
 		execve(get_path_and_name(res, cmd), args, g_env);
+		close(fd[1]);
 	}
 	else
 	{

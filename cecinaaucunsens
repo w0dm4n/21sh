@@ -1,4 +1,4 @@
-total 1622
+total 1508
 drwxr-xr-x   4 frmarinh  2015_paris    4096 Feb 20 15:55 .
 drwxr-xr-x  15 frmarinh  2015_paris    4096 Feb 20 10:13 ..
 -rw-r--r--@  1 frmarinh  2015_paris   34820 Feb 20 15:54 .DS_Store
@@ -10,6 +10,7 @@ drwxr-xr-x   8 frmarinh  2015_paris    4096 Feb 20 15:54 .git
 -rwxr-xr-x   1 frmarinh  2015_paris       0 Feb 20 14:49 OH
 -rw-r--r--   1 frmarinh  2015_paris      17 Feb 20 15:50 \
 -rwxr-xr-x   1 frmarinh  2015_paris       6 Feb 20 12:54 bonjourp
+-rwxr-xr-x   1 frmarinh  2015_paris       0 Feb 20 15:55 cecinaaucunsens
 -rw-r--r--   1 frmarinh  2015_paris    1928 Feb 18 01:19 chdir_command.c
 -rw-r--r--   1 frmarinh  2015_paris    5756 Feb 20 15:54 chdir_command.o
 -rw-r--r--   1 frmarinh  2015_paris    1439 Feb 17 21:24 chdir_command_ext.c
@@ -89,4 +90,4 @@ drwxr-xr-x   3 frmarinh  2015_paris    4096 Feb 20 15:54 libft
 -rw-r--r--   1 frmarinh  2015_paris    8936 Feb 20 15:54 write_in_filedescriptor_suite.o
 -rw-r--r--   1 frmarinh  2015_paris    1879 Feb 20 14:57 write_in_filedescriptor_suite_ext.c
 -rw-r--r--   1 frmarinh  2015_paris    5728 Feb 20 15:54 write_in_filedescriptor_suite_ext.o
--rwxr-xr-x   1 frmarinh  2015_paris   65536 Feb 20 15:55 wtf
+-rwxr-xr-x   1 frmarinh  2015_paris    6662 Feb 20 15:55 wtf

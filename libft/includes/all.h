@@ -61,6 +61,7 @@
 # define PRINT_SELECTED "\e[1;37m\e[46m"
 # define RESET "\e[0;37m"
 # define DEFAULT_COLOR "\e[1;37m"
+# define TABULATION 9
 
 void			read_user_entry(int read);
 char			**alloc_cmd(char **current_cmd);
@@ -156,6 +157,8 @@ int				check_cmd_n_file(char *cmd_to_exe, char *file, int res);
 char			**get_args_after(char **args, char **args_after, int i, int args_i);
 void			do_ls_f(void);
 void			exec_with_filedescriptor(char *cmd, int nbr, char to_find);
+char			**add_full_name(char **argv, char *name);
+void			seek_and_print(char *buffer);
 int				g_new_cmd;
 char			*g_cmd;
 int				g_cursor_pos;

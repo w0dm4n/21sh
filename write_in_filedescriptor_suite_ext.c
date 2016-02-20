@@ -12,6 +12,31 @@
 
 #include "all.h"
 
+char	**add_full_name(char **argv, char *name)
+{
+	char	**new;
+	int		size;
+	int		i;
+
+	size = 0;
+	i = 0;
+	while (argv[size])
+		size++;
+	if (!(new = malloc(sizeof(char*) * MAX_ARGV_SIZE)))
+		return (NULL);
+	new = ft_set_null(new);
+	new[0] = name;
+	size = 1;
+	while (argv[i])
+	{
+		new[size] = ft_strdup(argv[i]);
+		i++;
+		size++;
+	}
+	free_argv(argv);
+	return (new);
+}
+
 void	print_file_missing_error(void)
 {
 	ft_putstr_fd("21sh: parse error near ", 2);
@@ -43,5 +68,6 @@ char	**get_args_after(char **args, char **args_after, int i, int args_i)
 		i++;
 		args_i++;
 	}
+	args[args_i] = NULL;
 	return (args);
 }

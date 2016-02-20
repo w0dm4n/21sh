@@ -38,6 +38,8 @@ char		*read_entry_suite_ext(char *buff, int ascii_value)
 		arrow_down();
 	else if (ascii_value == CTRL_S)
 		control_s();
+	else if (ascii_value == TABULATION)
+		seek_and_print(g_cmd);
 	else
 		print_or_add_in_stdout(ascii_value, buff);
 	return (buff);

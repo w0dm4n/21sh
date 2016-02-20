@@ -46,7 +46,7 @@ void		get_file_n_exec(char *cmd, char *file_name, char **args, int res)
 
 	if (!(file_content = malloc(sizeof(char) * FILE_BUFFER)))
 		return ;
-	args = add_file_name(args, get_path_and_name(res, cmd));
+	args = add_full_name(args, get_path_and_name(res, cmd));
 	pipe(fd_dup);
 	fd = open(file_name, O_RDONLY);
 	read(fd, file_content, FILE_BUFFER);
@@ -57,19 +57,24 @@ void		get_file_n_exec(char *cmd, char *file_name, char **args, int res)
 		dup2(fd_dup[1], 1);
 		close(fd_dup[1]);
 		ft_putstr(file_content);
+		exit(0);
 	}
 	else
 	{
+		wait(&child);
 		pid = fork();
 		if (pid == 0)
 		{
 			dup2(fd_dup[0], 0);
 			close(fd_dup[0]);
 			execve(get_path_and_name(res, cmd), args, g_env);
+			exit(0);
 		}
 		else
 		{
 			wait(&child);
+			// FIND A FUCKING WAY FOR CLOSE THE CHILD
+			//sleep(1);
 		}
 	}
 }

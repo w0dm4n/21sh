@@ -1,0 +1,3048 @@
+total 1534
+drwxr-xr-x   4 frmarinh  2015_paris    4096 Feb 20 16:11 .
+drwxr-xr-x  15 frmarinh  2015_paris    4096 Feb 20 10:13 ..
+-rw-r--r--@  1 frmarinh  2015_paris   34820 Feb 20 16:06 .DS_Store
+-rw-r--r--   1 frmarinh  2015_paris    4096 Feb 17 21:24 ._.DS_Store
+drwxr-xr-x   8 frmarinh  2015_paris    4096 Feb 20 16:06 .git
+-rwxr-xr-x   1 frmarinh  2015_paris   67076 Feb 20 16:06 21sh
+-rwxr-xr-x   1 frmarinh  2015_paris    1415 Feb 20 14:07 4
+-rw-r--r--   1 frmarinh  2015_paris    2021 Feb 20 16:00 Makefile
+-rwxr-xr-x   1 frmarinh  2015_paris       0 Feb 20 14:49 OH
+-rw-r--r--   1 frmarinh  2015_paris      17 Feb 20 15:50 \
+-rwxr-xr-x   1 frmarinh  2015_paris       6 Feb 20 12:54 bonjourp
+-rwxr-xr-x   1 frmarinh  2015_paris    6735 Feb 20 15:55 cecinaaucunsens
+-rw-r--r--   1 frmarinh  2015_paris    1928 Feb 18 01:19 chdir_command.c
+-rw-r--r--   1 frmarinh  2015_paris    5756 Feb 20 16:06 chdir_command.o
+-rw-r--r--   1 frmarinh  2015_paris    1439 Feb 17 21:24 chdir_command_ext.c
+-rw-r--r--   1 frmarinh  2015_paris    4516 Feb 20 16:06 chdir_command_ext.o
+-rw-r--r--   1 frmarinh  2015_paris    2359 Feb 17 21:24 check_access_folder.c
+-rw-r--r--   1 frmarinh  2015_paris    8148 Feb 20 16:06 check_access_folder.o
+-rw-r--r--   1 frmarinh  2015_paris    2917 Feb 18 00:11 check_chars.c
+-rw-r--r--   1 frmarinh  2015_paris    7176 Feb 20 16:06 check_chars.o
+-rw-r--r--   1 frmarinh  2015_paris    2081 Feb 18 00:11 check_chars_ext.c
+-rw-r--r--   1 frmarinh  2015_paris    5372 Feb 20 16:06 check_chars_ext.o
+-rw-r--r--   1 frmarinh  2015_paris    1455 Feb 19 04:29 check_cmd.c
+-rw-r--r--   1 frmarinh  2015_paris    4512 Feb 20 16:06 check_cmd.o
+-rw-r--r--   1 frmarinh  2015_paris    2024 Feb 17 21:24 check_execve.c
+-rw-r--r--   1 frmarinh  2015_paris    7616 Feb 20 16:06 check_execve.o
+-rw-r--r--   1 frmarinh  2015_paris    1542 Feb 17 21:24 cmd_logs.c
+-rw-r--r--   1 frmarinh  2015_paris    4884 Feb 20 16:06 cmd_logs.o
+-rw-r--r--   1 frmarinh  2015_paris    1679 Feb 17 21:24 cursor_movement.c
+-rw-r--r--   1 frmarinh  2015_paris    5484 Feb 20 16:06 cursor_movement.o
+-rw-r--r--   1 frmarinh  2015_paris    1607 Feb 17 21:24 cursor_movement_ext.c
+-rw-r--r--   1 frmarinh  2015_paris    5460 Feb 20 16:06 cursor_movement_ext.o
+-rw-r--r--   1 frmarinh  2015_paris    1567 Feb 17 21:24 cursor_movement_ext_2.c
+-rw-r--r--   1 frmarinh  2015_paris    5540 Feb 20 16:06 cursor_movement_ext_2.o
+-rw-r--r--   1 frmarinh  2015_paris    1551 Feb 18 01:19 do_cmd.c
+-rw-r--r--   1 frmarinh  2015_paris    4784 Feb 20 16:06 do_cmd.o
+-rw-r--r--   1 frmarinh  2015_paris    2741 Feb 17 21:24 env_v.c
+-rw-r--r--   1 frmarinh  2015_paris    7220 Feb 20 16:06 env_v.o
+-rw-r--r--   1 frmarinh  2015_paris    2750 Feb 20 15:50 exec_with_filedescriptor.c
+-rw-r--r--   1 frmarinh  2015_paris    9032 Feb 20 16:06 exec_with_filedescriptor.o
+-rw-r--r--   1 frmarinh  2015_paris    2681 Feb 19 00:09 execute_binary.c
+-rw-r--r--   1 frmarinh  2015_paris    7280 Feb 20 16:06 execute_binary.o
+-rw-r--r--   1 frmarinh  2015_paris    1776 Feb 17 21:24 execute_binary_from_current_folder.c
+-rw-r--r--   1 frmarinh  2015_paris    5024 Feb 20 16:06 execute_binary_from_current_folder.o
+-rw-r--r--   1 frmarinh  2015_paris    1736 Feb 18 02:09 execute_from_asked_dir.c
+-rw-r--r--   1 frmarinh  2015_paris    5260 Feb 20 16:06 execute_from_asked_dir.o
+-rwxr-xr-x   1 frmarinh  2015_paris   87515 Feb 20 15:02 fewfwe
+-rw-r--r--   1 frmarinh  2015_paris    2485 Feb 17 21:24 get_path.c
+-rw-r--r--   1 frmarinh  2015_paris    6340 Feb 20 16:06 get_path.o
+-rw-r--r--   1 frmarinh  2015_paris    1881 Feb 18 05:13 get_separated_by_char.c
+-rw-r--r--   1 frmarinh  2015_paris    5172 Feb 20 16:06 get_separated_by_char.o
+-rw-r--r--   1 frmarinh  2015_paris    1820 Feb 18 04:27 handle_all_cmds.c
+-rw-r--r--   1 frmarinh  2015_paris    5216 Feb 20 16:06 handle_all_cmds.o
+-rw-r--r--   1 frmarinh  2015_paris    2686 Feb 18 01:37 handle_array.c
+-rw-r--r--   1 frmarinh  2015_paris    6692 Feb 20 16:06 handle_array.o
+-rw-r--r--   1 frmarinh  2015_paris    1699 Feb 17 21:24 handle_array_ext.c
+-rw-r--r--   1 frmarinh  2015_paris    4932 Feb 20 16:06 handle_array_ext.o
+-rw-r--r--   1 frmarinh  2015_paris    1898 Feb 20 15:00 handle_cmd.c
+-rw-r--r--   1 frmarinh  2015_paris    5248 Feb 20 16:06 handle_cmd.o
+-rw-r--r--   1 frmarinh  2015_paris    2341 Feb 20 12:22 handle_keys.c
+-rw-r--r--   1 frmarinh  2015_paris    6772 Feb 20 16:06 handle_keys.o
+-rw-r--r--   1 frmarinh  2015_paris    1560 Feb 17 21:24 handle_keys_suite.c
+-rw-r--r--   1 frmarinh  2015_paris    5236 Feb 20 16:06 handle_keys_suite.o
+-rw-r--r--   1 frmarinh  2015_paris    1504 Feb 17 21:24 handle_keys_suite_2.c
+-rw-r--r--   1 frmarinh  2015_paris    5056 Feb 20 16:06 handle_keys_suite_2.o
+-rw-r--r--   1 frmarinh  2015_paris    1811 Feb 20 12:31 handle_special_case.c
+-rw-r--r--   1 frmarinh  2015_paris    5240 Feb 20 16:06 handle_special_case.o
+drwxr-xr-x   3 frmarinh  2015_paris    4096 Feb 20 16:06 libft
+-rw-r--r--   1 frmarinh  2015_paris    1631 Feb 18 04:05 main.c
+-rw-r--r--   1 frmarinh  2015_paris    4784 Feb 20 16:06 main.o
+-rwxr-xr-x   1 frmarinh  2015_paris       0 Feb 19 00:23 o
+-rw-r--r--   1 frmarinh  2015_paris    3427 Feb 20 16:05 read_user_entry.c
+-rw-r--r--   1 frmarinh  2015_paris    9000 Feb 20 16:06 read_user_entry.o
+-rw-r--r--   1 frmarinh  2015_paris    2119 Feb 17 21:24 refresh_stdout.c
+-rw-r--r--   1 frmarinh  2015_paris    5900 Feb 20 16:06 refresh_stdout.o
+-rw-r--r--   1 frmarinh  2015_paris    1257 Feb 20 16:10 seek_and_print.c
+-rw-r--r--   1 frmarinh  2015_paris    3632 Feb 20 16:06 seek_and_print.o
+-rw-r--r--   1 frmarinh  2015_paris    1997 Feb 17 21:24 setenv_command.c
+-rw-r--r--   1 frmarinh  2015_paris    5240 Feb 20 16:06 setenv_command.o
+-rwxr-xr-x   1 frmarinh  2015_paris  227456 Feb 20 15:44 test
+-rw-r--r--   1 frmarinh  2015_paris    2266 Feb 17 21:24 unsetenv_command.c
+-rw-r--r--   1 frmarinh  2015_paris    5928 Feb 20 16:06 unsetenv_command.o
+-rw-r--r--   1 frmarinh  2015_paris    1691 Feb 17 21:24 utils.c
+-rw-r--r--   1 frmarinh  2015_paris    5468 Feb 20 16:06 utils.o
+-rw-r--r--   1 frmarinh  2015_paris    1585 Feb 20 12:22 utils_ext.c
+-rw-r--r--   1 frmarinh  2015_paris    5436 Feb 20 16:06 utils_ext.o
+-rwxr-xr-x   1 frmarinh  2015_paris       0 Feb 20 15:00 wfweefw
+-rw-r--r--   1 frmarinh  2015_paris    3851 Feb 20 15:54 write_in_filedescriptor.c
+-rw-r--r--   1 frmarinh  2015_paris    9364 Feb 20 16:06 write_in_filedescriptor.o
+-rw-r--r--   1 frmarinh  2015_paris    2807 Feb 20 14:11 write_in_filedescriptor_suite.c
+-rw-r--r--   1 frmarinh  2015_paris    8936 Feb 20 16:06 write_in_filedescriptor_suite.o
+-rw-r--r--   1 frmarinh  2015_paris    1879 Feb 20 14:57 write_in_filedescriptor_suite_ext.c
+-rw-r--r--   1 frmarinh  2015_paris    5728 Feb 20 16:06 write_in_filedescriptor_suite_ext.o
+-rwxr-xr-x   1 frmarinh  2015_paris    6662 Feb 20 15:55 wtf
+-rw-r--r--   1 frmarinh  2015_paris       0 Feb 20 16:11 wtfexit
+
+./.git:
+total 130
+drwxr-xr-x    8 frmarinh  2015_paris   4096 Feb 20 16:06 .
+drwxr-xr-x    4 frmarinh  2015_paris   4096 Feb 20 16:11 ..
+-rw-r--r--@   1 frmarinh  2015_paris   6148 Feb 17 21:48 .DS_Store
+-rw-r--r--    1 frmarinh  2015_paris   4096 Feb 17 21:48 ._.DS_Store
+-rw-r--r--    1 frmarinh  2015_paris     17 Feb 20 12:48 COMMIT_EDITMSG
+-rw-r--r--    1 frmarinh  2015_paris     23 Feb 17 21:24 HEAD
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 17 21:24 branches
+-rw-r--r--    1 frmarinh  2015_paris    304 Feb 17 21:24 config
+-rw-r--r--    1 frmarinh  2015_paris     73 Feb 17 21:24 description
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 17 21:24 hooks
+-rw-r--r--    1 frmarinh  2015_paris  20308 Feb 20 16:06 index
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 17 21:24 info
+drwxr-xr-x    3 frmarinh  2015_paris   4096 Feb 17 21:24 logs
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 objects
+-rw-r--r--    1 frmarinh  2015_paris    107 Feb 17 21:24 packed-refs
+drwxr-xr-x    5 frmarinh  2015_paris   4096 Feb 17 21:24 refs
+
+./.git/branches:
+total 16
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  8 frmarinh  2015_paris  4096 Feb 20 16:06 ..
+
+./.git/hooks:
+total 49
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  8 frmarinh  2015_paris  4096 Feb 20 16:06 ..
+-rwxr-xr-x  1 frmarinh  2015_paris   478 Feb 17 21:24 applypatch-msg.sample
+-rwxr-xr-x  1 frmarinh  2015_paris   896 Feb 17 21:24 commit-msg.sample
+-rwxr-xr-x  1 frmarinh  2015_paris   189 Feb 17 21:24 post-update.sample
+-rwxr-xr-x  1 frmarinh  2015_paris   424 Feb 17 21:24 pre-applypatch.sample
+-rwxr-xr-x  1 frmarinh  2015_paris  1642 Feb 17 21:24 pre-commit.sample
+-rwxr-xr-x  1 frmarinh  2015_paris  1348 Feb 17 21:24 pre-push.sample
+-rwxr-xr-x  1 frmarinh  2015_paris  4951 Feb 17 21:24 pre-rebase.sample
+-rwxr-xr-x  1 frmarinh  2015_paris  1239 Feb 17 21:24 prepare-commit-msg.sample
+-rwxr-xr-x  1 frmarinh  2015_paris  3611 Feb 17 21:24 update.sample
+
+./.git/info:
+total 17
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  8 frmarinh  2015_paris  4096 Feb 20 16:06 ..
+-rw-r--r--  1 frmarinh  2015_paris   240 Feb 17 21:24 exclude
+
+./.git/logs:
+total 43
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  8 frmarinh  2015_paris  4096 Feb 20 16:06 ..
+-rw-r--r--  1 frmarinh  2015_paris  9344 Feb 20 12:48 HEAD
+drwxr-xr-x  4 frmarinh  2015_paris  4096 Feb 17 21:24 refs
+
+./.git/logs/refs:
+total 32
+drwxr-xr-x  4 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 17 21:24 ..
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 heads
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 17 21:24 remotes
+
+./.git/logs/refs/heads:
+total 35
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  4 frmarinh  2015_paris  4096 Feb 17 21:24 ..
+-rw-r--r--  1 frmarinh  2015_paris  9344 Feb 20 12:48 master
+
+./.git/logs/refs/remotes:
+total 24
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  4 frmarinh  2015_paris  4096 Feb 17 21:24 ..
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 origin
+
+./.git/logs/refs/remotes/origin:
+total 34
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 17 21:24 ..
+-rw-r--r--  1 frmarinh  2015_paris   189 Feb 17 21:24 HEAD
+-rw-r--r--  1 frmarinh  2015_paris  8599 Feb 20 12:48 master
+
+./.git/objects:
+total 2072
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x    8 frmarinh  2015_paris  4096 Feb 20 16:06 ..
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 00
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 01
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:11 02
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 03
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 04
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 05
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 06
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:31 07
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 08
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 09
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 0a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 0b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 0c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 0d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 0e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 0f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 10
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 11
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 12
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 13
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 14
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 15
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 16
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:31 17
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 18
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 19
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 1a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 1b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 1c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 1d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 1e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 1f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 20
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 21
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:06 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 23
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 25
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 27
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 2a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 2b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 2c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 2d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 2e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:11 2f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:06 30
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:36 31
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 34
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 35
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 37
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 38
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 39
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 3a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 3b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 3c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 3d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 3e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:26 3f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 40
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 41
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 42
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 43
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:43 44
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 45
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 46
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 47
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 48
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 49
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:21 4a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 4b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 4c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 4d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 4e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 4f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 50
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 51
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:11 52
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 53
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 54
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 55
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:56 56
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 57
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 58
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:16 59
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 5a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 5b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 5c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 5d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 5e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 5f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 60
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 61
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:43 62
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:21 63
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 64
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 66
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 67
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 68
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 69
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 6a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 6b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 6c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 6d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 6e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 6f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 70
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 71
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 72
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 73
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 74
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:06 75
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 76
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:26 77
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 78
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 79
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 7a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 7b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 7c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 7d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 7e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 7f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 80
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 81
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 82
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 83
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 84
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 85
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 86
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:21 87
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:06 88
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 89
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 8a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 8b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 8c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 8d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 8e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 8f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:11 90
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 91
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 92
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 93
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 94
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 95
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 96
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 97
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 98
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 99
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 9a
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 9b
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 9c
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 9d
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 9e
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 9f
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 a0
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 a1
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 a2
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 a3
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 a4
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 a5
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 a6
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:21 a7
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:43 a8
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 a9
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 aa
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 ab
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 ac
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 ad
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 ae
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:06 af
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 b0
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 b1
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 b2
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 b3
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 b4
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 b5
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 b6
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 b7
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 b8
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:11 b9
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 ba
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 bb
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 bc
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 bd
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 be
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 bf
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 c0
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 c1
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 c2
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 c3
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:11 c4
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 c5
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 c6
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:36 c7
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:56 c8
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 c9
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 ca
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 cb
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 cc
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 cd
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 ce
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 cf
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 d0
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 d1
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 d2
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 d3
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 d4
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 d5
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 d6
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 d7
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 d8
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 d9
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 da
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:56 db
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 dc
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 dd
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 de
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 df
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:21 e0
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 e1
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:56 e2
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 e3
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 e4
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 e5
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 e6
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 e7
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 e8
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 e9
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 ea
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 eb
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 ec
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 ed
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 ee
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 ef
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 f0
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 f1
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:43 f2
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 f3
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:36 f4
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 f5
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 f6
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 f7
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 f8
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 f9
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:16 fa
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 fb
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 fc
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 fd
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 fe
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 ff
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 info
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 pack
+
+./.git/objects/00:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2024 Feb 18 04:51 23598d09e3f664d1aea1044acf7e7441787726
+-r--r--r--    1 frmarinh  2015_paris   168 Feb 17 21:24 40b28d86115ba04afbbe70c1e7dfb73f0e51d1
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 17 21:24 ebce9201c8ffdc337ca4cc84469f3d80be0201
+
+./.git/objects/01:
+total 30
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   174 Feb 18 01:36 4676faba9861d36bba3f0b4b83cd110fb1188b
+-r--r--r--    1 frmarinh  2015_paris   410 Feb 17 21:24 49690046cafe0b561dd1ee213589be58f69c1f
+-r--r--r--    1 frmarinh  2015_paris  2042 Feb 20 12:48 53dc8fca62738eff73d8554f94b798d9d5cdca
+-r--r--r--    1 frmarinh  2015_paris  2275 Feb 17 21:24 6da9822beeb0b3c3cf760314cfb298c7cecc2a
+-r--r--r--    1 frmarinh  2015_paris   623 Feb 18 02:11 f80b8a8fa7fbc3de934f50cd6f05d862670896
+-r--r--r--    1 frmarinh  2015_paris   485 Feb 17 21:24 f8ce38da7c1fa0f27e572a1d6ae54065b70a82
+
+./.git/objects/02:
+total 69
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 02:11 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   4595 Feb 17 21:24 2c1ee570e0390480ebb2958c05dbcd76681303
+-r--r--r--    1 frmarinh  2015_paris   2246 Feb 18 01:56 43b516bc6239bf3b67393e6f3862e7881d9386
+-r--r--r--    1 frmarinh  2015_paris   1114 Feb 17 21:24 4f99c8e13493f8049dc245f6fbaf848ef2ff1f
+-r--r--r--    1 frmarinh  2015_paris    292 Feb 17 21:24 5a8407f943b766fc6c959ba645c77d25d90124
+-r--r--r--    1 frmarinh  2015_paris   2428 Feb 18 01:56 843e6a129df116ff1a3d93cf9495479a6255b3
+-r--r--r--    1 frmarinh  2015_paris    344 Feb 18 02:11 a967654dd5de6a7fdb571137d70783474e3d5e
+-r--r--r--    1 frmarinh  2015_paris  14701 Feb 18 01:56 acd90e36737d7abac4b1035cef1b130f557bf9
+
+./.git/objects/03:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3172 Feb 18 01:56 4b24fdbdbfe2dbdde8b4b0748b23442a8d58ae
+-r--r--r--    1 frmarinh  2015_paris   571 Feb 18 05:01 75372da3c9a779f218839172ecba9c8321e23b
+-r--r--r--    1 frmarinh  2015_paris    19 Feb 17 21:24 9727ec5a50d0ed45ff67e6f4c9b953bd23c17d
+
+./.git/objects/04:
+total 59
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2401 Feb 19 00:39 01f0868c16300d15d06363e926639486b45acd
+-r--r--r--    1 frmarinh  2015_paris    321 Feb 18 04:31 1564bcd777b8e91947ff28343ae9dc8a4a523c
+-r--r--r--    1 frmarinh  2015_paris    483 Feb 18 05:21 1878e8b3c3c8a2a83940b0db466a6e6505ec85
+-r--r--r--    1 frmarinh  2015_paris    171 Feb 17 21:24 49dcab3efd409789c493863a8a6c81cc0654c1
+-r--r--r--    1 frmarinh  2015_paris   3156 Feb 18 04:41 6261534c8f3b09cd4be2157468d3720f7e3f0f
+-r--r--r--    1 frmarinh  2015_paris    174 Feb 18 01:46 64cd34035eb40908df675f960d8e961e9c9bd7
+-r--r--r--    1 frmarinh  2015_paris   3440 Feb 17 21:24 a2acf5c7c4f4c27319a60b30748492c5293abe
+-r--r--r--    1 frmarinh  2015_paris  10223 Feb 17 21:24 efc70ec7dfd98f638f9bfb35ff4c62873fbf42
+
+./.git/objects/05:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 19 03:01 65fb99657e45cf5f1ff9c781b0ebc1808d42ba
+-r--r--r--    1 frmarinh  2015_paris  2022 Feb 19 00:39 a4273f57b707d1d51530bf07100a4b57a65d5b
+-r--r--r--    1 frmarinh  2015_paris   355 Feb 18 04:31 c18285b555ac9b0a5a063f92c6a5598d0905d1
+
+./.git/objects/06:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2393 Feb 18 05:21 39b323a4cae0e1ad76f8c31519b9c23141f227
+-r--r--r--    1 frmarinh  2015_paris  3089 Feb 18 00:15 556bbca29612df4608b8083819dec611e06128
+-r--r--r--    1 frmarinh  2015_paris   277 Feb 17 21:24 707cb1c8e33ba2455d57bc2da8830868590e27
+
+./.git/objects/07:
+total 49
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 04:31 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    569 Feb 18 04:31 1b3504f7687f22f7417097b4259d629cccfd0c
+-r--r--r--    1 frmarinh  2015_paris    345 Feb 17 21:24 4c4c01a4462fc802032f135120604c0c30dc6d
+-r--r--r--    1 frmarinh  2015_paris  12415 Feb 18 01:16 57b57b8452c18450136efebbf56d39f1018a99
+-r--r--r--    1 frmarinh  2015_paris    220 Feb 18 04:31 6da800c948b022c84444c418a1fb8628a70d8e
+-r--r--r--    1 frmarinh  2015_paris   2000 Feb 17 21:24 8d3c863e0051c5a433023a877654f24eebe075
+
+./.git/objects/08:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   554 Feb 19 03:01 45aea4c6ad443f93002b031dae2202fcaae963
+-r--r--r--    1 frmarinh  2015_paris  2210 Feb 17 21:24 9ac510cd7e2eee5dbf29826999d40e2df013a2
+-r--r--r--    1 frmarinh  2015_paris  2197 Feb 18 04:41 b794b8f133e47c6ffa0583fc53b3f5291b0550
+
+./.git/objects/09:
+total 21
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1857 Feb 17 21:24 14565269f8bf7ba75d1496769f5de16a378846
+-r--r--r--    1 frmarinh  2015_paris   386 Feb 17 21:24 e62ba58ba60eb5c07a261eb0d8d6eed1727ac1
+
+./.git/objects/0a:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1723 Feb 18 05:01 328c43334f568416bc735bbd959cbeeb6bccea
+-r--r--r--    1 frmarinh  2015_paris  2151 Feb 18 00:15 7dec727288a5c6f9aa0eb040e6e2289f0682d1
+-r--r--r--    1 frmarinh  2015_paris   360 Feb 18 04:41 e351d7e57263bb649c41ded5d910bd5a5ffde7
+
+./.git/objects/0b:
+total 39
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   432 Feb 18 04:31 1690352bbc9b8353a25995b945846ddcb8610b
+-r--r--r--    1 frmarinh  2015_paris  2410 Feb 19 04:16 477f2d4b5251ae96a7dc04eb4dcb7c0ca55771
+-r--r--r--    1 frmarinh  2015_paris  3164 Feb 18 01:26 8f3ac0f11f13a2a88b4e5933356837abc16a35
+-r--r--r--    1 frmarinh  2015_paris  2299 Feb 18 01:46 dd3adfa0546e7388e1b1ef6ed0ef480e92672e
+-r--r--r--    1 frmarinh  2015_paris  2358 Feb 18 01:56 e2606420c7380978fbb335292728aa386bcba4
+
+./.git/objects/0c:
+total 58
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2649 Feb 19 00:39 00f4564c9a605399de763cae2283fd0f437afc
+-r--r--r--    1 frmarinh  2015_paris   3795 Feb 17 21:24 255e6108f83b05a9276a379980a6155b6a1b4c
+-r--r--r--    1 frmarinh  2015_paris   2232 Feb 17 21:24 43d6f0cad3cd60001f21d8028574e9740e4fe3
+-r--r--r--    1 frmarinh  2015_paris  11125 Feb 17 21:24 dc1f7b3497770d764f50feaf25d0df391ce6e2
+-r--r--r--    1 frmarinh  2015_paris    115 Feb 17 21:24 de8c3a35f5192d15aeea108995e46c48d6150b
+
+./.git/objects/0d:
+total 21
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2290 Feb 19 00:39 baaa48cc3825a7effbed34c44e7278c8809e31
+
+./.git/objects/0e:
+total 53
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14712 Feb 18 05:31 9980b91924dd6737ba2a3b5ccee7318b6f86d4
+-r--r--r--    1 frmarinh  2015_paris   2616 Feb 20 12:48 a1cf8ddccd5eb95a3a5068fb85bb53389562aa
+-r--r--r--    1 frmarinh  2015_paris    954 Feb 19 05:09 e48aec88aaa817dde18ae04d8e9ecf27dbc66e
+
+./.git/objects/0f:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  7424 Feb 17 21:24 0f6ad5e8afe10996a0b58ab0b22305aa6fc6cf
+-r--r--r--    1 frmarinh  2015_paris  2317 Feb 18 00:15 470f3d336f85532ebcf285bf8a0114171280ef
+
+./.git/objects/10:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  4056 Feb 19 03:01 55502a9171b3e41dcd652aa3572a00d3ee2c64
+-r--r--r--    1 frmarinh  2015_paris   615 Feb 18 01:16 e3c469d00bd9b4c95141b6fe6cb59547187eae
+
+./.git/objects/11:
+total 35
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   119 Feb 17 21:24 17fbf4ed07abc8c8e4b683e1c2e03283d12a4f
+-r--r--r--    1 frmarinh  2015_paris   295 Feb 17 21:24 21a66fdb76f5e45d77e5591a1e978c9e07c335
+-r--r--r--    1 frmarinh  2015_paris   294 Feb 17 21:24 47f3fe23a2633e748bcdbb51ae8331c0f1785a
+-r--r--r--    1 frmarinh  2015_paris  2000 Feb 17 21:24 4ec603074b2550c9c7963b14012b831e8e3258
+-r--r--r--    1 frmarinh  2015_paris  2182 Feb 18 04:51 9ce46c802c5785b68d2f986efc3ccc76a83139
+-r--r--r--    1 frmarinh  2015_paris   228 Feb 18 04:41 dd4e39dc9e8f32980e0aa8de0c1b1ab30f5662
+-r--r--r--    1 frmarinh  2015_paris  2512 Feb 19 03:01 ddf18283e8d6d1e541813afcd431ff289856fb
+-r--r--r--    1 frmarinh  2015_paris   404 Feb 17 21:24 e574d05eed01f190f1ab31d5f2c4050b0eb314
+
+./.git/objects/12:
+total 27
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    23 Feb 19 04:16 25010e83a6e1baf1e8c2775674d9805bde617f
+-r--r--r--    1 frmarinh  2015_paris  2314 Feb 18 00:15 6cbacf7b28e334ddd485305f9bbd8745c3b2d4
+-r--r--r--    1 frmarinh  2015_paris  2287 Feb 19 03:01 709b2285d70fc7c464cc417f328c49e267494d
+
+./.git/objects/13:
+total 56
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   291 Feb 17 21:24 3ada50acd6d2b5abee1fa41d23aefb50e0965b
+-r--r--r--    1 frmarinh  2015_paris  1561 Feb 17 21:24 6d676f21cc6d87a843f91498c5e14e9cdf0b23
+-r--r--r--    1 frmarinh  2015_paris  1832 Feb 18 01:46 7883554775127e9672a7934e5cc341ae25b466
+-r--r--r--    1 frmarinh  2015_paris  2246 Feb 19 03:01 80141eef4f9893c2bb59f00b9061ffb6b6fcd8
+-r--r--r--    1 frmarinh  2015_paris  3626 Feb 18 05:01 b8a88b9a8bbfeb8c696cf52d224662cee80b5f
+-r--r--r--    1 frmarinh  2015_paris  2428 Feb 18 04:41 c396cd54bc6cd1f80ad8ed532532e9fdf4ca83
+-r--r--r--    1 frmarinh  2015_paris  2046 Feb 19 03:01 c50e409a5c781812661ee36994addf7aed1557
+-r--r--r--    1 frmarinh  2015_paris   403 Feb 18 04:31 fcbce246f47f583b6b4f262271695612e546d8
+-r--r--r--    1 frmarinh  2015_paris  3814 Feb 18 05:31 fd30e98a255da55138ef364853b4a339ab01a6
+
+./.git/objects/14:
+total 59
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   4056 Feb 19 04:16 41509b62223d1524ace5589c598901a5b43daf
+-r--r--r--    1 frmarinh  2015_paris   2131 Feb 17 21:24 94b160277f09a8d1b563292828628f455d1ff0
+-r--r--r--    1 frmarinh  2015_paris  14694 Feb 18 02:11 bf6792aa3285d111c6c436cd5e6eda33cd3e30
+-r--r--r--    1 frmarinh  2015_paris    173 Feb 17 21:24 d33ddddf3053f8b5c19e8510526045a778c566
+
+./.git/objects/15:
+total 53
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    638 Feb 17 21:24 1bab5ac437592e680d04de28c352a1bab7b40c
+-r--r--r--    1 frmarinh  2015_paris  14698 Feb 17 21:24 23e990334b6c18b33a9d34e45a9993e07e2357
+-r--r--r--    1 frmarinh  2015_paris   2683 Feb 18 04:51 92b6bf7e0e68a85f22cb72fbc39903776f2ed5
+
+./.git/objects/16:
+total 61
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   3164 Feb 18 01:56 3f730a912be6025233c0b08718644bee511c5e
+-r--r--r--    1 frmarinh  2015_paris   1360 Feb 17 21:24 718e1942b714627d0b270b8ace31d698a8a59f
+-r--r--r--    1 frmarinh  2015_paris  14671 Feb 17 21:24 b935084240ebb8390a751f32ccabc462058ad2
+-r--r--r--    1 frmarinh  2015_paris   2300 Feb 19 00:39 bfe03073ccf2eba1f46b53ce6e40f7cc2a9336
+-r--r--r--    1 frmarinh  2015_paris    504 Feb 18 01:56 f58886473f7f76864e78c02af4a4d8add12e70
+
+./.git/objects/17:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:31 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   406 Feb 18 05:41 019f357853585983c210dba55947c23443dd24
+-r--r--r--    1 frmarinh  2015_paris   119 Feb 17 21:24 3e59fe85eeee5b93062dd112e9a544e4cd077f
+-r--r--r--    1 frmarinh  2015_paris   513 Feb 17 21:24 5027e2197f0a906e1a79abe5e360581642de9d
+-r--r--r--    1 frmarinh  2015_paris   398 Feb 17 21:24 c722972bb24ef4a80032cddec0ebbe3ce96a3e
+-r--r--r--    1 frmarinh  2015_paris   438 Feb 18 04:31 d1951449c6bfa7ef1c54be9ae44df4b78c7b82
+
+./.git/objects/18:
+total 66
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   3627 Feb 19 00:39 181e1fc7c8d99e527281dad44512a4e3b50c69
+-r--r--r--    1 frmarinh  2015_paris  14687 Feb 17 21:24 1df8c1e638c7e896c9d3ee9eae90a9da650dd4
+-r--r--r--    1 frmarinh  2015_paris   2293 Feb 20 12:48 3a81b3acf47ad027bd6f14cd38260b56c8cd67
+-r--r--r--    1 frmarinh  2015_paris    482 Feb 17 21:24 5c52b43ab7ce8a1c6d6ed13090cc18f1cb8dca
+-r--r--r--    1 frmarinh  2015_paris   1922 Feb 17 21:24 653dbacb9e3ede859bb47f4d8f8eb17e07d2f9
+-r--r--r--    1 frmarinh  2015_paris    287 Feb 17 21:24 812e77fc897495917005f2365d61599027a659
+-r--r--r--    1 frmarinh  2015_paris    324 Feb 18 04:31 cdd27197d3f49b5ce3fa2506fa0be7a73fe330
+-r--r--r--    1 frmarinh  2015_paris    324 Feb 18 04:31 d76b04ec0744c23124ab37587f74954a57f169
+
+./.git/objects/19:
+total 25
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3794 Feb 17 21:24 2381e11e265909c176a95f80a2fded456f001e
+-r--r--r--    1 frmarinh  2015_paris   393 Feb 17 21:24 bed56a09ba97ae5303bfa6cafcefba0ddc32a7
+
+./.git/objects/1a:
+total 47
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2414 Feb 20 12:48 0c1feb71a981ee9db1b3859909144ef932c96f
+-r--r--r--    1 frmarinh  2015_paris  2209 Feb 17 21:24 2238f2542393529868faa0a19cddeb545ba627
+-r--r--r--    1 frmarinh  2015_paris  5805 Feb 17 21:24 85cc68608e4b12396dc8f155f40dd0bc18d123
+-r--r--r--    1 frmarinh  2015_paris  2918 Feb 18 01:36 cc6bedab8434371b062148e0b7fa5f57632ffb
+-r--r--r--    1 frmarinh  2015_paris  1170 Feb 17 21:24 ea2f3d27bb4dbc4ba08cacf92377cf8325f130
+
+./.git/objects/1b:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3819 Feb 18 01:16 610fee83355076a3971e0f6007c4ecd399adb2
+-r--r--r--    1 frmarinh  2015_paris  1658 Feb 18 01:46 b81fbadda2eff165951c6d55bfd53cf04c56fb
+
+./.git/objects/1c:
+total 45
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   291 Feb 17 21:24 4e2a80c07e16802af9e5e6d69b91665fa38425
+-r--r--r--    1 frmarinh  2015_paris  2649 Feb 18 05:01 59a9518f3cd82e79fac18df5eb0d764a0ff5a3
+-r--r--r--    1 frmarinh  2015_paris  2022 Feb 18 01:46 65aedd61d8b5e763cd4cdf7bef45d41801824b
+-r--r--r--    1 frmarinh  2015_paris  3793 Feb 17 21:24 71ebdb604d982dd297a589a6d0fb07ffcf0bf1
+-r--r--r--    1 frmarinh  2015_paris  3626 Feb 18 01:46 7d6f0ff23421d47a5bf3dbf35993870f6064c0
+-r--r--r--    1 frmarinh  2015_paris   350 Feb 17 21:24 c29c43575124c7577e3b1ede19c6698d5ca2ac
+-r--r--r--    1 frmarinh  2015_paris    23 Feb 18 02:21 d909e05d33f0f6bc4ea1caf19b5749b434ceb3
+
+./.git/objects/1d:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2023 Feb 18 01:56 5f9ba4c0d9314b42694073fa24fc63bfc6985e
+-r--r--r--    1 frmarinh  2015_paris  2022 Feb 18 04:41 89e8201f8e98b1416dc52244c2cd1dcf4b8224
+
+./.git/objects/1e:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2440 Feb 19 00:39 90e39f04e2310602c0780067df29067915abb0
+-r--r--r--    1 frmarinh  2015_paris  2422 Feb 18 05:21 c47f90ede11e8ff4d6e58e20f31ce3ff06326f
+-r--r--r--    1 frmarinh  2015_paris  2510 Feb 18 01:46 e5c01dcffc7b5a20e5c439489f10f9b266d262
+-r--r--r--    1 frmarinh  2015_paris   381 Feb 18 04:31 ead930fc052d488e8ca2c7df8c70e6c16ce3cc
+-r--r--r--    1 frmarinh  2015_paris   298 Feb 17 21:24 f7fc2edb4a71c960852b29dd5f04e9c14e4dd6
+
+./.git/objects/1f:
+total 27
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   796 Feb 18 01:26 19156a5c46394fd2c1b270d99151fb8c318881
+-r--r--r--    1 frmarinh  2015_paris  1622 Feb 18 01:36 6897e2a6fc8f950b20d41e5073a9981e7a8c4f
+-r--r--r--    1 frmarinh  2015_paris  2210 Feb 18 05:01 7d8ef7befa383155067fb4edb6a74d02dde06a
+
+./.git/objects/20:
+total 77
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   1172 Feb 18 00:15 69c4ed345839bcb3a704c4d3cc9896b693dec4
+-r--r--r--    1 frmarinh  2015_paris  14676 Feb 17 21:24 df197c2926a9bf86db540803d12529fbe65610
+-r--r--r--    1 frmarinh  2015_paris  14678 Feb 17 21:24 f3ecfde4d6a6826d367e8fc0f2e0e6e91c1654
+
+./.git/objects/21:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2429 Feb 18 05:21 6bbaeaaa1e0d6db8a1230a988b234d042b2f52
+-r--r--r--    1 frmarinh  2015_paris   392 Feb 20 12:48 6e431bab656c80abbeb11788fc3029827a19dd
+
+./.git/objects/22:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:06 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   615 Feb 18 01:46 39b560224f24a2c539c848cdad079591c644dc
+-r--r--r--    1 frmarinh  2015_paris   315 Feb 17 21:24 4e7b3492400e9c450aec96c59546fb64b7c5ae
+-r--r--r--    1 frmarinh  2015_paris  1168 Feb 18 02:06 827412cf0dc867895ab234b13f96afef0b9810
+-r--r--r--    1 frmarinh  2015_paris   530 Feb 17 21:24 8d30c7b0b8ab7656b8f0cfc14c5de99a062dff
+
+./.git/objects/23:
+total 34
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   458 Feb 18 04:31 09674b69ebf3ee99f72beecff46cc42e4d29b6
+-r--r--r--    1 frmarinh  2015_paris   292 Feb 17 21:24 3c64e3f62317a8ec0972d6cb3e435ede5b452e
+-r--r--r--    1 frmarinh  2015_paris  1892 Feb 17 21:24 403aea4be6ca998ba08db6461084ebdcb1a101
+-r--r--r--    1 frmarinh  2015_paris   383 Feb 17 21:24 4803e6bbe76148e11104139f6e9f57f5a0ddbd
+-r--r--r--    1 frmarinh  2015_paris   941 Feb 19 00:39 97545f3e226a277a125ae5ce7efc584d90c948
+-r--r--r--    1 frmarinh  2015_paris   491 Feb 18 01:26 fb0209591eb4523a6c0a6bda0c7e43b2625d2e
+-r--r--r--    1 frmarinh  2015_paris  3815 Feb 18 05:11 ff59c1b43696ad374154739e839af981655f4a
+
+./.git/objects/24:
+total 57
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   1162 Feb 17 21:24 a8399804638c7c5d4c21d8d9ab3fbe403e1c83
+-r--r--r--    1 frmarinh  2015_paris  14697 Feb 17 21:24 a9af4670ce2e45597332a01a6a7c088ea6975c
+-r--r--r--    1 frmarinh  2015_paris    171 Feb 17 21:24 c5b4385a45a54e359ef1d071c54f638915a2fa
+-r--r--r--    1 frmarinh  2015_paris    377 Feb 18 04:31 c632d109882bc0e389f8fc8de788806970297c
+-r--r--r--    1 frmarinh  2015_paris    917 Feb 17 21:24 c946d10bc32003d61b463db5c6d0f73de1db62
+-r--r--r--    1 frmarinh  2015_paris   2411 Feb 17 21:24 dc8b5b36fa5c7747299348ab040b8a164cd0f3
+
+./.git/objects/25:
+total 27
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2358 Feb 19 00:50 053e13e1648410abe414716ee8e936cbb6e7e9
+-r--r--r--    1 frmarinh  2015_paris   612 Feb 17 21:24 0545af24921a272b490209f97af94e332772d7
+-r--r--r--    1 frmarinh  2015_paris   118 Feb 17 21:24 6d4ba900be99b8756ecca4946435d19d4bce92
+-r--r--r--    1 frmarinh  2015_paris   280 Feb 17 21:24 7a62b3950e2eceebea60cb92addd86abf72adc
+-r--r--r--    1 frmarinh  2015_paris   697 Feb 18 04:51 c602b35f9675a0c6b574dd7849da0a2e5502eb
+
+./.git/objects/26:
+total 46
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   337 Feb 18 04:31 3f616da03101577d7ad3f4e7ceafce5f3b8e3f
+-r--r--r--    1 frmarinh  2015_paris  2683 Feb 18 04:41 834cb8f6dcac2d3988666f099938386afe3635
+-r--r--r--    1 frmarinh  2015_paris  4077 Feb 18 01:46 90d9fc3b683c7ff01fdffb26f7654b1ae5738c
+-r--r--r--    1 frmarinh  2015_paris  1923 Feb 17 21:24 a186db5fdd9251caed3d6e0e73ba93924e8d96
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 17 21:24 bf82f6e3e88bd8891eeba6319763135b0b95fc
+-r--r--r--    1 frmarinh  2015_paris  3861 Feb 17 21:24 dc81b398b93440f6d8953c1071e3fb866cb0fd
+-r--r--r--    1 frmarinh  2015_paris   670 Feb 18 04:31 f4e6fcb9f09e0bf3067e4828ecd0782f34af06
+
+./.git/objects/27:
+total 50
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  8499 Feb 17 21:24 060c1c7d599bbe450f65bc7f280eed46caa883
+-r--r--r--    1 frmarinh  2015_paris  2400 Feb 19 03:01 2ca560d15c9688f359c0b2734784c5ef25ed38
+-r--r--r--    1 frmarinh  2015_paris  1863 Feb 18 05:01 83167de0ead1c3a345eaf304d6beea5ebf64d9
+-r--r--r--    1 frmarinh  2015_paris   145 Feb 18 01:46 922fb1f4b9cebfe2e9f3f8591f4b29b2cf4a45
+-r--r--r--    1 frmarinh  2015_paris   277 Feb 17 21:24 ae22da382c0827af2d3434f79ced562984736c
+-r--r--r--    1 frmarinh  2015_paris   335 Feb 18 04:31 bb04327a088beb6380b2b29097d7b01ce209e0
+-r--r--r--    1 frmarinh  2015_paris  2286 Feb 19 04:16 ee4d6fb6373aa01f306ffb2e91ee468b143e0a
+
+./.git/objects/28:
+total 99
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:50 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   1170 Feb 17 21:24 0a265ce3935571aa0d764ea63cad8774fcd3a1
+-r--r--r--    1 frmarinh  2015_paris   3165 Feb 18 04:51 0d2e4cde38d8737974f00104c18c159c44ebd5
+-r--r--r--    1 frmarinh  2015_paris   2409 Feb 18 05:01 21f59c2925988c2701b20754b93ff055042663
+-r--r--r--    1 frmarinh  2015_paris   6488 Feb 17 21:24 343abd5b749b972e51a1404398261af705fac6
+-r--r--r--    1 frmarinh  2015_paris   2197 Feb 19 00:39 37acaa6c78a0d1dabccaf4d8db6ec2ce6d5769
+-r--r--r--    1 frmarinh  2015_paris    172 Feb 18 01:26 92cf23f3121387dbda2723e70c5db8a9febc1a
+-r--r--r--    1 frmarinh  2015_paris   8566 Feb 17 21:24 984cf495072b676e4c439b7db2d07ac5d9ab84
+-r--r--r--    1 frmarinh  2015_paris  14689 Feb 18 04:11 c3b3b48d29b601a54fbc8d8d4759112186fda3
+-r--r--r--    1 frmarinh  2015_paris     20 Feb 19 00:50 d0af969b32e69a389087d7a267a2ecc05f1350
+-r--r--r--    1 frmarinh  2015_paris   1016 Feb 17 21:24 f55c7c119e652055a245f89f5ab5b57c1ef259
+
+./.git/objects/29:
+total 78
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2401 Feb 18 04:51 44588a5b7ea73387d267cb35a661573b87518a
+-r--r--r--    1 frmarinh  2015_paris   2428 Feb 19 04:16 693a45aa6ba4256092d6c85b26442b3104d26b
+-r--r--r--    1 frmarinh  2015_paris   2732 Feb 17 21:24 8c830b0fbb21d87fc200b1ddcd304b15f94f2e
+-r--r--r--    1 frmarinh  2015_paris   2400 Feb 18 01:36 c19206bef23d922f0b705277e419e04f023e3e
+-r--r--r--    1 frmarinh  2015_paris   3627 Feb 18 04:51 c54b1d059b399d0cc42f17bae337965f143486
+-r--r--r--    1 frmarinh  2015_paris   1551 Feb 18 01:26 ecf0a81b183aea7054659fffb26cbc4ce869a4
+-r--r--r--    1 frmarinh  2015_paris  14690 Feb 17 21:24 f8cb869ffd454a93ebe05bd723992d9a9d1b50
+
+./.git/objects/2a:
+total 45
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2032 Feb 18 04:31 03362870b93febc94fb13455c558e93f3103a5
+-r--r--r--    1 frmarinh  2015_paris  2422 Feb 19 03:01 0c462808d5b2f59a59248ad7d79992efde47ce
+-r--r--r--    1 frmarinh  2015_paris   119 Feb 17 21:24 573716b9324c31783179918d4725767d5aee1e
+-r--r--r--    1 frmarinh  2015_paris  1698 Feb 18 05:11 7f3f9ba641bd02b171ac0a98c06c0dc8a6f34c
+-r--r--r--    1 frmarinh  2015_paris  2823 Feb 17 21:24 89af9042c076c41503b6ddec69a6a037220d47
+-r--r--r--    1 frmarinh  2015_paris  2044 Feb 18 01:36 968b2e80428c25f6b0faac9c70efb9efdfea4f
+-r--r--r--    1 frmarinh  2015_paris  2286 Feb 18 01:56 c5d8523b1fe096da42fce76b2a2add02055ad9
+
+./.git/objects/2b:
+total 58
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   1857 Feb 17 21:24 30ca9197c93e17b9bcc7068deaabf266d05332
+-r--r--r--    1 frmarinh  2015_paris   2294 Feb 19 03:01 885f9374276dd6899f838ac34f1cc8f7a55a2c
+-r--r--r--    1 frmarinh  2015_paris   1740 Feb 17 21:24 bc843735d1cb562d8199a234e1ddc83d009722
+-r--r--r--    1 frmarinh  2015_paris  14680 Feb 17 21:24 c622bb2cd300ff8073722901a005f2a95ad34d
+
+./.git/objects/2c:
+total 77
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14705 Feb 18 01:36 03ba3a322055b7cf57e3bc8e570d997780da8d
+-r--r--r--    1 frmarinh  2015_paris   2363 Feb 19 00:39 168eaf7ee2c6d16f2d0ef6e129b9ec7eab6e1c
+-r--r--r--    1 frmarinh  2015_paris   2294 Feb 19 04:16 2618c9f94b1b874aa448e6184d70187136497c
+-r--r--r--    1 frmarinh  2015_paris    290 Feb 17 21:24 28105488d7ba98c7bacccc92778565814d2c1a
+-r--r--r--    1 frmarinh  2015_paris    427 Feb 18 04:31 372839a251cfc0c007b6bf4520790b968748c1
+-r--r--r--    1 frmarinh  2015_paris   2134 Feb 19 00:39 5ac2f42484f40fad1b4fefcbb872bbc4e92c4b
+-r--r--r--    1 frmarinh  2015_paris   2357 Feb 17 21:24 5b59491e4038fc4485b9da00668ec32b0dccb4
+-r--r--r--    1 frmarinh  2015_paris   2919 Feb 20 12:48 6f4b691cb0f3569bf1a92a61c0cc4d0a1de9f8
+-r--r--r--    1 frmarinh  2015_paris   2046 Feb 18 01:56 fee940bce8c170c2935206348a074ee145a4b7
+
+./.git/objects/2d:
+total 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2811 Feb 19 00:39 3818359b13f5af2d50b9e93ff841800c514c56
+-r--r--r--    1 frmarinh  2015_paris  2357 Feb 20 12:48 57e94a02017b9364e9bd2c13dafc2847070b07
+-r--r--r--    1 frmarinh  2015_paris  1923 Feb 17 21:24 c2f48b255c9182313dfc3ce152bab851316e17
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 17 21:24 eae5c6309ae8b8df343bb1a69a3aaef980186c
+
+./.git/objects/2e:
+total 57
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   694 Feb 17 21:24 0020983448ff15f6f5bf20501c032d2ed8bdea
+-r--r--r--    1 frmarinh  2015_paris  4056 Feb 20 12:48 18ed6f3e5ecf037a0d7ea9d7b93cb4d6fd3aeb
+-r--r--r--    1 frmarinh  2015_paris  8491 Feb 17 21:24 6735a46aa21be01d58dffdab7c1ee411b4fe8e
+-r--r--r--    1 frmarinh  2015_paris  3172 Feb 18 05:01 cc4f9c72c95fd99d51e6bad34bba1d326d25ae
+-r--r--r--    1 frmarinh  2015_paris  2208 Feb 18 00:15 f23b143ea61aa62dd6735ddf92c2d471d2fbb7
+-r--r--r--    1 frmarinh  2015_paris   597 Feb 17 21:24 f65fa51167c906716c002f3597911680c8f2b6
+
+./.git/objects/2f:
+total 67
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 02:11 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   3171 Feb 17 21:24 15780ad0e77d5f7781ced4849ee758ca8e3f67
+-r--r--r--    1 frmarinh  2015_paris    524 Feb 18 04:31 6fc0fd8c4a45b0835063c2c7263aa05b5bf1a0
+-r--r--r--    1 frmarinh  2015_paris  19183 Feb 18 02:11 a113618164c7d0f9f5745903df688756bd8400
+-r--r--r--    1 frmarinh  2015_paris   1742 Feb 17 21:24 f7a9d073df34b01bab4109ece1773f41b4d77f
+
+./.git/objects/30:
+total 59
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 02:06 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2021 Feb 18 02:06 34c07930d2dc99facd6b1b1963a85491b528a3
+-r--r--r--    1 frmarinh  2015_paris   3795 Feb 17 21:24 397eb5966b9d3db4808dcb63e7108a63c7dfea
+-r--r--r--    1 frmarinh  2015_paris    357 Feb 18 04:31 44c23766f67dabd16ed58d29b9640f95f70dd8
+-r--r--r--    1 frmarinh  2015_paris    293 Feb 17 21:24 b5e3ae18aa5c54e5ce8c76cc0a4fdbf560c80e
+-r--r--r--    1 frmarinh  2015_paris  14673 Feb 18 01:46 fc6677b0a8788f6672c8822c257a435f3170c1
+
+./.git/objects/31:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:36 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  7487 Feb 17 21:24 24964a7dae9e677ca6bd6f756a26de8a23a1ac
+-r--r--r--    1 frmarinh  2015_paris  2028 Feb 18 01:36 2a9fa6486f7c94f9a73cc7b260838620b5d753
+-r--r--r--    1 frmarinh  2015_paris    31 Feb 17 21:24 470c0d5bafd3cd541f271c40b0355a52afbf52
+
+./.git/objects/32:
+total 48
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2811 Feb 18 01:56 03db6546d5b70de491821633480cf1b5523ca7
+-r--r--r--    1 frmarinh  2015_paris  2421 Feb 19 04:16 3e8e549eb66f22655b4b24b1c5f6a00e497269
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 18 01:36 82da1cb8db0e2c4c0d0f5ac6eda92271fc6aca
+-r--r--r--    1 frmarinh  2015_paris  2939 Feb 18 05:01 88b8b5b3476583edb9fb26d122d167842f15b0
+-r--r--r--    1 frmarinh  2015_paris  3172 Feb 18 04:51 922f3804f5aef4146940b4d5a2e45521efec70
+-r--r--r--    1 frmarinh  2015_paris  3545 Feb 17 21:24 a8f5b4ae1902a20ca9a4926e5d8cb9203cf8c8
+
+./.git/objects/33:
+total 20
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1741 Feb 17 21:24 5b88db95f6d5c556cbace6ec52502c63631503
+
+./.git/objects/34:
+total 23
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 17 21:24 17ace69a4942dc9aea039c0a3eb27134b67bc2
+-r--r--r--    1 frmarinh  2015_paris  2919 Feb 18 04:41 b082d75a032edd8449c16a223d9908618adda5
+
+./.git/objects/35:
+total 34
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   646 Feb 19 05:09 32d57addddf8c0b56e38aa0bc359bba3f008d5
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 18 04:51 34c033e0ac06e0d6d65f0ae5f97bde7ad4abd0
+-r--r--r--    1 frmarinh  2015_paris  2838 Feb 17 21:24 b3e77c148558e50c9c57af728b51a8d613df97
+-r--r--r--    1 frmarinh  2015_paris  4056 Feb 18 02:06 d92a760706240c521427d96d51dd7eace0c18c
+-r--r--r--    1 frmarinh  2015_paris   343 Feb 18 04:31 ecb78d1eaebeda3946be983118de2cc8c2d523
+
+./.git/objects/36:
+total 31
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2422 Feb 18 04:51 2aab6efdf5d3df0e46c9ec86a09ac5d5cc3909
+-r--r--r--    1 frmarinh  2015_paris   686 Feb 19 00:39 37098f51731523f4e2916d812ea66b7ab79aa1
+-r--r--r--    1 frmarinh  2015_paris  1361 Feb 17 21:24 6d8d6e0bf316a6a5ba4c02cfb9b16f7ecc2a1f
+-r--r--r--    1 frmarinh  2015_paris  2207 Feb 17 21:24 ef2507550039fc0cdaa66ea40fafce12dd500a
+
+./.git/objects/37:
+total 17
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   327 Feb 17 21:24 21d819c5f1ce237229dad8fd889891b37c8dc2
+
+./.git/objects/38:
+total 37
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   292 Feb 17 21:24 7402044718d81bc9797d0746f124fe4ef41f40
+-r--r--r--    1 frmarinh  2015_paris  3795 Feb 17 21:24 a2386d10faad54ae97249a8e7d4f2a55d018da
+-r--r--r--    1 frmarinh  2015_paris  2357 Feb 19 04:16 caeebbd667833f4130a18edf76bebd68890947
+-r--r--r--    1 frmarinh  2015_paris  3170 Feb 18 01:26 e37b68bcaacdc57080b87cc9c255cce5cb24fe
+
+./.git/objects/39:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1715 Feb 19 00:39 42d6394cb61931293aafc2930b8ec52a93aadf
+-r--r--r--    1 frmarinh  2015_paris   467 Feb 17 21:24 5a3f5fd71dd943a23c47438e06793a8db97a8b
+-r--r--r--    1 frmarinh  2015_paris   130 Feb 17 21:24 aad7dbc13c5489f216957baa24d3b613b620ea
+
+./.git/objects/3a:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2422 Feb 18 04:11 0a692151838fbb9f34620df66b4a3b436e252b
+-r--r--r--    1 frmarinh  2015_paris   682 Feb 18 04:41 3fe9b550004461c70c1a8667edddb47f03d814
+-r--r--r--    1 frmarinh  2015_paris  2409 Feb 20 12:48 c4df24031bd6e3e38e24a10beb29ee1ed9945d
+
+./.git/objects/3b:
+total 39
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3794 Feb 17 21:24 1601510ad3df4a26b06d662ddbd1d103e73889
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 17 21:24 49f9e7fff2d456095b93c9d058cb897ee6fc26
+-r--r--r--    1 frmarinh  2015_paris  3795 Feb 17 21:24 4d2b797f14874165e1845232f0559404f058e0
+-r--r--r--    1 frmarinh  2015_paris  2831 Feb 18 00:15 d0fd06750d621f4ed29140fb08bca0234af233
+
+./.git/objects/3c:
+total 21
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2512 Feb 20 12:48 c4e4d8f6db0b9dfc6b40d2695dce77abe123dc
+
+./.git/objects/3d:
+total 77
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   3061 Feb 17 21:24 0a979c1447ad272e8d014d062e2170e84068b2
+-r--r--r--    1 frmarinh  2015_paris   2317 Feb 17 21:24 15aaf0d69d05139b99ee7797a7619b637fa7a5
+-r--r--r--    1 frmarinh  2015_paris   2268 Feb 19 03:01 6b808e3daa8a1ac544dc04f7d545fd523c687f
+-r--r--r--    1 frmarinh  2015_paris    343 Feb 17 21:24 85b4b85f1d145f80b78f950e4de6374ee9d6fa
+-r--r--r--    1 frmarinh  2015_paris   3815 Feb 18 05:21 86bc7f6e336cdac7e497dc7e3b5ad2d5871dfc
+-r--r--r--    1 frmarinh  2015_paris   2269 Feb 19 04:16 a8e1543e53d0012d026361c073bbb80bee1edd
+-r--r--r--    1 frmarinh  2015_paris    343 Feb 18 04:31 ed2ee5f593445b7d5207930865dae8df1e44f0
+-r--r--r--    1 frmarinh  2015_paris  14718 Feb 18 05:01 f0a7480f1aac2cf13909c30917fdba9d7f4830
+-r--r--r--    1 frmarinh  2015_paris    330 Feb 17 21:24 f83143a4c0e3cf01c37398f2493c363197a5e9
+
+./.git/objects/3e:
+total 67
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris     53 Feb 17 21:24 1558579a0e8205af180d2cb262b2155e17046e
+-r--r--r--    1 frmarinh  2015_paris   3793 Feb 17 21:24 60e993851d69fb1f4ab06c31cf47db8e1b3728
+-r--r--r--    1 frmarinh  2015_paris  14685 Feb 17 21:24 62ea34947bd9d3802548145b5944043b218122
+-r--r--r--    1 frmarinh  2015_paris    358 Feb 18 04:41 9fb207f85ef972e1cfa114b71960015efd4aed
+-r--r--r--    1 frmarinh  2015_paris    525 Feb 20 12:48 ad35d1c6e50858b354c93c2a18dd9efe81fd31
+-r--r--r--    1 frmarinh  2015_paris    974 Feb 17 21:24 bc8f837e58188981888408b7b67585dbbd897d
+-r--r--r--    1 frmarinh  2015_paris   2918 Feb 18 01:26 c0e47e3f0e2ed5cd13ee572cd493a03b28b7f9
+-r--r--r--    1 frmarinh  2015_paris    895 Feb 18 01:46 d43423dda61ac95c19723bef3f323ad48c8481
+
+./.git/objects/3f:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:26 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   388 Feb 17 21:24 98d9a0d57dc33d0036fec46846e834bbe23d94
+-r--r--r--    1 frmarinh  2015_paris  2511 Feb 18 01:26 98e84002e539899d8f0aa6079a9f78339fa829
+-r--r--r--    1 frmarinh  2015_paris  1020 Feb 17 21:24 baf3f84d1b66bd4324b14bca55d9b7721c1db8
+-r--r--r--    1 frmarinh  2015_paris  1928 Feb 17 21:24 eff4468c8fd8b989f88e3e9e8f8068218e6f6a
+
+./.git/objects/40:
+total 38
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   521 Feb 18 04:31 31b70da1754557bc3b4384aee0a738375225a0
+-r--r--r--    1 frmarinh  2015_paris   170 Feb 20 12:48 8bb75bdba91d2106a4d0c42ced101919874c63
+-r--r--r--    1 frmarinh  2015_paris  2114 Feb 17 21:24 b126adb853d614805cce47a746dd4b9b364731
+-r--r--r--    1 frmarinh  2015_paris  7025 Feb 17 21:24 c66808072b531304c312dd3d48eba1701190b5
+
+./.git/objects/41:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2489 Feb 18 01:56 07e7d429bdef484af0ffe0d34476bbb786e3cd
+-r--r--r--    1 frmarinh  2015_paris  2428 Feb 18 04:51 7f463fca3f7bfb63d7553213ab27ca4267c0ce
+
+./.git/objects/42:
+total 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   549 Feb 17 21:24 5960e4fca56fcc0a3f49e93afaa91daef4a1e7
+-r--r--r--    1 frmarinh  2015_paris   728 Feb 18 00:15 7fb9555a41ba4a6d6c732da22cce18707e8f30
+-r--r--r--    1 frmarinh  2015_paris  1920 Feb 18 00:15 905d6cd33e04943ce6ebb25a4af2024e155ad9
+-r--r--r--    1 frmarinh  2015_paris  3796 Feb 17 21:24 a76bdd8065d54a7cd7e9827ba6b6f7ecadf304
+
+./.git/objects/43:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2440 Feb 18 05:01 54be6fb93f9dab6de4025724b1243887ca7cd7
+-r--r--r--    1 frmarinh  2015_paris   173 Feb 19 04:16 cf6efc50e387d59c2632c6a7cc0cc3400a199e
+-r--r--r--    1 frmarinh  2015_paris  3156 Feb 18 05:01 ec9bd1a505f702f98690a45439e1e0ea233ef7
+
+./.git/objects/44:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:43 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3440 Feb 17 21:24 226d568954f2b92b6859c9b2d7e2a4f317ea4f
+-r--r--r--    1 frmarinh  2015_paris   503 Feb 18 05:43 971227e5f6f67b1d6422e18b949fffe4e6edbd
+
+./.git/objects/45:
+total 48
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2029 Feb 18 01:56 06402103e476fc9f13ff1c88ec1e81394c9400
+-r--r--r--    1 frmarinh  2015_paris    495 Feb 18 04:51 34a5aeedd3d459c447742126a68bd5fdbf7eb3
+-r--r--r--    1 frmarinh  2015_paris  12277 Feb 17 21:24 78a1c00e34895edbfe0b3548e858851da307bd
+-r--r--r--    1 frmarinh  2015_paris    391 Feb 18 04:31 a184b93d9f85e775b44b65d259440ecc4ba44b
+-r--r--r--    1 frmarinh  2015_paris    654 Feb 18 01:56 aa9e8ecd4f3fb66f8a487436814bf67576b9e3
+
+./.git/objects/46:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  4343 Feb 20 12:48 637ebb9412658527df3eadecbfdcfca692a2a7
+-r--r--r--    1 frmarinh  2015_paris   678 Feb 19 04:16 bb0eead5b04d3bd9349110c16149a6d5c6b7b0
+-r--r--r--    1 frmarinh  2015_paris  2483 Feb 19 05:09 d4884205cfa2c6bc527468e2c3971a026bea9b
+-r--r--r--    1 frmarinh  2015_paris  2022 Feb 18 01:36 ffdc07feef02ed1ad01c8e35f8171c4d9a3d4f
+
+./.git/objects/47:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2645 Feb 17 21:24 4bf4a934e509efb0354425bdc67d1553d2a79a
+-r--r--r--    1 frmarinh  2015_paris   811 Feb 18 01:46 77081ea229f416221db8a6c3e59db1b68e0b1b
+-r--r--r--    1 frmarinh  2015_paris  2298 Feb 18 01:36 e4ee3d0f8657ab7f99a1361ba1ddca8873f5a6
+
+./.git/objects/48:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 17 21:24 2ae6df2c9a4b1dcfe75ca99384b09800f01032
+-r--r--r--    1 frmarinh  2015_paris   391 Feb 18 04:31 b2ab63e65012e422da65930e58dc5d4237fc2d
+-r--r--r--    1 frmarinh  2015_paris  3793 Feb 17 21:24 c40c2d6ea0aa7b6798de9f66542abe59688218
+
+./.git/objects/49:
+total 49
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3170 Feb 18 01:36 295e827311ed6a0672348a9038e86cf7fbb7e5
+-r--r--r--    1 frmarinh  2015_paris  3311 Feb 18 02:11 54c6b7e3ab268952df6c05f50fa70ee6146d18
+-r--r--r--    1 frmarinh  2015_paris   366 Feb 18 04:31 55d9a9fe1b681c8163f2086caeea3be9841073
+-r--r--r--    1 frmarinh  2015_paris   689 Feb 18 01:26 694b76d4d69688155c3fbce42ff1a1aa81bb5f
+-r--r--r--    1 frmarinh  2015_paris  2649 Feb 19 03:01 6f714d623727301c512a7d93bae7d9aec92e69
+-r--r--r--    1 frmarinh  2015_paris  2246 Feb 18 05:01 82c77cc8a133835ade0b2ea27bee9870798781
+-r--r--r--    1 frmarinh  2015_paris  2215 Feb 18 05:41 f60e109db78f57a07b63e2efd5af733ae6d054
+
+./.git/objects/4a:
+total 87
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 05:21 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   3546 Feb 18 01:36 01e58e9a0f86fb132135bd302e37182675d068
+-r--r--r--    1 frmarinh  2015_paris   2223 Feb 17 21:24 07be19e221c2af71e0e20719a2b43528b9b17c
+-r--r--r--    1 frmarinh  2015_paris    362 Feb 17 21:24 1ccc8f79c91cefcef2f3398fa8c0bf58f6e5b9
+-r--r--r--    1 frmarinh  2015_paris   2409 Feb 18 04:41 2e5dca224d038fb9d19376780c3b6ce012b229
+-r--r--r--    1 frmarinh  2015_paris    425 Feb 18 04:41 5cb0b9951291a68ae95e93198f97eba9659587
+-r--r--r--    1 frmarinh  2015_paris    392 Feb 17 21:24 6ceef999bc8af3d9ed6387f954c0f0e2335dae
+-r--r--r--    1 frmarinh  2015_paris  20156 Feb 18 05:21 a337889eb99cc9391663178cb22be76477e7fe
+-r--r--r--    1 frmarinh  2015_paris   2811 Feb 18 04:41 d0f139c86c1fe6c8956b303e5a3c6af8df9587
+-r--r--r--    1 frmarinh  2015_paris   2300 Feb 18 04:41 ed780eaf5353fc11f56ad1c91abe6825da19a3
+
+./.git/objects/4b:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   773 Feb 18 01:26 2377fb092a273cb57cf3452b86bbff3b55b89f
+-r--r--r--    1 frmarinh  2015_paris   478 Feb 18 01:26 25f607adc74d2fda5195eef154952da464aa1c
+-r--r--r--    1 frmarinh  2015_paris   608 Feb 17 21:24 27905c09bd593a7a89cd60fe88bcfca934afdd
+-r--r--r--    1 frmarinh  2015_paris  2136 Feb 18 01:16 a9e40cba820cab47e4360a890f5e276b010bcd
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 19 00:50 de1097ed1bad453ef9e4f56c8a9fddf0a11c1d
+-r--r--r--    1 frmarinh  2015_paris  2213 Feb 18 05:43 e0631fb72ecce541dcfe96ec27a696a0341f2e
+-r--r--r--    1 frmarinh  2015_paris   173 Feb 18 02:21 ffc2a28d1e98a1a573fb0f78e1a5cc5fbb8bd2
+
+./.git/objects/4c:
+total 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2141 Feb 18 04:41 038190bb753c3f6387534638af0a390cbf4fe8
+-r--r--r--    1 frmarinh  2015_paris  1925 Feb 18 02:06 1ee927e51c9086b351739533e699660f185fd4
+-r--r--r--    1 frmarinh  2015_paris  1200 Feb 17 21:24 9f3dc3c0be0e93a7dfc043480de379f05174c3
+-r--r--r--    1 frmarinh  2015_paris  1505 Feb 18 01:26 bb1e2d1a27043af8e5b284db02aaa17a9d786b
+-r--r--r--    1 frmarinh  2015_paris   169 Feb 17 21:24 d42bae59eb6233004346c961b806038d701d0c
+
+./.git/objects/4d:
+total 70
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 05:09 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2045 Feb 18 01:46 2d7408f9ec899b87e5450789eb31173cef8ba1
+-r--r--r--    1 frmarinh  2015_paris   3814 Feb 19 05:09 4aa4485aef3618046993ff29878557c9f68dc6
+-r--r--r--    1 frmarinh  2015_paris   2317 Feb 17 21:24 8b670d90beb6fd3aae5b17c1fe9cd54488b517
+-r--r--r--    1 frmarinh  2015_paris   2918 Feb 18 01:46 afd187aa88522e6c1562391c857d1bc0e919bb
+-r--r--r--    1 frmarinh  2015_paris  14683 Feb 17 21:24 cbc8541af6e6d5d9970d0bd795156298c0e513
+-r--r--r--    1 frmarinh  2015_paris    522 Feb 17 21:24 f8c72255aca62128ae2a5d525cd26adf23b7d4
+
+./.git/objects/4e:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 17 21:24 675a82be4c3dd88ed91bd582f6bc345cc6c78b
+-r--r--r--    1 frmarinh  2015_paris  2310 Feb 18 00:15 7816c7d33747401389ae2c035373d8a9c0b88f
+-r--r--r--    1 frmarinh  2015_paris   525 Feb 17 21:24 c808ba1f48d32e1870214613c526caddff2296
+
+./.git/objects/4f:
+total 20
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   119 Feb 17 21:24 49891b1b6472971a375c5e64c3fcdc4581120b
+-r--r--r--    1 frmarinh  2015_paris   573 Feb 18 00:15 5b535af4995c68cfa0a52b69ab0d133e735ea2
+-r--r--r--    1 frmarinh  2015_paris   298 Feb 17 21:24 acaff6733877363e9294f0ee4db89097f64dc7
+
+./.git/objects/50:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2401 Feb 20 12:48 03b2b43ea5a446745c0a4d620ea37205517602
+-r--r--r--    1 frmarinh  2015_paris  3456 Feb 18 00:15 4c2fc63ad1351a3522ae8c2fb15abdebc4dbc8
+-r--r--r--    1 frmarinh  2015_paris  2275 Feb 17 21:24 8d46d2626cd2e6ec0c824a13229ae000f692a8
+
+./.git/objects/51:
+total 41
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2440 Feb 18 04:51 4813646812d58d6c289c734ae89127319b28d2
+-r--r--r--    1 frmarinh  2015_paris  3807 Feb 20 12:48 67f6806862a5f8a36364c154c30bad087b35b6
+-r--r--r--    1 frmarinh  2015_paris   728 Feb 17 21:24 828839df5ac3c23adb751494b203efd3d847d0
+-r--r--r--    1 frmarinh  2015_paris  2335 Feb 18 05:11 85bd052298ed1bd4ee4706f1ec3140c8ef9917
+-r--r--r--    1 frmarinh  2015_paris  2293 Feb 18 01:56 89fbfbebbc3edc9102105c042586ee50fa2730
+
+./.git/objects/52:
+total 18
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:11 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 18 02:11 03903421f7c2c8afb588bdb15ad0a6bc982e0d
+-r--r--r--    1 frmarinh  2015_paris   314 Feb 17 21:24 f0904e91aaaa6d5073a7b9638b4d8d89166ebf
+
+./.git/objects/53:
+total 37
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2684 Feb 19 04:16 0bd2fa3f7c7aa9681b71c7fb623ffb0a2b7493
+-r--r--r--    1 frmarinh  2015_paris  2245 Feb 20 12:48 2cfae46a21550896021093454db0fa7b74058a
+-r--r--r--    1 frmarinh  2015_paris  3456 Feb 17 21:24 3cf711b3648a94be60d916de8352ffe5fd649b
+-r--r--r--    1 frmarinh  2015_paris  1084 Feb 17 21:24 89d8bad00182d84b43324c3e20a69eac0817ea
+
+./.git/objects/54:
+total 98
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   3794 Feb 17 21:24 01f8d2e83b2d696ddc9d6633fdf27199920973
+-r--r--r--    1 frmarinh  2015_paris  19725 Feb 18 04:51 1f91b1c941cc044eac451e604ba46989581b74
+-r--r--r--    1 frmarinh  2015_paris    294 Feb 17 21:24 a8fe6998da3acd86a454e7e4b6015b5787714a
+-r--r--r--    1 frmarinh  2015_paris  14673 Feb 17 21:24 c254056fde7d7426ac64730eb048ec21afee9e
+-r--r--r--    1 frmarinh  2015_paris   2317 Feb 17 21:24 eafa2d19fdf76bc57fb81f3b1b05d0597e1f3a
+
+./.git/objects/55:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3163 Feb 18 01:46 33ada8e682b04a05285f51a4e7f77bfd1102a8
+-r--r--r--    1 frmarinh  2015_paris   119 Feb 17 21:24 3fc28d9aaaf200d0a8ebcfeb20ac4a1b8be42f
+
+./.git/objects/56:
+total 31
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:56 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   332 Feb 17 21:24 1fc57f275d34b8e0ea030c2b5ab5847b51332b
+-r--r--r--    1 frmarinh  2015_paris  4078 Feb 18 01:56 8f52875e535c33710ac5ae70183717417f3f76
+-r--r--r--    1 frmarinh  2015_paris  2683 Feb 18 01:56 af24abbf1cdf73952416798e1dac6baa967842
+
+./.git/objects/57:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   425 Feb 17 21:24 3fe20145b39ebef12de88a49f2bf4cee6463ab
+-r--r--r--    1 frmarinh  2015_paris   361 Feb 18 04:31 4625f9c6a4142899aa06ea6c73bfe7b7fd53c4
+-r--r--r--    1 frmarinh  2015_paris   574 Feb 17 21:24 a2b29d3bd90518ecbca0f2cb6c2169e95d0896
+-r--r--r--    1 frmarinh  2015_paris  2428 Feb 20 12:48 c05205f2322a024c27ccfbc0bc4dbc067ec7b4
+-r--r--r--    1 frmarinh  2015_paris  2334 Feb 19 00:39 cb2bbb4dc5f055bb812a3b9cfe06f185073f82
+-r--r--r--    1 frmarinh  2015_paris  2561 Feb 17 21:24 f608b8ca7c361647a52197eff7e6f0172cd1ea
+
+./.git/objects/58:
+total 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   445 Feb 17 21:24 0bf0ec3dbf8f676656602a922839c05423a784
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 18 05:11 36f11d2ff74e64aec395335b7090681425441a
+-r--r--r--    1 frmarinh  2015_paris  3634 Feb 18 04:31 75cdf51b288baac2eaff776caa56ff06428b3e
+-r--r--r--    1 frmarinh  2015_paris  2836 Feb 17 21:24 c127be8fd73f0c725cf96be1dca84c82170d42
+
+./.git/objects/59:
+total 19
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   344 Feb 18 01:16 d25b3dc57241583657d1e32625fb863e05ce2f
+-r--r--r--    1 frmarinh  2015_paris   437 Feb 18 04:31 d64ee85698d38316a76c3fa429bc76ece2b538
+-r--r--r--    1 frmarinh  2015_paris   372 Feb 17 21:24 f900f1435d1e7961dbbcf9783ce3b5f04dd6cd
+
+./.git/objects/5a:
+total 37
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1564 Feb 17 21:24 24ae70ebd822a77c0503a5f22e6e07296589f8
+-r--r--r--    1 frmarinh  2015_paris  3795 Feb 17 21:24 b57fa194533ec018838873195f79ab909d28b0
+-r--r--r--    1 frmarinh  2015_paris  3814 Feb 18 04:41 bb16a9d1510052e54244aaadf7a7aa77fceb23
+-r--r--r--    1 frmarinh  2015_paris   471 Feb 17 21:24 ceac23fdbf418edb553a7007675da7e4a5afaa
+
+./.git/objects/5b:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   145 Feb 18 05:01 1c9f93a439255d28c7483257f007eb449191e0
+-r--r--r--    1 frmarinh  2015_paris  2411 Feb 17 21:24 2df1da1f630d44a70b702d8ee0fabeae677832
+-r--r--r--    1 frmarinh  2015_paris   451 Feb 18 04:31 c48f77b8b099dd1f0d8b5d9cf8e9e362340884
+-r--r--r--    1 frmarinh  2015_paris  4056 Feb 18 05:01 c5290bd79696b7d209b03e42113e29027c2e89
+-r--r--r--    1 frmarinh  2015_paris   749 Feb 17 21:24 cc72cfe96722a6d7bed983197bee207e424fba
+
+./.git/objects/5c:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 17 21:24 0a01b318a7e73580f00d772f062c18fbba37fa
+-r--r--r--    1 frmarinh  2015_paris  2357 Feb 18 01:36 24345e4391ca822a974589bc23e00949f8e15f
+-r--r--r--    1 frmarinh  2015_paris  4056 Feb 18 04:51 39dc1f9be435492067a504ef221b5d52869ab1
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 20 12:48 b811612d60731947dbd48448c0de59802914e8
+-r--r--r--    1 frmarinh  2015_paris  2401 Feb 18 01:56 c9255e120de4942ec2c38e756ebb97ed448448
+
+./.git/objects/5d:
+total 73
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    371 Feb 18 04:31 0cff54de9938d8d344e663c9739d85e88eb9f3
+-r--r--r--    1 frmarinh  2015_paris   3626 Feb 18 01:36 556465a82c24f1799c8f4f69ec51224610f24e
+-r--r--r--    1 frmarinh  2015_paris   3815 Feb 19 03:01 639d90e51b973168cc19252b8cc2ddaaabadd3
+-r--r--r--    1 frmarinh  2015_paris   2651 Feb 19 04:16 8bc32007e6aedb49c29d20d1636d486c1c82ff
+-r--r--r--    1 frmarinh  2015_paris  14700 Feb 18 04:51 a9a8e3875e994127cb0392064781b483f3e0b2
+-r--r--r--    1 frmarinh  2015_paris   2197 Feb 18 05:01 f1f2810ea16378d2d36bdddc866ac5fed330af
+
+./.git/objects/5e:
+total 30
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2287 Feb 18 01:26 aae4285f11ee5d608c75bf6550f692ec9d7582
+-r--r--r--    1 frmarinh  2015_paris   606 Feb 17 21:24 abcaba07a00d54e11a857d9e80ae1f21e32c8a
+-r--r--r--    1 frmarinh  2015_paris  3164 Feb 18 04:41 f5a475c11027b9bbd4f8a70373a0deffc9b154
+
+./.git/objects/5f:
+total 43
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2287 Feb 20 12:48 1cdf57b93b0e66b5bd122cbe03f36678bbb526
+-r--r--r--    1 frmarinh  2015_paris  1930 Feb 18 01:56 5e031d60f1e2a7219b5d11cdf8e3c487a3918e
+-r--r--r--    1 frmarinh  2015_paris  1143 Feb 17 21:24 7d7d97a964d53c866b3975e51b37310c884373
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 18 04:51 a468caa4e7efd99eade9e37723120d2407199f
+-r--r--r--    1 frmarinh  2015_paris  3166 Feb 19 00:39 d3a8c06f3b871b98a7f9ad31b9de5012b9e228
+-r--r--r--    1 frmarinh  2015_paris   145 Feb 18 01:26 db4673ac47b3ff77fa16bee506d94d56bdecbf
+-r--r--r--    1 frmarinh  2015_paris  2837 Feb 17 21:24 f952ce67c4ea2c93301de06a08a2c43ad8e597
+
+./.git/objects/60:
+total 74
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2542 Feb 17 21:24 2fa0239159747698eeaf94ba9360d494d778ac
+-r--r--r--    1 frmarinh  2015_paris   2649 Feb 18 01:56 4772bcba281a71cc70d30efab1eec74ffb3066
+-r--r--r--    1 frmarinh  2015_paris   2142 Feb 19 04:16 5be99c65ea188f7fc34bd8ed5811c66018c5a9
+-r--r--r--    1 frmarinh  2015_paris    322 Feb 17 21:24 c545f49a4242ac8ab78866d9e1f96f2a2f3070
+-r--r--r--    1 frmarinh  2015_paris  14683 Feb 17 21:24 ce9e1ea804472e9ea17766600c72fb3b0c1d00
+-r--r--r--    1 frmarinh  2015_paris    551 Feb 18 04:31 dddb442e6958d67371834c7888b61b16a81fc7
+-r--r--r--    1 frmarinh  2015_paris   2244 Feb 17 21:24 e04c1567f0ae30e01a459ada67fd5f04b402cc
+-r--r--r--    1 frmarinh  2015_paris   2141 Feb 19 03:01 f01b56049c00f75646460b4469c29fa28dddc5
+
+./.git/objects/61:
+total 42
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   430 Feb 17 21:24 11338bacc73cca00f86c4ff38cc6de5cc927f2
+-r--r--r--    1 frmarinh  2015_paris   276 Feb 17 21:24 16fa04e3d0ce609065725b2b288d6101d80d9a
+-r--r--r--    1 frmarinh  2015_paris  5231 Feb 17 21:24 420d4170744c0534f4fd2d9f59c73a0695a354
+-r--r--r--    1 frmarinh  2015_paris  2488 Feb 18 01:36 62631df5d48701769dfb06f8347a487bdd285f
+-r--r--r--    1 frmarinh  2015_paris  1165 Feb 17 21:24 80b55e535582c993f432a637e4ee77198b17b8
+-r--r--r--    1 frmarinh  2015_paris  2246 Feb 19 04:16 97b42e01f10e6e18dae90104950c23dbc54b4f
+
+./.git/objects/62:
+total 23
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:43 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1793 Feb 18 05:43 1ff066d0f2c232960892d2bd001956d09dc3ca
+-r--r--r--    1 frmarinh  2015_paris   180 Feb 17 21:24 d49a64542ad9ee8291721aa86b00eb19d3a3f1
+-r--r--r--    1 frmarinh  2015_paris   697 Feb 18 01:26 e3f92d61a2872f0a8dc9024ba57c34a054682f
+
+./.git/objects/63:
+total 65
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 05:21 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  12355 Feb 17 21:24 06e88033e26ae213d91d1c49294be0b89c7a8d
+-r--r--r--    1 frmarinh  2015_paris   2363 Feb 18 05:21 183a802868e3c7c489d8ccfa50a3ec753487fb
+-r--r--r--    1 frmarinh  2015_paris    585 Feb 17 21:24 2250bec33b226f0020c9dde61aed124733d752
+-r--r--r--    1 frmarinh  2015_paris   2023 Feb 18 01:26 69569bbb348934d8da5ae622e3a8580aa97a13
+-r--r--r--    1 frmarinh  2015_paris   3970 Feb 17 21:24 e0bb4478b7c3fddee1a0ebca85ff80a3b0cbac
+-r--r--r--    1 frmarinh  2015_paris   2439 Feb 17 21:24 e6ee1f6912af88cf2aac073e00dfedeb3c41f2
+
+./.git/objects/64:
+total 56
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 05:11 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  20160 Feb 18 05:11 bd3679e93cc5e416b3a4d74fb20ae06ece450f
+
+./.git/objects/66:
+total 27
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1407 Feb 18 01:16 4227d85c05520c2fb01681b8afe629b925bbae
+-r--r--r--    1 frmarinh  2015_paris  3794 Feb 17 21:24 fc7969a7e225d666f8a22f3487fb9a631832fa
+
+./.git/objects/67:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3375 Feb 17 21:24 2d88071325d094e157f30f94df405c18dc70c2
+-r--r--r--    1 frmarinh  2015_paris   619 Feb 18 01:26 605626238b1181727f3da88a8e026383967c20
+-r--r--r--    1 frmarinh  2015_paris   485 Feb 19 05:09 a57210361df6d97c5bfa407c3a19fe082dbc91
+-r--r--r--    1 frmarinh  2015_paris   595 Feb 18 01:26 ae178920a62723f506a1c3b529f08b768cbbf6
+-r--r--r--    1 frmarinh  2015_paris   170 Feb 17 21:24 ddc515bbe0456c33e1e51311bc15ef56af453d
+
+./.git/objects/68:
+total 52
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3793 Feb 17 21:24 0533470f01cac903093d07c571aa6e215dce58
+-r--r--r--    1 frmarinh  2015_paris  3816 Feb 18 01:56 3f0d4a6caf819e40330d2a761a17c6e9a962d4
+-r--r--r--    1 frmarinh  2015_paris   940 Feb 19 04:16 460e244a8d12aa13da96766a5ba2106830d41a
+-r--r--r--    1 frmarinh  2015_paris   667 Feb 17 21:24 d87deb79cc91aa8a714176688e1c7f9063b32e
+-r--r--r--    1 frmarinh  2015_paris  3796 Feb 17 21:24 e2b2a3af4929599a64848b0db5799cb82d4edb
+-r--r--r--    1 frmarinh  2015_paris  3794 Feb 17 21:24 f2d6e27861de277fc4e43a574370dc45ecaae1
+
+./.git/objects/69:
+total 64
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    691 Feb 17 21:24 013c48465e3293a709d6788c02503a71566a19
+-r--r--r--    1 frmarinh  2015_paris   2649 Feb 18 04:41 9f04da6200b44747521e7e641448be7f1dab3a
+-r--r--r--    1 frmarinh  2015_paris   2316 Feb 17 21:24 c3af7687765cd8960086a47629fe124115541a
+-r--r--r--    1 frmarinh  2015_paris   2439 Feb 18 04:41 d4843217bf4b2fa9a9d73a4a3ac2ca8039d6a3
+-r--r--r--    1 frmarinh  2015_paris  12302 Feb 18 00:15 eed4856f4c7c6ede7417423af4a3c0df4a1986
+-r--r--r--    1 frmarinh  2015_paris   2393 Feb 19 03:01 fbcb362ce929c1e1ea6a208aa2c92c773eff46
+
+./.git/objects/6a:
+total 83
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2276 Feb 17 21:24 3e3052899712799ec66839f8ecb6d4425d04d1
+-r--r--r--    1 frmarinh  2015_paris   8278 Feb 17 21:24 a5ba2ba0e2b92d19ce365c455a7cc8382a5e19
+-r--r--r--    1 frmarinh  2015_paris   1313 Feb 17 21:24 bae78165210e67211a8ade9b3e07f47a97a50f
+-r--r--r--    1 frmarinh  2015_paris   2300 Feb 19 03:01 e38a087a1b311696fad8616c2fb9c701a04618
+-r--r--r--    1 frmarinh  2015_paris  14695 Feb 17 21:24 f4418d387668e830802d6d7ccc576a33dd7e13
+-r--r--r--    1 frmarinh  2015_paris   3820 Feb 18 01:36 fa11778adb9384eda0058890fab9d5bff951d4
+
+./.git/objects/6b:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2272 Feb 18 00:15 3a90e1291be72910dfafdacfc8961f8d041b18
+-r--r--r--    1 frmarinh  2015_paris   336 Feb 18 04:31 403d6f0197b05c14f09db0568602bc66649977
+-r--r--r--    1 frmarinh  2015_paris  1174 Feb 18 01:16 5b19220636f1ed072c9cf80b489e1c8d5986bf
+-r--r--r--    1 frmarinh  2015_paris   170 Feb 17 21:24 75b0a091732f988d4669bbd68d4c272df22028
+-r--r--r--    1 frmarinh  2015_paris   965 Feb 20 12:48 f0ba76c10d712944a02a1948e9b1195e331ca1
+
+./.git/objects/6c:
+total 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   840 Feb 17 21:24 863a28e8785c399017bcf4732ba8e30bcc601b
+-r--r--r--    1 frmarinh  2015_paris  6769 Feb 19 03:01 c1e966ec388305d0939a2d8ce31a0b6d54ce52
+
+./.git/objects/6d:
+total 41
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  4056 Feb 19 00:39 2a54160a442e4dc7f5a2f08817a597178eb92b
+-r--r--r--    1 frmarinh  2015_paris  3372 Feb 19 04:16 630cffbf5b24059d319df674a86f913ca7077c
+-r--r--r--    1 frmarinh  2015_paris   314 Feb 18 04:31 72fc489c4fe1409de866fa153e4f692d0c9029
+-r--r--r--    1 frmarinh  2015_paris  3793 Feb 17 21:24 a2b4879c9a502fc52efa7bbc96babf55e3b062
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 17 21:24 d179ade90c0705a1e89e08604ce94da42b722b
+
+./.git/objects/6e:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2317 Feb 17 21:24 264a58d164e37c333784eb74ab56daefdcf6d1
+-r--r--r--    1 frmarinh  2015_paris  2490 Feb 19 00:39 2eb432fe0700a5488d85a00e6ece08e25e6fc9
+
+./.git/objects/6f:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1773 Feb 18 05:21 1185ecab78d9344008c7e0649acc615ea6caa3
+-r--r--r--    1 frmarinh  2015_paris  3172 Feb 19 03:01 228c6134651bc217211eb3b8634aa457e00fe0
+-r--r--r--    1 frmarinh  2015_paris  2919 Feb 18 05:01 8f3fe6b88e3ba48e52ab292f03475c17eafcf2
+
+./.git/objects/70:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2489 Feb 20 12:48 164415be0918c2463d4b66152a95d78b3a100d
+-r--r--r--    1 frmarinh  2015_paris   468 Feb 17 21:24 ef99cdec623cbc635725970f1f5ea63960879b
+
+./.git/objects/71:
+total 111
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14695 Feb 17 21:24 2599570be3a52cffeb46a6ab8ea63388c53373
+-r--r--r--    1 frmarinh  2015_paris  10698 Feb 17 21:24 283882135b2aba7bb64c2397e1796e35de5056
+-r--r--r--    1 frmarinh  2015_paris   2812 Feb 20 12:48 2880f743ae4959d86781f20270d08115adb684
+-r--r--r--    1 frmarinh  2015_paris   2300 Feb 19 04:16 7bc4eb1e619bf0c7961dcd6468b6967ef58adb
+-r--r--r--    1 frmarinh  2015_paris  14699 Feb 17 21:24 ae7943b4c6cbdf21f43c07f49845bf74167687
+-r--r--r--    1 frmarinh  2015_paris    429 Feb 17 21:24 f16915c4fb7ed6b1efe3a30354c934183c7061
+-r--r--r--    1 frmarinh  2015_paris   1567 Feb 17 21:24 fa7a8516c52b0fbdc8159dd5663877e218b2d0
+
+./.git/objects/72:
+total 45
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2289 Feb 18 01:46 5d0c1f3675117ffd87d7f9c4e4327eb10865fb
+-r--r--r--    1 frmarinh  2015_paris   273 Feb 17 21:24 6a330cbdc4de622fbef068318773bccd85ee87
+-r--r--r--    1 frmarinh  2015_paris  3819 Feb 18 01:46 a01f8f9d7e9c68f3c2203ef192ae51e9e87da8
+-r--r--r--    1 frmarinh  2015_paris  2292 Feb 18 01:36 d4e8e7b3f4449aca98d160be766154029b454e
+-r--r--r--    1 frmarinh  2015_paris  2385 Feb 17 21:24 dc78d124a2e089c6dde8e0ee4c3d037abff94e
+-r--r--r--    1 frmarinh  2015_paris  2213 Feb 17 21:24 e3cce0f4158c92c6232f9c04224bf88313955d
+
+./.git/objects/73:
+total 49
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2043 Feb 19 05:09 12e5d5f7e57a771826574ca7a7d67dfbc0c193
+-r--r--r--    1 frmarinh  2015_paris  8721 Feb 17 21:24 286050770c1b73e5a96848c65e5c048b5f35bf
+-r--r--r--    1 frmarinh  2015_paris   545 Feb 18 04:31 41fd3fe15c88f3a61c6cecaf4f327a5ddaaa13
+-r--r--r--    1 frmarinh  2015_paris  1346 Feb 17 21:24 53c78eb8551e5f531bf0b2f157505582667389
+-r--r--r--    1 frmarinh  2015_paris   173 Feb 19 00:39 5dacfc3141520a2c00e6a266854740688221de
+-r--r--r--    1 frmarinh  2015_paris  2214 Feb 18 05:11 8109c75508f1e6700635b8f41a02e4f3d71410
+
+./.git/objects/74:
+total 23
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2684 Feb 19 03:01 a0f18bd6549695ca2dc86d0c2e4e555f86c564
+-r--r--r--    1 frmarinh  2015_paris   345 Feb 18 04:31 ac136acf861cef7b28d5941acc299bcc85fade
+
+./.git/objects/75:
+total 30
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:06 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2431 Feb 18 02:06 196fcd917eb5325a3922fb29f6e84666e95324
+-r--r--r--    1 frmarinh  2015_paris   477 Feb 17 21:24 2154496f7a773280ebee221512a099e68183cc
+-r--r--r--    1 frmarinh  2015_paris   119 Feb 17 21:24 269728a5cbd997e96c70841ac4528caf8199f2
+-r--r--r--    1 frmarinh  2015_paris  2333 Feb 18 01:56 7ed2ffc747e85657baee2cb50c9baa62bed4ef
+-r--r--r--    1 frmarinh  2015_paris   601 Feb 17 21:24 9beb2181d2cba8dd02cfb3e6fd69c8863135c5
+
+./.git/objects/76:
+total 34
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2046 Feb 19 00:39 22e7f42fefa4f6e5c7ec8a8181ae2b3ca2c40c
+-r--r--r--    1 frmarinh  2015_paris  2440 Feb 19 04:16 71208ceb505da5071a8ce49e686acf9932fd5f
+-r--r--r--    1 frmarinh  2015_paris   319 Feb 17 21:24 9ccb6473fa829cf3f45ed4a5e562b2cc2f4dd0
+-r--r--r--    1 frmarinh  2015_paris  3795 Feb 17 21:24 dcdf6819b9405ecff4f18f880d1e6b4143bb37
+
+./.git/objects/77:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:26 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3499 Feb 17 21:24 1cd7cc96237816b2666e621c9a26da86d187f4
+-r--r--r--    1 frmarinh  2015_paris   457 Feb 17 21:24 37db0c29af3ea425837900638666567dd3a5c6
+-r--r--r--    1 frmarinh  2015_paris  2432 Feb 18 01:26 b7c14de435bcdcb72d2c92ca3a017717b168c4
+
+./.git/objects/78:
+total 44
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2223 Feb 17 21:24 1493177c50d1cf79369ea1bec21c489ed0a5b4
+-r--r--r--    1 frmarinh  2015_paris  2512 Feb 19 04:16 1837f8f75743987f62de99333c383568949b69
+-r--r--r--    1 frmarinh  2015_paris  3165 Feb 18 05:01 6635b0a003b51169dca7f58229d19e234f4cbb
+-r--r--r--    1 frmarinh  2015_paris  2409 Feb 18 04:51 713cc3e3287d1e8788c4242ba2453e3af57d8c
+-r--r--r--    1 frmarinh  2015_paris  2684 Feb 20 12:48 a4f55cc1de9534aaa0987654fb66915a6f457b
+
+./.git/objects/79:
+total 38
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3796 Feb 17 21:24 199f26982ed45419af2952663e9911dd644da5
+-r--r--r--    1 frmarinh  2015_paris   170 Feb 18 00:15 7f54eccd09d4799a6bc2ee7dec571beeef3c58
+-r--r--r--    1 frmarinh  2015_paris  6527 Feb 17 21:24 e080efbf5ff0cf73479923b25f41a00558382a
+
+./.git/objects/7a:
+total 54
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   475 Feb 18 02:06 3377ce181446a14ea1f62fdb22f2a681899495
+-r--r--r--    1 frmarinh  2015_paris  2287 Feb 18 04:51 377df9c4a03eaea9666ec3c5a184eb0646e706
+-r--r--r--    1 frmarinh  2015_paris  1875 Feb 19 00:39 5ab56721224e649dc5985670e057ccb5e86cbb
+-r--r--r--    1 frmarinh  2015_paris  3794 Feb 17 21:24 6115aac691ea66cb8d344e16baf79e7b4183ee
+-r--r--r--    1 frmarinh  2015_paris  3626 Feb 18 04:41 a435fedf999cd557e3ea06ad03a1d6ab5116ae
+-r--r--r--    1 frmarinh  2015_paris  5491 Feb 19 00:50 b524ebef6eafbd52fd773700a37d0dd9213cc1
+-r--r--r--    1 frmarinh  2015_paris   301 Feb 17 21:24 e1282b5e62bcaaaca45900ff4e4c3fa01f8fdc
+
+./.git/objects/7b:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1833 Feb 18 01:36 759f1e3923106cd101a7902d6e3d5f878d727f
+-r--r--r--    1 frmarinh  2015_paris  2046 Feb 18 05:01 c96fa1effd63ce62f5ecfd1ff11d0bdb03c5eb
+-r--r--r--    1 frmarinh  2015_paris  2300 Feb 18 01:56 e1983e017b96b4ee3cafba540625b4e9495c09
+
+./.git/objects/7c:
+total 39
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3171 Feb 20 12:48 3b3ab57c53c955dc0b13c7faa7a0e280980027
+-r--r--r--    1 frmarinh  2015_paris  2512 Feb 18 05:01 59feca652a79a13ec973bb7d95056713a674fd
+-r--r--r--    1 frmarinh  2015_paris  1377 Feb 17 21:24 669ff06ba45bd5d724fed819f55f9b5f37893b
+-r--r--r--    1 frmarinh  2015_paris  3813 Feb 18 02:11 c6e8f6dde03c89060e8598acb0c19039bde5bf
+
+./.git/objects/7d:
+total 27
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2245 Feb 18 01:46 1a7c4643b99b9b196d0c79518f614ff5eeaf83
+-r--r--r--    1 frmarinh  2015_paris  2422 Feb 18 01:56 35247dc9eb816c1218d2fd75be21ca95dac70c
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 19 04:16 b23720f35fc8b74e847e717395ad7294495b87
+
+./.git/objects/7e:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1026 Feb 17 21:24 6155a40d633e36e1aaa5c7f8b594b5090e119d
+-r--r--r--    1 frmarinh  2015_paris  2197 Feb 19 04:16 63838cce1492db7e0abf19e03f7a0f2bd8e9a3
+
+./.git/objects/7f:
+total 56
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    419 Feb 17 21:24 17e795025b40473c0f73739c19980773fc97a3
+-r--r--r--    1 frmarinh  2015_paris   1922 Feb 17 21:24 5b41603cbfa2e5f981cea3124cf8c56b303bbb
+-r--r--r--    1 frmarinh  2015_paris  10405 Feb 17 21:24 73b822d873f72f589e8106133e6aea54e74a63
+-r--r--r--    1 frmarinh  2015_paris   2406 Feb 18 00:15 75202194a896c3b176ad7c313dffcb307155e1
+-r--r--r--    1 frmarinh  2015_paris   3627 Feb 19 03:01 a953ba2d475ac19938c5d938ddc8f37d5a3c6d
+-r--r--r--    1 frmarinh  2015_paris    356 Feb 17 21:24 eaef18bf8c409fddacaf409a4bbbeb8da7091f
+
+./.git/objects/80:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2300 Feb 18 04:51 1e3cc6390c145fd51c84de41cbd273d0a7e5a5
+-r--r--r--    1 frmarinh  2015_paris   169 Feb 17 21:24 4c440c6e16c58f63a55437e7f053ad00eb1185
+-r--r--r--    1 frmarinh  2015_paris  2355 Feb 19 03:01 a2eeb2c89142a197f3c1adad87170129b80e34
+-r--r--r--    1 frmarinh  2015_paris  4250 Feb 20 12:48 bc7ef03915e5e5c3de253ad5ce96a9bfca8e1e
+
+./.git/objects/81:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2022 Feb 18 05:01 617e14827cee1e5497a55d93325b53973f5e3a
+-r--r--r--    1 frmarinh  2015_paris  2648 Feb 18 01:26 a7e6d7691cea9cc0635bba395ccdb62c297092
+
+./.git/objects/82:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3814 Feb 19 00:50 17874a541b365c5edb2f5b3b02272b12c56392
+-r--r--r--    1 frmarinh  2015_paris   118 Feb 17 21:24 1cfdd723158010751727ed3b7b80ca2d59a702
+-r--r--r--    1 frmarinh  2015_paris   803 Feb 18 01:36 472e45badc62370f00f906d3e222ea5b9d0d45
+-r--r--r--    1 frmarinh  2015_paris   369 Feb 17 21:24 8cd4feeaf27839b0b7b407b1a01011ca493fd8
+-r--r--r--    1 frmarinh  2015_paris  2393 Feb 19 04:16 d7c8901fd91635cb5c9310af0f54564c92906e
+
+./.git/objects/83:
+total 48
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2945 Feb 17 21:24 0942149cde6148e1fb637dc2c6af915209c89f
+-r--r--r--    1 frmarinh  2015_paris   340 Feb 17 21:24 3beb37614bbfe1a49d4fdcf5c3efd5344bd6a4
+-r--r--r--    1 frmarinh  2015_paris  2401 Feb 18 04:41 cd64bfa7d0909a5adb6ebdce3dc70e6782f6b2
+-r--r--r--    1 frmarinh  2015_paris  2939 Feb 18 04:51 d336ed117f273972c429a3af075cc801961c17
+-r--r--r--    1 frmarinh  2015_paris  3814 Feb 18 04:51 de2660a1f1c6ea927d33cad0321227341f87e3
+-r--r--r--    1 frmarinh  2015_paris  2938 Feb 19 04:16 ecea442ea15a2e52de33d9de43b74aff9ada42
+
+./.git/objects/84:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2938 Feb 19 00:39 14551ef644eb6a23c85b9c306459d749c5e3b9
+-r--r--r--    1 frmarinh  2015_paris   662 Feb 18 04:31 52a0b054836e3d0d78269a697ac4d03ad1e9cd
+
+./.git/objects/85:
+total 58
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 05:11 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    118 Feb 17 21:24 2e26d12089d5c555b2de68570dacad25f07268
+-r--r--r--    1 frmarinh  2015_paris   3355 Feb 18 04:51 3e1cdc7188228e8538442fe57b20477fe0699d
+-r--r--r--    1 frmarinh  2015_paris    293 Feb 17 21:24 6ce8da1013fd99fa245cd61cf8c111a8429d9d
+-r--r--r--    1 frmarinh  2015_paris  14695 Feb 18 05:11 a037b9ed17c4e4b1251c091762fc9aff15129c
+-r--r--r--    1 frmarinh  2015_paris    853 Feb 17 21:24 a1ce8fe8826fb75bcb39e1504e4f4050675a97
+-r--r--r--    1 frmarinh  2015_paris    681 Feb 17 21:24 c883e87c4e1d83a46b7061e6e8fcb016867437
+
+./.git/objects/86:
+total 37
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3971 Feb 17 21:24 6cd17b3d4f3ec073a1d868869a4cd7f91ddccd
+-r--r--r--    1 frmarinh  2015_paris  2224 Feb 17 21:24 7ebeed59785064e6870b13aa52069a1b57b402
+-r--r--r--    1 frmarinh  2015_paris  2246 Feb 19 00:39 9b4a7bae9d0f5ded76f19fb1e0555c16e7278a
+-r--r--r--    1 frmarinh  2015_paris   659 Feb 18 01:26 ca44e9db3c124eef4503e11bfaf6696593f1c4
+-r--r--r--    1 frmarinh  2015_paris   169 Feb 17 21:24 d1b7d050ed11a59ba6822332c868f395addbe9
+
+./.git/objects/87:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:21 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2647 Feb 18 01:36 2bd08659f8737d09673feed2f777365496f47e
+-r--r--r--    1 frmarinh  2015_paris   380 Feb 18 04:31 507b444571d847320cf48ab97d051b5b959fbe
+-r--r--r--    1 frmarinh  2015_paris   414 Feb 18 04:31 60d0a49f6fff80ff5007ff972931df3c5b6e4a
+-r--r--r--    1 frmarinh  2015_paris   569 Feb 18 05:21 9992da4c1cc9dc16f1099ca926c2cd5c7649b2
+
+./.git/objects/88:
+total 72
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 02:06 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    273 Feb 17 21:24 0f792bc3e5cc5e6c237a49011a5ab0912819a2
+-r--r--r--    1 frmarinh  2015_paris   1928 Feb 17 21:24 7bd61dcc89452b548c5fbb6211672cd86ca5ee
+-r--r--r--    1 frmarinh  2015_paris   2409 Feb 18 01:56 b756a9088d0e58eb2903ea1007fabf2589bfd0
+-r--r--r--    1 frmarinh  2015_paris    427 Feb 18 04:31 c1feb32b562f2faddd70ea2e3d263d458ba8e8
+-r--r--r--    1 frmarinh  2015_paris    711 Feb 17 21:24 c88600054c3ec87c2fd4f7f454cf932b4ff250
+-r--r--r--    1 frmarinh  2015_paris   2246 Feb 18 01:26 cfa7142d2165802584dbf8f905e737d5a095ac
+-r--r--r--    1 frmarinh  2015_paris  19219 Feb 18 02:06 dcd7fe34b499b0bd906efac7121de6f3684de0
+
+./.git/objects/89:
+total 72
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 05:09 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2938 Feb 19 03:01 028ecde681efc92b24bafa75fbba0d2f1d92b3
+-r--r--r--    1 frmarinh  2015_paris  14679 Feb 17 21:24 67781c836c877f73c9d089649f095fbbe6948b
+-r--r--r--    1 frmarinh  2015_paris   2268 Feb 18 01:56 9ef43d0fc86a68a6c90a19213078389c033827
+-r--r--r--    1 frmarinh  2015_paris   2919 Feb 19 00:39 b1ba35ede0c0e4ae19de53cd9f9a8371694a5a
+-r--r--r--    1 frmarinh  2015_paris   3815 Feb 19 00:39 d96a2084c6cb5868258db74b7f052cdf59a0b6
+-r--r--r--    1 frmarinh  2015_paris    321 Feb 18 04:31 eb351cb7b00a0924a9caf44cf2e6d1a0eaf54b
+-r--r--r--    1 frmarinh  2015_paris    172 Feb 19 05:09 f382d161a987caa3854fecdce4eaad15e579ac
+
+./.git/objects/8a:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2937 Feb 18 01:36 a983c4bbcaa8430499adf12c7c54a189942dd6
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 19 03:01 be4bf0eb58175801e9d76f3268b6066a905bd7
+-r--r--r--    1 frmarinh  2015_paris  2133 Feb 20 12:48 f97dd3802320bc323867b9cdef64965c81d36a
+
+./.git/objects/8b:
+total 60
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2364 Feb 19 04:16 1dd51a171f8f571db007945edb9fc54b6eebc8
+-r--r--r--    1 frmarinh  2015_paris   3818 Feb 18 02:06 27967d11eb260eb0e643158c445bdc7a530d4a
+-r--r--r--    1 frmarinh  2015_paris  14684 Feb 17 21:24 80c16914638f99b8c72c5760fb3bd51062dc7b
+-r--r--r--    1 frmarinh  2015_paris    679 Feb 17 21:24 cccb49bca8199fceb1e7d0e0f306eb8690e028
+
+./.git/objects/8c:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2045 Feb 19 04:16 6947147c7270f00db886e52cadcd116977a95b
+-r--r--r--    1 frmarinh  2015_paris   418 Feb 17 21:24 b0488a6d37babb6f64058131ab673b994f4b02
+-r--r--r--    1 frmarinh  2015_paris  3278 Feb 17 21:24 d3f1a8695e01d8775520663bc62e4518539380
+
+./.git/objects/8d:
+total 18
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   275 Feb 17 21:24 7ddcd10244154ff450c8f9c0991a07aa41be98
+-r--r--r--    1 frmarinh  2015_paris   377 Feb 18 05:01 ff00ad148b1d14056c3d47c0106afedee2028a
+
+./.git/objects/8e:
+total 60
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2562 Feb 17 21:24 5cbd2cb786e95fcb6a70cceb46281b7c16a601
+-r--r--r--    1 frmarinh  2015_paris  11992 Feb 17 21:24 abae5989f1413600ee65b2aad9103f2920259d
+-r--r--r--    1 frmarinh  2015_paris   2684 Feb 19 00:39 dedf7e894e0777f27f3085c48609e90d215e95
+-r--r--r--    1 frmarinh  2015_paris   4077 Feb 18 01:26 f1d82cfaa74691f04b4b33090e5eaa04ec07de
+
+./.git/objects/8f:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   402 Feb 17 21:24 3e3b2175ca3d956890a65cf51d6d7f6dab411b
+-r--r--r--    1 frmarinh  2015_paris  2292 Feb 18 01:46 4c0f8f4f38f12b05cf495296e7497f62224bad
+
+./.git/objects/90:
+total 55
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 04:11 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  19284 Feb 18 04:11 0a0f106f014f8dce4a7e5f4c5ce08dec81af65
+-r--r--r--    1 frmarinh  2015_paris    293 Feb 17 21:24 e73fe1786e864202be2903188c19e2b59c0bb3
+
+./.git/objects/91:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   648 Feb 18 01:56 52a0c043a9b7d0d5a96d4d62ff8aa4406bc2d0
+-r--r--r--    1 frmarinh  2015_paris  2098 Feb 18 05:01 d106e691c9beeff26f7908425a92e543cbfb73
+-r--r--r--    1 frmarinh  2015_paris  2907 Feb 17 21:24 eac0c492bd319925151843d3e217645d772633
+
+./.git/objects/92:
+total 41
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3814 Feb 18 04:11 3ef3de98c13e2d24096f7f8e206c917ce2fdfa
+-r--r--r--    1 frmarinh  2015_paris  3373 Feb 20 12:48 7c9526830c17aa7e12a184640746eed8b67158
+-r--r--r--    1 frmarinh  2015_paris  1528 Feb 17 21:24 93b7f1175d8996aac4da9d7b23dbe62ac57e1a
+-r--r--r--    1 frmarinh  2015_paris  1197 Feb 17 21:24 dd78ad857da987fdaab5e3f57787d3687c8e8a
+-r--r--r--    1 frmarinh  2015_paris  2046 Feb 18 04:51 e3de10bef849e66074612f21d6bc53a136c404
+
+./.git/objects/93:
+total 87
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   5291 Feb 17 21:24 05c618ac06ff26330d40371d86e338437b1c69
+-r--r--r--    1 frmarinh  2015_paris    522 Feb 17 21:24 31d9921d991291a8dcaeb116982c4f092f250b
+-r--r--r--    1 frmarinh  2015_paris  21445 Feb 19 00:50 385892423129005112d3aa01664d6d4a882d59
+-r--r--r--    1 frmarinh  2015_paris   2142 Feb 20 12:48 61a35e7b72d3694b1fc7e6260e74fbcc8d93a9
+-r--r--r--    1 frmarinh  2015_paris   1961 Feb 18 02:21 73218339bbe309abe21f34bebdafe1fd122ee1
+-r--r--r--    1 frmarinh  2015_paris    333 Feb 17 21:24 7a7dfbe88e66ab5bb2b2e4aed036b133e3ca77
+-r--r--r--    1 frmarinh  2015_paris    393 Feb 17 21:24 9bcb0fdd5906d93ec4399ed0d4d2a286bba6b3
+-r--r--r--    1 frmarinh  2015_paris   2126 Feb 17 21:24 b50e99fe74934d27c420f579874f3d2f3c7242
+
+./.git/objects/94:
+total 18
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   641 Feb 18 04:41 ce1cc974cd720e973d95655dcd56d5510dab5a
+
+./.git/objects/95:
+total 64
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2232 Feb 17 21:24 117d6f0d1b8642cb1645fcec663cfc1b8d0636
+-r--r--r--    1 frmarinh  2015_paris  3816 Feb 19 00:39 1494cbb602518c72f4a46a253c8a83d6c5eea5
+-r--r--r--    1 frmarinh  2015_paris  2649 Feb 20 12:48 18fac30db55b24e7e7c8e5fe29cbfc1e074d91
+-r--r--r--    1 frmarinh  2015_paris   704 Feb 20 12:48 61b743a52e34fcc3b9ca00439d58096e54f45c
+-r--r--r--    1 frmarinh  2015_paris  3626 Feb 20 12:48 7d79283503b1e386ebafb529ec526bd2811825
+-r--r--r--    1 frmarinh  2015_paris  2141 Feb 18 01:56 83384405d696b7a5f2c8c8d4940e13c10b4000
+-r--r--r--    1 frmarinh  2015_paris  2219 Feb 18 00:15 8e83ffd1f7b182b135d59945d68fc6ce183434
+-r--r--r--    1 frmarinh  2015_paris   362 Feb 18 04:31 cf5add1cae43a61d390e355d00cd01ea9f8644
+-r--r--r--    1 frmarinh  2015_paris  2288 Feb 19 00:39 e118f5b6dd5f94bf0c33693259bcdf00e56295
+-r--r--r--    1 frmarinh  2015_paris   625 Feb 18 04:31 fd11dccb632791ab4af216da664d6922b28dcc
+-r--r--r--    1 frmarinh  2015_paris   317 Feb 18 04:51 fe18b69e474ff72ec323e1067a3deed483b67a
+
+./.git/objects/96:
+total 90
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   3154 Feb 18 01:46 033cc1ce812a2352d07904b972eba67b8b75d2
+-r--r--r--    1 frmarinh  2015_paris   2232 Feb 17 21:24 10a673bce74e16563cdd714dff63420382ed8e
+-r--r--r--    1 frmarinh  2015_paris    725 Feb 17 21:24 13f22d43fa1d436e8804b1c1db2c1b92e67f69
+-r--r--r--    1 frmarinh  2015_paris   3172 Feb 18 04:41 1a0d4f5abe7097b30749852bb784d4274160e3
+-r--r--r--    1 frmarinh  2015_paris   2028 Feb 18 01:46 58e014570426a11717132a164e6c466804f173
+-r--r--r--    1 frmarinh  2015_paris    170 Feb 17 21:24 64bc27e72b2b6be28e90fd6aa26b39a4cedb53
+-r--r--r--    1 frmarinh  2015_paris   2290 Feb 18 05:01 a2881e62363591a46c960c0ca11899a8482a66
+-r--r--r--    1 frmarinh  2015_paris   2938 Feb 18 04:41 af6bfa5e6909bb4e8b93335bbd5f01e8d1817a
+-r--r--r--    1 frmarinh  2015_paris  14696 Feb 17 21:24 bd17d17089f08bc0a08bd61d386516eb95aac2
+-r--r--r--    1 frmarinh  2015_paris   4056 Feb 18 02:11 c6991ef56fdf081ba938103fbaf8a1aad87b9b
+
+./.git/objects/97:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2490 Feb 19 03:01 0b89d6e0280d27720d1905e41eb5ed21e7cef1
+-r--r--r--    1 frmarinh  2015_paris  1710 Feb 19 03:01 2a180ff2d6b54c69fdb30bfec9cbd0242b41a6
+-r--r--r--    1 frmarinh  2015_paris   342 Feb 17 21:24 c049a3a365e449d96cdec1f1af6f845b96abe7
+
+./.git/objects/98:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2428 Feb 18 01:46 684a2bd2ab0f552bc4c1a843d32d7d2f295c5a
+-r--r--r--    1 frmarinh  2015_paris   291 Feb 17 21:24 91496cf47eebf124ecca385c3c2d23652c3bb1
+-r--r--r--    1 frmarinh  2015_paris  2547 Feb 18 00:15 af943fc28b5c679621c51ae4b6e35bc3bd1dc5
+-r--r--r--    1 frmarinh  2015_paris   344 Feb 17 21:24 cf24a3b13dc608e28dd5dc54b79a50fcf2a7a4
+-r--r--r--    1 frmarinh  2015_paris  3816 Feb 18 04:51 de27381c28b5acbc093e5b3548f6f92abe5740
+
+./.git/objects/99:
+total 55
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2028 Feb 18 01:26 410e7e8b6b01ac3186eef89549ad1cdbb0c8e3
+-r--r--r--    1 frmarinh  2015_paris  14746 Feb 20 12:48 65d21c70ed2ef5a672177aaac8286af464c2a3
+-r--r--r--    1 frmarinh  2015_paris   2490 Feb 19 04:16 cd7848ae7e13be1db16ce179d45cdbf0db2741
+-r--r--r--    1 frmarinh  2015_paris    512 Feb 18 04:31 ea05e0453487c1a466821954743956c25fc89c
+
+./.git/objects/9a:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   749 Feb 18 04:31 4384059f55d10df46edffcc01d930345df7138
+-r--r--r--    1 frmarinh  2015_paris  2400 Feb 18 01:26 6c21d24ac602e54eea1d7b6163623cf3e3ba72
+-r--r--r--    1 frmarinh  2015_paris   169 Feb 18 04:41 896db13f08a5e29bd43a12d0daf09991034f8f
+-r--r--r--    1 frmarinh  2015_paris  2246 Feb 18 04:41 8a9d16f3b8272cc1aceef72a4e9f58f70c6a98
+-r--r--r--    1 frmarinh  2015_paris   617 Feb 18 01:56 9c005026a819ec18d786f06b5e5bddbaa2cf8c
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 17 21:24 b643c454e4d2d1d1142264f87433bab90c1620
+-r--r--r--    1 frmarinh  2015_paris  1743 Feb 18 01:46 bbada3531e43dd8dcd01b2447079c7d7947791
+
+./.git/objects/9b:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   737 Feb 19 00:39 6a7ee000be16c4d4b4a27e671ca0f85317811b
+-r--r--r--    1 frmarinh  2015_paris  2245 Feb 18 01:36 b2f118fd5922fa4c65e0da323495495f4c6087
+-r--r--r--    1 frmarinh  2015_paris  1143 Feb 17 21:24 b90577b6e067d949036f6ae50d21c059394abd
+-r--r--r--    1 frmarinh  2015_paris  2197 Feb 20 12:48 b9775391fbcdce6ba4aca21c25378de89038b8
+-r--r--r--    1 frmarinh  2015_paris  2411 Feb 17 21:24 ec74cbb7beaed692011a254c50b6226afe2cc4
+
+./.git/objects/9c:
+total 19
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1063 Feb 19 00:39 24048b58dc4eb1a9bac497138b29f83fb95704
+
+./.git/objects/9d:
+total 55
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2293 Feb 18 04:41 0f367f0a337ac0de0a7de22650fc4aa2060ac6
+-r--r--r--    1 frmarinh  2015_paris  3155 Feb 19 03:01 3a2260e7caecc4fa479e7163841f9c80785c9a
+-r--r--r--    1 frmarinh  2015_paris  2497 Feb 17 21:24 593adbfb3c803683c50c6020a6e3e1f87e0821
+-r--r--r--    1 frmarinh  2015_paris  2684 Feb 18 05:01 5d63f07c71dea5684c41c0a9f11cbc94d9376f
+-r--r--r--    1 frmarinh  2015_paris    20 Feb 20 12:48 aeafb9864cf43055ae93beb0afd6c7d144bfa4
+-r--r--r--    1 frmarinh  2015_paris   331 Feb 17 21:24 be56b2eac0f24a6ddc1f8263ffc1d2bb7c8000
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 17 21:24 cb74a84e92de2bcab71de8b33f63c65de931c5
+-r--r--r--    1 frmarinh  2015_paris  3816 Feb 18 05:21 cc4925fc5c8484a9743fac2e23a8ad66f199c6
+-r--r--r--    1 frmarinh  2015_paris  2267 Feb 18 04:41 f2d51069b510122549b8bac5e28da9cc757d9e
+
+./.git/objects/9e:
+total 56
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    171 Feb 17 21:24 8c63957bf14168e10b1806f805c87edf6e63c0
+-r--r--r--    1 frmarinh  2015_paris  19516 Feb 18 04:41 d2b5718c144bb1ed7e87b7279eb893a08cf117
+
+./.git/objects/9f:
+total 45
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 05:09 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14719 Feb 19 05:09 06c9214423e3ea8d02cf7a57d4fd879745ee26
+
+./.git/objects/a0:
+total 131
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    350 Feb 18 04:31 107aa8a355160c5a232b0c94ee5ee77e181170
+-r--r--r--    1 frmarinh  2015_paris  14690 Feb 17 21:24 39ac92a75d6b7368204a4db389f10927f94136
+-r--r--r--    1 frmarinh  2015_paris   3813 Feb 19 04:16 42f7e487f89501d85381e1c6c12d98d3e1b119
+-r--r--r--    1 frmarinh  2015_paris  20182 Feb 18 05:31 5da03e61711c24f1eb134843f9abaee9b19c09
+-r--r--r--    1 frmarinh  2015_paris  14688 Feb 17 21:24 88481cadbaec3c65bc33fa40473ecc0cf2506f
+-r--r--r--    1 frmarinh  2015_paris   2542 Feb 17 21:24 cbfdabdbda61da0fa5b9bb78133d7b45270923
+-r--r--r--    1 frmarinh  2015_paris   1097 Feb 20 12:48 e401a22a42ae19f9b112ec11e2486322571714
+
+./.git/objects/a1:
+total 50
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 05:09 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2215 Feb 18 00:15 37e84169ae35a29870406dede1fdb8898f62ed
+-r--r--r--    1 frmarinh  2015_paris  2287 Feb 18 04:41 8edd90d66bfb234b4cf073c37fbd51a2ec0ec6
+-r--r--r--    1 frmarinh  2015_paris  2197 Feb 19 03:01 a7722b34a73804d38ecda98455ae2167ecde86
+-r--r--r--    1 frmarinh  2015_paris  1804 Feb 18 04:41 b1f1c59038894a94a2d8051cf47c41cb065ea5
+-r--r--r--    1 frmarinh  2015_paris  4219 Feb 19 05:09 bbb179f9997a84c07b0e0269d77852092176db
+-r--r--r--    1 frmarinh  2015_paris   692 Feb 19 05:09 c10fd74829904b8b0ee700f9bd296caf3c3aa4
+-r--r--r--    1 frmarinh  2015_paris  1923 Feb 17 21:24 d79786f7f92aa262eeeb4a1258b2b3105dd290
+
+./.git/objects/a2:
+total 65
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    293 Feb 17 21:24 00110857022a477b85614e60e69898f6aef0c0
+-r--r--r--    1 frmarinh  2015_paris   2919 Feb 19 03:01 26ced15f42ba9517c12f60a702aa2e45fad683
+-r--r--r--    1 frmarinh  2015_paris    563 Feb 17 21:24 4b0c53b89ae7acf2b857db3a03b5b9a9cfb5d9
+-r--r--r--    1 frmarinh  2015_paris  14699 Feb 17 21:24 57407c7217fce52f11ad83b192e41fc092a52a
+-r--r--r--    1 frmarinh  2015_paris   2919 Feb 18 01:56 67d841cf584989bd0a547619ff639377671c55
+-r--r--r--    1 frmarinh  2015_paris   2141 Feb 19 00:39 bcf52f6ec189b1ed51a5a7ff8da272d9f5516a
+
+./.git/objects/a3:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2268 Feb 18 04:51 70fb4d7f5e52d0166101bf635cc8a8222f24e5
+-r--r--r--    1 frmarinh  2015_paris  1057 Feb 18 04:31 fa860fa731d293edc8f060bb7c7ae4b123f91a
+
+./.git/objects/a4:
+total 116
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2511 Feb 18 01:56 06327e3b64c2010a13493c1d2699df02d18361
+-r--r--r--    1 frmarinh  2015_paris   2357 Feb 18 01:46 9555033ac16620e933f6ec9de2ae37d2f95a02
+-r--r--r--    1 frmarinh  2015_paris   3859 Feb 17 21:24 9c9c78c956144fbcd9e0b8d840775848a59597
+-r--r--r--    1 frmarinh  2015_paris   2811 Feb 19 03:01 a2ca17673b1411ee8206b5155933ce2e7d4b3f
+-r--r--r--    1 frmarinh  2015_paris  14693 Feb 17 21:24 c846f3a327b7df753a3044300ec0d6d9897855
+-r--r--r--    1 frmarinh  2015_paris  14703 Feb 17 21:24 de97081f42311ea5f64281545c308cfff4d642
+-r--r--r--    1 frmarinh  2015_paris   6122 Feb 17 21:24 e726767edbd1c123658ce487579522759add11
+-r--r--r--    1 frmarinh  2015_paris    431 Feb 18 04:31 f3f830de9882e02bfe370b24a1a682a080dfee
+-r--r--r--    1 frmarinh  2015_paris   2357 Feb 18 01:26 ff3cd2e0ebd254b8f6e8b86f41135c995368a5
+
+./.git/objects/a5:
+total 34
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2223 Feb 17 21:24 049b46c6a98396e3b9bb2ae53131c01949c3f5
+-r--r--r--    1 frmarinh  2015_paris   292 Feb 17 21:24 d0edb2b1f017367a889d2147fdfac13e4f6b31
+-r--r--r--    1 frmarinh  2015_paris   927 Feb 18 01:56 d56d515312138c61c32b833c033546370458ef
+-r--r--r--    1 frmarinh  2015_paris   322 Feb 18 04:31 dcd86475d39091da68260aff12e28db2b0b89d
+-r--r--r--    1 frmarinh  2015_paris   553 Feb 18 05:11 e785cb17cda95e75e93606140c637671cf98cd
+-r--r--r--    1 frmarinh  2015_paris  3440 Feb 17 21:24 f126827f2b7646106e790d460218386c193c20
+
+./.git/objects/a6:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1741 Feb 17 21:24 5e0a753920718d9ebbc7d3c7515586cb215af4
+-r--r--r--    1 frmarinh  2015_paris   615 Feb 17 21:24 db92ca76c83ef4de09c38ca747a90c471076e9
+
+./.git/objects/a7:
+total 39
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:21 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1244 Feb 17 21:24 0a641945c980320c57b431d1d14f55a58fced4
+-r--r--r--    1 frmarinh  2015_paris   368 Feb 17 21:24 34cc3c668e344770411970ad4e0d03f66fd841
+-r--r--r--    1 frmarinh  2015_paris  8842 Feb 17 21:24 b5314916cd9b0740d075079e29d212e0f4a3f7
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 18 05:21 ecee43fbe8560f4ef052aaac337432f20d9771
+
+./.git/objects/a8:
+total 30
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:43 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   332 Feb 17 21:24 026e723f801673fb2c47e66ae3ca21ed266cd9
+-r--r--r--    1 frmarinh  2015_paris  2022 Feb 18 04:51 3ff6a2cbb92c0b59323893be546775b28abcd9
+-r--r--r--    1 frmarinh  2015_paris   505 Feb 18 02:11 929135eb948fc9c68eabce0fce0b3184d5fd20
+-r--r--r--    1 frmarinh  2015_paris  3816 Feb 18 05:43 cb74eec9376d6dcc19ee3be6f5da12271e7221
+
+./.git/objects/a9:
+total 31
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2444 Feb 19 04:16 4a6e80516373799de7590f3022419247ebe9c6
+-r--r--r--    1 frmarinh  2015_paris   170 Feb 17 21:24 4bed39d2d5345a2ac0febc17929eb8241f9e00
+-r--r--r--    1 frmarinh  2015_paris  2022 Feb 19 04:16 9a1599c552156160ea7c13e60e8dbf6a004cfb
+-r--r--r--    1 frmarinh  2015_paris  2423 Feb 20 12:48 ed236c744bbfb707d37848404073231a506617
+
+./.git/objects/aa:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   450 Feb 18 04:31 1e435a0e8203e5b8ed5e15659eb5402d262052
+-r--r--r--    1 frmarinh  2015_paris   414 Feb 17 21:24 34c869965c8bde9527ffae1653238502f9254a
+-r--r--r--    1 frmarinh  2015_paris  3996 Feb 18 00:15 46964ae882827d2d51d6d25872b1f099def250
+-r--r--r--    1 frmarinh  2015_paris  4574 Feb 17 21:24 6b5f08a9a6e3167754b1861eb97a20be014f33
+-r--r--r--    1 frmarinh  2015_paris   435 Feb 17 21:24 d921b11d8f662c6c4ec0c1475a81d234e22e2c
+
+./.git/objects/ab:
+total 91
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   1922 Feb 17 21:24 0a8437c4625626f0dfc7f91547e4d775dc5330
+-r--r--r--    1 frmarinh  2015_paris   2400 Feb 18 01:46 1bf279fb6116eddb4a0bc1b7e3949a58f2ea2d
+-r--r--r--    1 frmarinh  2015_paris    387 Feb 17 21:24 340092f176c1d0e79dead96790e176d2048965
+-r--r--r--    1 frmarinh  2015_paris   2659 Feb 19 00:50 441a9b8e2d5a911b14efab60ab9a974ab8ce63
+-r--r--r--    1 frmarinh  2015_paris   3794 Feb 17 21:24 68de09cfe2ce42c5932f8f8ce1e848cffd39e8
+-r--r--r--    1 frmarinh  2015_paris   3815 Feb 18 00:15 70dfde73b3403e29ec55208ff423fb15b017ae
+-r--r--r--    1 frmarinh  2015_paris    849 Feb 20 12:48 74d2f45c5ceb51eefe713569b55588c06c9bb7
+-r--r--r--    1 frmarinh  2015_paris    556 Feb 17 21:24 8fc2cce011af49ab849cf68cb00198b9c7265a
+-r--r--r--    1 frmarinh  2015_paris  14688 Feb 17 21:24 a45e8ac8b4b560afc5c4c1769d67529d38a998
+-r--r--r--    1 frmarinh  2015_paris   1339 Feb 17 21:24 cc8b3b68f658f3c1ac8a612a88fefa28bf8bba
+-r--r--r--    1 frmarinh  2015_paris   3156 Feb 19 04:16 d56fc2d1147f0846ab1b6206fed677c64bd5d3
+
+./.git/objects/ac:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2811 Feb 18 04:51 f3f98c34eadc71426658c271703edb41cebeab
+
+./.git/objects/ad:
+total 25
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   448 Feb 17 21:24 351b7cdc1c5423dbc67325458d1e6efb3ab5e6
+-r--r--r--    1 frmarinh  2015_paris  3795 Feb 17 21:24 f1042fc19f28e6d93e1af57f5e1c4b550117ba
+
+./.git/objects/ae:
+total 43
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2510 Feb 18 01:36 41ef8a593c338685cc2bfcb1f84b4fb8e0bcb3
+-r--r--r--    1 frmarinh  2015_paris    24 Feb 17 21:24 7167d9899d45eac3ff88277d123d040daef889
+-r--r--r--    1 frmarinh  2015_paris  2289 Feb 19 04:16 9e25015745b0619179c60691721426a770ca6a
+-r--r--r--    1 frmarinh  2015_paris  2648 Feb 18 01:46 a53b30bc8e85cba91e17bb21bd75cf9b3d00f0
+-r--r--r--    1 frmarinh  2015_paris  2290 Feb 18 04:51 c64c463e14239a7915060e7571d7275938ad20
+-r--r--r--    1 frmarinh  2015_paris  2145 Feb 17 21:24 ed7ba428ce00ff53edaf65abbc5495fd49c31e
+
+./.git/objects/af:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:06 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 17 21:24 102209cb446fe6d9ae4dd4afd038e2478528f9
+-r--r--r--    1 frmarinh  2015_paris  1541 Feb 17 21:24 345f2c49c635915ec56406be30586c6ad527c1
+-r--r--r--    1 frmarinh  2015_paris   931 Feb 18 02:06 3f2a143159bb75f6dd42bf533845eea9c800bf
+-r--r--r--    1 frmarinh  2015_paris   601 Feb 17 21:24 ccea5c2ae548fe95835873fd9407c2e8d9f5e3
+-r--r--r--    1 frmarinh  2015_paris  2018 Feb 17 21:24 dc4e5ae3842b92fac663b548ba62b626c4224b
+
+./.git/objects/b0:
+total 19
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   478 Feb 17 21:24 5473c33ac28467f4c203bec1c06c15d0a74d78
+-r--r--r--    1 frmarinh  2015_paris   944 Feb 20 12:48 c3480dc53ac5bd28ff261d6344530a1b693e7b
+
+./.git/objects/b1:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   360 Feb 17 21:24 9434bb3f284ee026ded8dbce342638b18b4f0f
+-r--r--r--    1 frmarinh  2015_paris  3816 Feb 19 03:01 bfa13d8f68429d15b7e8384609520a69d92137
+-r--r--r--    1 frmarinh  2015_paris  3628 Feb 18 01:26 c327694674b348941b632195c7f04179a610e1
+
+./.git/objects/b2:
+total 66
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3170 Feb 18 01:46 3301dfb87e542339b70cdbd13b594e2f6e5c53
+-r--r--r--    1 frmarinh  2015_paris  2409 Feb 19 03:01 60f73774f1644de4053a10b0c1bb87d6474d55
+-r--r--r--    1 frmarinh  2015_paris  3546 Feb 18 01:26 7e182ccd9f25c7307dbda505bd09db428b3efe
+-r--r--r--    1 frmarinh  2015_paris  9412 Feb 17 21:24 d90656322b4f21b60edddc2a961dcaaa117466
+-r--r--r--    1 frmarinh  2015_paris  2255 Feb 20 12:48 e2ee5fca1f9441d1fa7d8d77831220552147df
+-r--r--r--    1 frmarinh  2015_paris  2541 Feb 17 21:24 ed5e538dec76745fbc8d3f01d8e448bec9ee5c
+-r--r--r--    1 frmarinh  2015_paris   568 Feb 17 21:24 fce8ff4e50ee473cd89fe90d1761ededc0fae0
+
+./.git/objects/b3:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1102 Feb 19 04:16 61a13eee972cd3296d89f7f19fba06039051c9
+-r--r--r--    1 frmarinh  2015_paris   477 Feb 18 04:31 90ebaedd8066885bfc5ecacd1e9402003097de
+-r--r--r--    1 frmarinh  2015_paris   556 Feb 17 21:24 a493364f32d82f75456872c7e5264e9f921409
+
+./.git/objects/b4:
+total 26
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   682 Feb 18 04:31 05a118eb10e0f5652ebacf3ea63324115b4057
+-r--r--r--    1 frmarinh  2015_paris   310 Feb 17 21:24 69226c4d9e78cb551f8b06e621d46983bc78d1
+-r--r--r--    1 frmarinh  2015_paris  2490 Feb 18 05:01 9ac299e6c908d86edf4e43c349ac6782ef6082
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 18 01:56 ece4030ef7ee33aad7f095ea4f880ebb4a5dc2
+-r--r--r--    1 frmarinh  2015_paris   118 Feb 17 21:24 f26e970c4bd030774bf14cc223e4ccdcac93ed
+
+./.git/objects/b5:
+total 70
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2300 Feb 18 05:01 2fb413e8046f24621d9be3dd28870f359ddfc4
+-r--r--r--    1 frmarinh  2015_paris  14709 Feb 18 01:16 50849af5ba90edba22ef2883cadf7f4fecb6d5
+-r--r--r--    1 frmarinh  2015_paris   6859 Feb 17 21:24 8121f36a31d43689be78ee48b9fd2165cfc3f0
+-r--r--r--    1 frmarinh  2015_paris    119 Feb 17 21:24 ad07bfa4ad0454b373b755fe75500eb3dd2a70
+-r--r--r--    1 frmarinh  2015_paris   2157 Feb 17 21:24 c13fa342529f6b44ce94654b38b38b2e063b45
+
+./.git/objects/b6:
+total 52
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2495 Feb 20 12:48 204f49c16240c5ccef350e458afbfc3c7b3281
+-r--r--r--    1 frmarinh  2015_paris    490 Feb 18 04:31 3da824d24fffacfea902624979fbb0b00fa507
+-r--r--r--    1 frmarinh  2015_paris    118 Feb 17 21:24 455ebce675b71e6c8f7559bfbc6b9122e3934c
+-r--r--r--    1 frmarinh  2015_paris  14678 Feb 17 21:24 5b978278f751b00767474bba5dfb8813536cd2
+
+./.git/objects/b7:
+total 27
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   167 Feb 17 21:24 6d1d6c51d3c5476bb52b1f5a99e60be82808da
+-r--r--r--    1 frmarinh  2015_paris  2823 Feb 17 21:24 944e93c9d5df9ad060e7e1242207df9f8d7f9a
+-r--r--r--    1 frmarinh  2015_paris  2046 Feb 20 12:48 bb07537d1bf0752bf1600132f703c400bd6f58
+
+./.git/objects/b8:
+total 68
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2837 Feb 17 21:24 1f2c6e0dd61a0b7b88878bd726b713dae80158
+-r--r--r--    1 frmarinh  2015_paris   2429 Feb 19 00:39 3ec7f75ab42d0f4a3d861799410245743fa9d6
+-r--r--r--    1 frmarinh  2015_paris   1646 Feb 18 01:36 4989abd3a0a448635e4699a394a23944a503ce
+-r--r--r--    1 frmarinh  2015_paris  14673 Feb 17 21:24 69838cff91196da43f21a52f46654764e25d51
+-r--r--r--    1 frmarinh  2015_paris    292 Feb 17 21:24 8a15e45a8ce862d8c895012886112143bdfbba
+-r--r--r--    1 frmarinh  2015_paris   3456 Feb 17 21:24 8b7373144af27f1a10f9775497c9bd7825c750
+
+./.git/objects/b9:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:11 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1027 Feb 17 21:24 615a78821256bf77fc1e146805de9f42e36920
+-r--r--r--    1 frmarinh  2015_paris   588 Feb 19 00:50 aa18c9bbbfda310eddba40dcbc8a166a620eb4
+-r--r--r--    1 frmarinh  2015_paris   322 Feb 17 21:24 ba3d394ac956fa97612d8b503f3b7cf74ae99c
+
+./.git/objects/ba:
+total 82
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2197 Feb 18 04:51 145ae77c05103770e9f9e9b57a33ba124aec06
+-r--r--r--    1 frmarinh  2015_paris    275 Feb 17 21:24 1ebc995d17a8a158b50ba60142631b29f34b2f
+-r--r--r--    1 frmarinh  2015_paris   3795 Feb 17 21:24 4531b274243066702814f460dfdfdf62764f79
+-r--r--r--    1 frmarinh  2015_paris   2358 Feb 18 05:01 609029fdfbfbf69c8e26ef1b23522b3c605d96
+-r--r--r--    1 frmarinh  2015_paris   3794 Feb 17 21:24 64659f6bdd469de12535236769de767d1d38fe
+-r--r--r--    1 frmarinh  2015_paris   1962 Feb 18 04:11 664e4469b4a099901cc1325832b10d7bca4b1c
+-r--r--r--    1 frmarinh  2015_paris   2937 Feb 18 01:46 96926ad7154fdc3308e4cf4689ed621423c7e7
+-r--r--r--    1 frmarinh  2015_paris  14711 Feb 18 01:26 9aff71203dacc62d35df85dc57405152171339
+
+./.git/objects/bb:
+total 45
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14697 Feb 17 21:24 b5cef529d3ca1fc51082f313ebd5379f8e07c0
+
+./.git/objects/bc:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3373 Feb 19 00:39 32f7e071e5b0f6103cae8914f980c0c6af28ba
+-r--r--r--    1 frmarinh  2015_paris   544 Feb 18 00:15 5a542780bfb846f15263a895f8722c8009a2d6
+-r--r--r--    1 frmarinh  2015_paris  2286 Feb 18 05:01 9f8df1a61d20d9f4eafcdc9df7f8af35ff8050
+-r--r--r--    1 frmarinh  2015_paris  1154 Feb 18 02:11 ca4eb360ffd9aeda984c9562330def17ac5110
+
+./.git/objects/bd:
+total 27
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   377 Feb 18 04:31 52e973ec3d3604a00801788a2c597e782ceba9
+-r--r--r--    1 frmarinh  2015_paris   351 Feb 17 21:24 9cdea637800523747a57857c269a49a4e5c52a
+-r--r--r--    1 frmarinh  2015_paris  3627 Feb 19 04:16 d026261f3494d7c43099527a6d3f6396b1e382
+-r--r--r--    1 frmarinh  2015_paris   269 Feb 17 21:24 e2d1d990dfb4aa926ae5ea59db789aba711338
+
+./.git/objects/be:
+total 47
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  4204 Feb 19 04:16 14e21357de1bbfaac511744f09a0e536b54a63
+-r--r--r--    1 frmarinh  2015_paris  2333 Feb 19 04:16 3884730218f3c8497452d7564d0396b9ecd973
+-r--r--r--    1 frmarinh  2015_paris  3156 Feb 18 01:56 63aab3e5dcbdc2074b266cf439b04c2236b8e8
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 19 00:39 7920013b22997dd3573bdb2a616096e76b8d35
+-r--r--r--    1 frmarinh  2015_paris  2245 Feb 18 04:51 e23efca09827b31c0b1231b8dc73e1ff01fe0c
+-r--r--r--    1 frmarinh  2015_paris  2046 Feb 18 04:51 f198a28b0920b207f597b7570a907def64a0ba
+
+./.git/objects/bf:
+total 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2488 Feb 18 01:26 44ef11bf5182abaa5a77d485e02f5d0bd006d2
+-r--r--r--    1 frmarinh  2015_paris  5462 Feb 19 00:39 97d29e2c540a7786cfd7a6360b0bb176389a1c
+
+./.git/objects/c0:
+total 38
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2124 Feb 18 04:41 146ce65f52721293eb7a6f925725b8cf27e5cc
+-r--r--r--    1 frmarinh  2015_paris  6067 Feb 17 21:24 a0ef2cdf8d9d6597e1bb182d3c2eed4c702d05
+-r--r--r--    1 frmarinh  2015_paris  2333 Feb 20 12:48 de4d47b1cd081aa26afd52580dcc746e09180b
+
+./.git/objects/c1:
+total 45
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   3157 Feb 18 04:51 2f1473407ef8573bf868767362a6e2665c3193
+-r--r--r--    1 frmarinh  2015_paris  10816 Feb 17 21:24 d59644a9226eecfbad5c7f96f4fcb275936748
+
+./.git/objects/c2:
+total 30
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1984 Feb 17 21:24 53aa06bf0cd56c5906576226e2d3e99cf742f3
+-r--r--r--    1 frmarinh  2015_paris  4396 Feb 20 12:48 aada7f5193120ad6fd0cfa25177669933902c6
+-r--r--r--    1 frmarinh  2015_paris   387 Feb 18 04:31 d0b87b790efa014fc5692e9cda37404e59a820
+
+./.git/objects/c3:
+total 92
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2401 Feb 19 04:16 014d201f6b44fe6d7f5768002b4d20d99dc906
+-r--r--r--    1 frmarinh  2015_paris    624 Feb 18 04:31 16b2879e5f879277763c45c2759f23d12f9639
+-r--r--r--    1 frmarinh  2015_paris   1926 Feb 18 02:11 352d2e0e647319c82c3f201f717256cb64c283
+-r--r--r--    1 frmarinh  2015_paris    451 Feb 17 21:24 37ae1271b1f6ef1a1f981b28474bb5a7521390
+-r--r--r--    1 frmarinh  2015_paris   2333 Feb 19 03:01 3b7b1309393b0c6bf59c9620fd203d88fb4c69
+-r--r--r--    1 frmarinh  2015_paris  20181 Feb 18 05:43 75dfe1c64e2c4bc4ed0fbfef452c37574c2c58
+-r--r--r--    1 frmarinh  2015_paris   3814 Feb 18 01:36 a25b8ecd8f15645c06b7b026aad2418283c312
+-r--r--r--    1 frmarinh  2015_paris   2837 Feb 17 21:24 ad41ad146bbf4587c1191e878cbce92eb6a536
+-r--r--r--    1 frmarinh  2015_paris   2439 Feb 19 03:01 ff4c1504bbdf5149e081585b5ecc6a9e3f197f
+
+./.git/objects/c4:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 02:11 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2134 Feb 18 02:11 158f6d0f6d7de1ae4261fbdec06623fadaefa2
+-r--r--r--    1 frmarinh  2015_paris  3795 Feb 17 21:24 15e7f79618eb5b06d9c943b02b45206225620f
+
+./.git/objects/c5:
+total 43
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2511 Feb 18 04:41 31ba4ad31283c9257d810e1dd34285254c571d
+-r--r--r--    1 frmarinh  2015_paris  2358 Feb 18 04:41 49c4cb5206643f7321c99778140b495391d8fc
+-r--r--r--    1 frmarinh  2015_paris  1732 Feb 18 00:15 527842a6d60414c6c7a8d4e88abe2d89ce2f84
+-r--r--r--    1 frmarinh  2015_paris  4336 Feb 17 21:24 5999628e487016142ccdb648ac6b91877d657a
+-r--r--r--    1 frmarinh  2015_paris   468 Feb 18 04:41 96144c062cb050636f50f19c2bc93a9d0e3a62
+-r--r--r--    1 frmarinh  2015_paris   393 Feb 17 21:24 a38c0a01f557d54596e0ab3bc19061148de9e6
+-r--r--r--    1 frmarinh  2015_paris   526 Feb 18 04:51 d7c631bac7ddf95762f667742de497f2604005
+
+./.git/objects/c6:
+total 102
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  22161 Feb 19 03:01 946871ba44ff1e5bcbcb7959cd2c95fa512bf3
+-r--r--r--    1 frmarinh  2015_paris   1488 Feb 17 21:24 94d1bdc2ce839cf78a4c3e5a4d785e0dc28231
+-r--r--r--    1 frmarinh  2015_paris   3796 Feb 17 21:24 95629fedd7317fda2b188de0260666aea58710
+-r--r--r--    1 frmarinh  2015_paris    576 Feb 18 04:41 d6d248f9cdf60279a87d8bdd1e681a2a5c4f48
+-r--r--r--    1 frmarinh  2015_paris  14696 Feb 19 03:01 daebe5c71317eb915bda4898a014b454f3c267
+
+./.git/objects/c7:
+total 40
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:36 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2276 Feb 17 21:24 31150dc8a8b1daba73a92d927c0dffca8a4177
+-r--r--r--    1 frmarinh  2015_paris   388 Feb 18 04:31 4b27f014c342427453984981069c699beec554
+-r--r--r--    1 frmarinh  2015_paris  4868 Feb 17 21:24 68dd29a99d9b0f1f2a495c0e01960f016c4e28
+-r--r--r--    1 frmarinh  2015_paris   504 Feb 17 21:24 71d683ca6b09ecba516c1462e2b05d6e21887b
+-r--r--r--    1 frmarinh  2015_paris  2288 Feb 18 01:36 c6fd8e227c09f3770d042284caebd632543272
+-r--r--r--    1 frmarinh  2015_paris   274 Feb 17 21:24 e8622ee8fdb2fcd0c010641e391a97d638825a
+-r--r--r--    1 frmarinh  2015_paris   448 Feb 17 21:24 ece3b254025ab80ba2ffc60bb2b1f1fd374885
+
+./.git/objects/c8:
+total 44
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 01:56 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  10025 Feb 17 21:24 9b235c717ff23d7e0804472f9dae0ecf3f7791
+-r--r--r--    1 frmarinh  2015_paris   3626 Feb 18 01:56 fc9c2367f3840d59da3f52816a994ec80c4a84
+
+./.git/objects/c9:
+total 38
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:11 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  7168 Feb 17 21:24 51237aeb5a371b1a4074c1ceac0599a7bec160
+-r--r--r--    1 frmarinh  2015_paris  3101 Feb 17 21:24 bc4f87cdf44e0d895586ece37cba2bfcbbcb86
+-r--r--r--    1 frmarinh  2015_paris   394 Feb 18 05:11 c4acb2c663aaa9be7aa6a44abf7d58096e60ee
+
+./.git/objects/ca:
+total 23
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 00:50 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1462 Feb 19 00:50 ad626512cb26ec208e16e86b212aaf969a597f
+-r--r--r--    1 frmarinh  2015_paris  2040 Feb 17 21:24 e2b65bf645885a7763ceebae03af4f3e7efcfe
+
+./.git/objects/cb:
+total 38
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2937 Feb 18 01:56 097627e44322e08daa89e72ec55edab065fa58
+-r--r--r--    1 frmarinh  2015_paris  2211 Feb 18 05:21 2ce060206ab441d4d97fff536364096f1d9e58
+-r--r--r--    1 frmarinh  2015_paris  2837 Feb 17 21:24 4d38159cd71ce026c084fb49c7d6b6ad38bf04
+-r--r--r--    1 frmarinh  2015_paris   484 Feb 17 21:24 6b58f87ecd19245d989516c07ebb0e4ea839a7
+-r--r--r--    1 frmarinh  2015_paris   118 Feb 17 21:24 7138e5931044a5e2082fef854300caf8f42611
+-r--r--r--    1 frmarinh  2015_paris   568 Feb 20 12:48 7cd8f01ddb27ee72b0be39174d9e3c3410fad2
+-r--r--r--    1 frmarinh  2015_paris   169 Feb 17 21:24 8b987e14ea22d109ce1eb0b642416bd09eb5f9
+
+./.git/objects/cc:
+total 35
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  4310 Feb 17 21:24 0e0de49631bf0f9887587f919376e81a05d7ed
+-r--r--r--    1 frmarinh  2015_paris  2333 Feb 18 05:21 316d2b9934df7aca08e87437627b68c3260e90
+-r--r--r--    1 frmarinh  2015_paris   607 Feb 17 21:24 4c1f3e0a454eca5736c3e4cc1d52f976617a91
+-r--r--r--    1 frmarinh  2015_paris   380 Feb 18 04:31 c4da007758f17f7e9ec89b410d2933a988679a
+-r--r--r--    1 frmarinh  2015_paris   701 Feb 18 00:15 f49ebf11dc8cce9189ad97503bd01f3d88409b
+
+./.git/objects/cd:
+total 90
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14714 Feb 18 00:15 727675d857ad24435d1895bf63da964fa60a65
+-r--r--r--    1 frmarinh  2015_paris    174 Feb 18 04:11 7f7258bf0f1c5c959842c01e02fa88ae367ef7
+-r--r--r--    1 frmarinh  2015_paris    119 Feb 17 21:24 99fc6ee5a9f67d4dce23fc2f09d34187b60135
+-r--r--r--    1 frmarinh  2015_paris    447 Feb 17 21:24 c559941868117a2bdf04bb067ab4ca44692abc
+-r--r--r--    1 frmarinh  2015_paris  21463 Feb 19 00:39 ecdd18dec7667547398bd99c36958cc8357d43
+
+./.git/objects/ce:
+total 66
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    351 Feb 18 04:31 1c572a9f45773d087b61e7cf7329c95b8bbea9
+-r--r--r--    1 frmarinh  2015_paris   1833 Feb 18 01:26 1e26e1dacdcaf80b12119a56b7628ea259a5b2
+-r--r--r--    1 frmarinh  2015_paris   2284 Feb 19 00:39 238186cc9afa8835211768bbfc22c438c13af2
+-r--r--r--    1 frmarinh  2015_paris   2422 Feb 19 00:39 28a76cf6072da3148c6fbe2ecb3247023cf4be
+-r--r--r--    1 frmarinh  2015_paris    381 Feb 18 04:31 30c2cae9446716cfe0e74a0dd73544f87308fe
+-r--r--r--    1 frmarinh  2015_paris  14696 Feb 18 05:43 845244e5cb0919b6af9e3bc61259e81983be3c
+-r--r--r--    1 frmarinh  2015_paris   2316 Feb 17 21:24 abaa531954d312edfda7f493737bc470854162
+
+./.git/objects/cf:
+total 51
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2408 Feb 18 01:26 1bb72edca9ffec6478964a663e4ffc0f2b5af3
+-r--r--r--    1 frmarinh  2015_paris  3172 Feb 19 00:39 2aba8b0edb7dfe81ceb73d07d20b369858bcee
+-r--r--r--    1 frmarinh  2015_paris  2293 Feb 19 00:39 4aabfe9d757414082fc4f0a1eb20c03f379a04
+-r--r--r--    1 frmarinh  2015_paris  2287 Feb 18 01:46 604dacd63eb9c456758d483edd638231a9c82b
+-r--r--r--    1 frmarinh  2015_paris   330 Feb 20 12:48 7bfb1eb96346b46362eede85a84a2002301635
+-r--r--r--    1 frmarinh  2015_paris  2919 Feb 18 04:51 8685fae8428add6c23d0e397dd129e8f724f16
+-r--r--r--    1 frmarinh  2015_paris   119 Feb 17 21:24 88fdcd13d68391e800305b8a1e46f54e61d67a
+-r--r--r--    1 frmarinh  2015_paris  2409 Feb 19 00:39 9a21e659a4a936d81378fc6b95d05669b5cd6d
+
+./.git/objects/d0:
+total 72
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2289 Feb 18 01:26 0064b5a38b55b38311f3471fdd651e25ad1b4a
+-r--r--r--    1 frmarinh  2015_paris   2290 Feb 19 03:01 080b609eae8025e1f7f2339f92bc8764384146
+-r--r--r--    1 frmarinh  2015_paris    392 Feb 18 04:31 18d1323026bebf266f8ff92d3f1fb9de36422e
+-r--r--r--    1 frmarinh  2015_paris   2316 Feb 17 21:24 79e2ae94606fb3d106e65995f66ab0b0d8eaab
+-r--r--r--    1 frmarinh  2015_paris  11144 Feb 17 21:24 b7b9097c96701fad8dd3fbb48038ee2db475b8
+-r--r--r--    1 frmarinh  2015_paris    523 Feb 18 01:26 d32016da38f53bbe00586e0bc7ac59f3ccc535
+-r--r--r--    1 frmarinh  2015_paris   1990 Feb 17 21:24 e1a17c6686f6376e339ad0ba7df71e625f65f8
+-r--r--r--    1 frmarinh  2015_paris   1957 Feb 19 04:16 e7b07d08c4681ff0d8ff7e3e53e349b63a41b6
+-r--r--r--    1 frmarinh  2015_paris    118 Feb 17 21:24 eb2ed966411ed76af431e00ca2f21ffc1e463d
+-r--r--r--    1 frmarinh  2015_paris   3155 Feb 19 00:39 eebc3eef4a86b506287926ea6ed2e99a914295
+
+./.git/objects/d1:
+total 41
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2316 Feb 17 21:24 20d8f9d5e38aea6343868e9f71040cb4573223
+-r--r--r--    1 frmarinh  2015_paris   306 Feb 17 21:24 2f7d3cbe5d073a0080880c76370bada90f2bfb
+-r--r--r--    1 frmarinh  2015_paris  4077 Feb 18 01:36 461bad6b02a284908092be0253d58de1db0dea
+-r--r--r--    1 frmarinh  2015_paris  2938 Feb 20 12:48 ba0086d630d3fcb99d79f3d6d7527e50e318eb
+-r--r--r--    1 frmarinh  2015_paris  2363 Feb 19 03:01 e984a0e3024fae4064504cb0940cf5655f2980
+
+./.git/objects/d2:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3815 Feb 20 12:48 0758fcc43712e4822c5044d038fe3bfff32c49
+-r--r--r--    1 frmarinh  2015_paris  2317 Feb 17 21:24 8b8887d90df4442b7f784be3c2045ea0361a93
+
+./.git/objects/d3:
+total 46
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2187 Feb 17 21:24 140303f4c013ae7770f7bbe90f6f108e94b87c
+-r--r--r--    1 frmarinh  2015_paris  2468 Feb 17 21:24 2b03ff011363fb67b2fa1f45c5475c878e3890
+-r--r--r--    1 frmarinh  2015_paris  2268 Feb 18 05:01 50091ca7301489f87e45efa914c184cefb3b82
+-r--r--r--    1 frmarinh  2015_paris   592 Feb 18 04:31 590b35c5935af090c1e54aa96f3e8cdf895f3f
+-r--r--r--    1 frmarinh  2015_paris    20 Feb 18 00:15 5e62fcf6d62331a2cd9ccc43ff200254959420
+-r--r--r--    1 frmarinh  2015_paris  2290 Feb 18 04:41 754db0b5ff835ea056e8a07c95efaeb28b35a8
+-r--r--r--    1 frmarinh  2015_paris   316 Feb 17 21:24 aaac5a2fa43d336b0ae13ca1900ad194df8552
+-r--r--r--    1 frmarinh  2015_paris  2681 Feb 17 21:24 f264f9b0707328580afacaf331f0c865e680c7
+
+./.git/objects/d4:
+total 62
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2022 Feb 19 03:01 101cff7bfca175a22c9d0806ef57313eeb93f1
+-r--r--r--    1 frmarinh  2015_paris   331 Feb 17 21:24 310abde3adf022e89e4b22ee8882d890046d40
+-r--r--r--    1 frmarinh  2015_paris   599 Feb 18 05:11 5f646ae27c5c4a11a622650b94b8a98bd4e1a1
+-r--r--r--    1 frmarinh  2015_paris  2811 Feb 18 01:46 6ce5157d632262dde4e7f5f2d8f81208ebf262
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 18 01:16 bd32e1b4db3334bb82d926368b9583ec4b8ab9
+-r--r--r--    1 frmarinh  2015_paris  3815 Feb 19 04:16 bf675e97a41aa4a83950843624e5d44199078e
+-r--r--r--    1 frmarinh  2015_paris  8721 Feb 17 21:24 d9214c893bb35ca757a109f6401a7195fd27d3
+-r--r--r--    1 frmarinh  2015_paris   544 Feb 17 21:24 e6e3dd1b3a95a6a3cd9e9ee1f3ba121c88e2cc
+-r--r--r--    1 frmarinh  2015_paris  1737 Feb 19 04:16 ffac435e3cf90aa29ecd754b7d0a31b19c2b8e
+
+./.git/objects/d5:
+total 86
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    293 Feb 17 21:24 01d4b8aea4a012d17708ca2a5bac6fcc63afa9
+-r--r--r--    1 frmarinh  2015_paris  14709 Feb 18 04:41 3348e84924bec4cf854b146f1964e8beef371b
+-r--r--r--    1 frmarinh  2015_paris  14697 Feb 18 02:06 6b745b6ac8efcfe2a546e37a830fcdc6bbcbcf
+-r--r--r--    1 frmarinh  2015_paris   2023 Feb 18 04:41 739b89a75a59daa826352ef8b9ae9f4c5ea6ed
+-r--r--r--    1 frmarinh  2015_paris    170 Feb 17 21:24 9416b4749027d732dc04281bb5afc7cb036243
+-r--r--r--    1 frmarinh  2015_paris   2333 Feb 18 04:41 a16dfd34140be7ab2d7226d531e4185a29ac23
+-r--r--r--    1 frmarinh  2015_paris    182 Feb 18 00:15 b1db159f67de3ffc3b93ce6c03d0dd5bcd3cd4
+
+./.git/objects/d6:
+total 47
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   633 Feb 17 21:24 26a7572abc6b15d63ddd2948681dbc85c621e6
+-r--r--r--    1 frmarinh  2015_paris  2286 Feb 18 01:36 3e350f41b66a9037e051256b39ef5e16e98a40
+-r--r--r--    1 frmarinh  2015_paris  3164 Feb 18 01:36 58cc52a0efa1626970716451a9aa90d40c312a
+-r--r--r--    1 frmarinh  2015_paris  2111 Feb 18 05:01 669f71241a76334761aef906db04ec875710bf
+-r--r--r--    1 frmarinh  2015_paris  4352 Feb 19 04:16 a0cb4822934bd0827d3eec75f361303fc9a32b
+-r--r--r--    1 frmarinh  2015_paris  1489 Feb 17 21:24 ae01794a2cf9bca130dc4ed511cf22e6fbd610
+
+./.git/objects/d7:
+total 21
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2300 Feb 20 12:48 ffdadc5dc1ce1da482f0b986233f33b2287e76
+
+./.git/objects/d8:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3373 Feb 19 03:01 152ff35ace8fe7cc78b1f028fea64c1145248f
+-r--r--r--    1 frmarinh  2015_paris   286 Feb 17 21:24 2e8fcd167b213de4b598c266869cbd9ddbbf8e
+-r--r--r--    1 frmarinh  2015_paris  1561 Feb 17 21:24 85d04357edd175fe28d68d1ce51679df141bf6
+
+./.git/objects/d9:
+total 28
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   653 Feb 17 21:24 6991353b3da03a01ddb3e24470416570fe5d5b
+-r--r--r--    1 frmarinh  2015_paris  4002 Feb 17 21:24 96485ab4fb7fdfdefc5a971fa339feef005628
+-r--r--r--    1 frmarinh  2015_paris   379 Feb 18 04:31 ac113b8d9c7b7fd7c4fad6a8856a616bd6d0ac
+-r--r--r--    1 frmarinh  2015_paris   293 Feb 17 21:24 e4f421ab5b3057768aa7af171f694d67c93248
+
+./.git/objects/da:
+total 96
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    669 Feb 18 01:46 035ea52624d7a78535f95319797c508f5a60b3
+-r--r--r--    1 frmarinh  2015_paris  22194 Feb 19 05:09 289711fea7609413f9e88ee4a3f5668924d09b
+-r--r--r--    1 frmarinh  2015_paris   2029 Feb 20 12:48 485f86d2a9af322e706e62dceb8d7be6f7b1f8
+-r--r--r--    1 frmarinh  2015_paris    171 Feb 18 05:31 4efb10b97a2268c2c536014c7c1be1ca6da84c
+-r--r--r--    1 frmarinh  2015_paris  14707 Feb 19 00:39 75d0bafe9745d99e33e152fad71fa9b3e3485a
+
+./.git/objects/db:
+total 37
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:56 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2432 Feb 18 01:56 0de96b4e290e288dc5f326cab2ce89b706bcb7
+-r--r--r--    1 frmarinh  2015_paris  2488 Feb 18 01:46 5367008ed0c96ad449c9fbd44ae58fc0798b3b
+-r--r--r--    1 frmarinh  2015_paris  1092 Feb 17 21:24 930c5402bc73d9d808c0ad907656f06e653365
+-r--r--r--    1 frmarinh  2015_paris  2642 Feb 17 21:24 955dadfcecdbb5ccad63813da7c9196c760f97
+-r--r--r--    1 frmarinh  2015_paris   307 Feb 17 21:24 d7c9ef690513562c25ccc477e06918411ac8b6
+-r--r--r--    1 frmarinh  2015_paris   382 Feb 17 21:24 f254435efa9d5bff59f1e7abf3a925217f49a5
+
+./.git/objects/dc:
+total 21
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   525 Feb 17 21:24 7797dea6d769f91d1dbf26b7df3f1c67818065
+-r--r--r--    1 frmarinh  2015_paris    84 Feb 17 21:24 97799d4b24daa803c2f21c7c8d78a20cae5594
+-r--r--r--    1 frmarinh  2015_paris   851 Feb 18 00:15 d2114d30759387382dd319bca664d1c51c36b2
+
+./.git/objects/dd:
+total 29
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2338 Feb 18 01:16 7f6a2cb08559568481c354d745830455589202
+-r--r--r--    1 frmarinh  2015_paris  3815 Feb 18 05:01 d0193e99f1ba301ce9e9d37a077f4e32e284dd
+
+./.git/objects/de:
+total 47
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    734 Feb 17 21:24 7f316dd30567226ed5af61b884c53657c98579
+-r--r--r--    1 frmarinh  2015_paris  14699 Feb 17 21:24 d56f74a89a93e09c0f9ecd5a850b067033943d
+
+./.git/objects/df:
+total 65
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    494 Feb 18 01:26 15507edaa97a1adc5abb2cb40e2684f0154b4b
+-r--r--r--    1 frmarinh  2015_paris  23188 Feb 20 12:48 60deef5e8aa8f31cd26b6f2ca35322649d8a70
+-r--r--r--    1 frmarinh  2015_paris    937 Feb 19 00:50 b0835d95af36756f81d5cbaacfe0b7e9cb700a
+
+./.git/objects/e0:
+total 71
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 18 05:21 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14709 Feb 18 05:21 b3c824564bc202003fbfd15168bdadd7f046f6
+-r--r--r--    1 frmarinh  2015_paris  11078 Feb 17 21:24 c571c6b835d90c0c8966e5947df9c617457dbd
+-r--r--r--    1 frmarinh  2015_paris    174 Feb 18 04:31 d7b3bc7b0ee14c1f98269f0d34ee036864cc37
+-r--r--r--    1 frmarinh  2015_paris   1077 Feb 17 21:24 e77fb4abe9333e6acbbaf40b7b4a427f19d456
+
+./.git/objects/e1:
+total 59
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  3166 Feb 19 03:01 11cec4f65735af5c6e1673dc0f791274c40ba4
+-r--r--r--    1 frmarinh  2015_paris  2561 Feb 17 21:24 16549d625abbd7afe0b9144e55bafc7ef36b8c
+-r--r--r--    1 frmarinh  2015_paris  2512 Feb 19 00:39 6325854a0a52f5964d635a047c18fe26102a00
+-r--r--r--    1 frmarinh  2015_paris  2489 Feb 18 04:41 78533dc4aed4c3a3899db28a9d23a78c307d8b
+-r--r--r--    1 frmarinh  2015_paris  2142 Feb 17 21:24 bf562f765c12c380899375c48262a910422ff6
+-r--r--r--    1 frmarinh  2015_paris   684 Feb 17 21:24 c136c72a8bfe610c47e88fa4808a5150fb8404
+-r--r--r--    1 frmarinh  2015_paris  3816 Feb 18 04:41 c4bde48ac6ccb300487f5796e258af95e99085
+-r--r--r--    1 frmarinh  2015_paris  2490 Feb 18 04:51 ebd6cb1ee04ec7ca70070c5f316653740f8f35
+
+./.git/objects/e2:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:56 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2289 Feb 18 01:56 92f46f9fc8b37f41c054a1042ac4d5632066c2
+-r--r--r--    1 frmarinh  2015_paris   229 Feb 17 21:24 fad9df3c043b5e5d17f4338379808aba4796cf
+
+./.git/objects/e3:
+total 21
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2432 Feb 18 01:46 b6191747b7e57c647d9f18dd39e0669507f0c1
+
+./.git/objects/e4:
+total 48
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2407 Feb 18 01:36 1c199666417e132ae4b595a5ccf7a7d7c6479f
+-r--r--r--    1 frmarinh  2015_paris  2358 Feb 18 04:51 27299a980e0f9ea319974dac4b03b51f72e449
+-r--r--r--    1 frmarinh  2015_paris  2292 Feb 18 01:26 2e98ed917a302710addbf9baba7f867f5411c0
+-r--r--r--    1 frmarinh  2015_paris  3794 Feb 17 21:24 32cdbb1b9f24efa9b2d3102ecc58c927973ae3
+-r--r--r--    1 frmarinh  2015_paris  3792 Feb 17 21:24 612c20afc76652cdaa24bee790c21013e673bc
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 18 02:11 b1b32c1ee1be775d1a29b9e33e418484309c03
+
+./.git/objects/e5:
+total 24
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   339 Feb 18 04:41 71bd3d7e20ae3b02c13462fe6be99038dcf5ed
+-r--r--r--    1 frmarinh  2015_paris  3172 Feb 19 04:16 cd833d73af56075e57623d23e5fa6c836eb243
+
+./.git/objects/e6:
+total 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2046 Feb 18 04:41 1acc7405c84f62decdd2530497c730f5a62ea8
+-r--r--r--    1 frmarinh  2015_paris  2333 Feb 18 04:51 3dafe7e09bbef700e10d302a3e6d4340d97e80
+-r--r--r--    1 frmarinh  2015_paris  2317 Feb 17 21:24 98abbde4f887955dc37e9ab0e1410be983bdbe
+-r--r--r--    1 frmarinh  2015_paris   398 Feb 18 04:31 9b4174ccdec34270826d2834bf97ec0ada25df
+-r--r--r--    1 frmarinh  2015_paris    15 Feb 19 00:39 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+
+./.git/objects/e7:
+total 53
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:50 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14682 Feb 19 00:50 83c7bd29ac1a27343212182a06ff0fafb57cb1
+-r--r--r--    1 frmarinh  2015_paris    170 Feb 17 21:24 8bf02227e44c4aa01a8f10c06d5d02775bb830
+-r--r--r--    1 frmarinh  2015_paris    591 Feb 18 04:31 97e9d385ac939f6e787934927b8eb81091f647
+-r--r--r--    1 frmarinh  2015_paris   2393 Feb 19 00:39 c7e11eddf9b4d8cb8009334fd9bab8bb391a01
+
+./.git/objects/e8:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:46 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2682 Feb 18 01:46 1e37ad54d17597962560443c766bedbcea570e
+
+./.git/objects/e9:
+total 49
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   1792 Feb 18 01:56 13341b6d97de3afe1ce63a58b7885073bbce1a
+-r--r--r--    1 frmarinh  2015_paris  14690 Feb 19 04:16 46bc7b1a40e88f79e9e179b52f63d107eef0a2
+
+./.git/objects/ea:
+total 39
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2224 Feb 17 21:24 6327e75ff71db5c23d45942a2ce8b5d2106748
+-r--r--r--    1 frmarinh  2015_paris  2649 Feb 18 04:51 8464b2822e9450586852a630601dadb85a142d
+-r--r--r--    1 frmarinh  2015_paris   345 Feb 17 21:24 87818771c0c8cf036aaed38e2a6894dce142e3
+-r--r--r--    1 frmarinh  2015_paris   519 Feb 18 05:01 aec6f438a57718703d2d6e87b4148bdb925b64
+-r--r--r--    1 frmarinh  2015_paris  3818 Feb 18 01:26 d75e676006c7701b192cf6c8f4659550745f85
+-r--r--r--    1 frmarinh  2015_paris   144 Feb 18 01:56 ee5c1ca689716af6cc19462459e6bb6e72de36
+
+./.git/objects/eb:
+total 37
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2358 Feb 19 03:01 247a1fe70c4841c08899cb3646c7f80134f3dc
+-r--r--r--    1 frmarinh  2015_paris   334 Feb 17 21:24 6a7e68e1f977853e5cee1aaac8496076e7b6d1
+-r--r--r--    1 frmarinh  2015_paris  3797 Feb 17 21:24 7ba6527ff99f471561d0436b1eaeb1ae8466df
+-r--r--r--    1 frmarinh  2015_paris  3165 Feb 19 04:16 bafda31a10710109c1f1699cce61772232f28e
+
+./.git/objects/ec:
+total 76
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  11071 Feb 17 21:24 35e1e07cc11f32bac12ab73e9db04278f62174
+-r--r--r--    1 frmarinh  2015_paris    335 Feb 17 21:24 a914baace643495ba18b90a42ad99f2b2c3e90
+-r--r--r--    1 frmarinh  2015_paris    429 Feb 18 04:31 b6c80db548fbe383efdb657e6589a3369ba465
+-r--r--r--    1 frmarinh  2015_paris  14679 Feb 17 21:24 e3f06611644bad0bef4c22bb468452cc4679c4
+-r--r--r--    1 frmarinh  2015_paris   3157 Feb 20 12:48 f056e16777b21eded2995da9a506347c38f92a
+
+./.git/objects/ed:
+total 74
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   2358 Feb 19 00:39 6894e6eff47a32614c7d13da06c98b74750af6
+-r--r--r--    1 frmarinh  2015_paris   2439 Feb 20 12:48 73d4bcee062e41cf368e0a673d79b3038126db
+-r--r--r--    1 frmarinh  2015_paris   1110 Feb 17 21:24 75c3ea091a4570804e4845069714c7d99939d0
+-r--r--r--    1 frmarinh  2015_paris  22209 Feb 19 04:16 b20b612aa11dcd084d9006140419a13e304c4b
+-r--r--r--    1 frmarinh  2015_paris    391 Feb 18 05:21 f51d5d2196002775d972b181478e463ec223f1
+
+./.git/objects/ee:
+total 32
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2421 Feb 18 04:41 050cac09bc495857093d7ae03944877cb05fa7
+-r--r--r--    1 frmarinh  2015_paris  2408 Feb 18 01:46 c46941f04698927394cc37909eabd7571d91d0
+-r--r--r--    1 frmarinh  2015_paris  2682 Feb 18 01:36 c772a9172d5de4b12d8c255ea6001a9e7c0939
+
+./.git/objects/ef:
+total 80
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 04:16 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris    359 Feb 18 04:31 0e5ec20db7555b8d508f0e6defa6955d009ed7
+-r--r--r--    1 frmarinh  2015_paris   2804 Feb 17 21:24 0fc0df8bd8d2356a948dfd9fd28a63092bbb82
+-r--r--r--    1 frmarinh  2015_paris  14704 Feb 17 21:24 15d759403ebaba01c86cd1b942251332e9cae3
+-r--r--r--    1 frmarinh  2015_paris   2919 Feb 19 04:16 193b5e69569614062f3abe7ca542c51fbeb58c
+-r--r--r--    1 frmarinh  2015_paris   2197 Feb 18 04:11 1cf07948aaf31b62601bc4f3684e4b484c941c
+-r--r--r--    1 frmarinh  2015_paris   1794 Feb 18 05:31 4739779a56f92b087c52fe2dffbc50060b8239
+-r--r--r--    1 frmarinh  2015_paris   2268 Feb 19 00:39 4fabf6a3d0f872ba4b9c275ab6650e4625c8be
+-r--r--r--    1 frmarinh  2015_paris   4056 Feb 18 04:41 680fd1c907fec62b25a8c82ad1b70b4197bc3e
+
+./.git/objects/f0:
+total 33
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:51 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1832 Feb 18 04:51 1a174a805e0978fe0ac964dfb6cf223813d055
+-r--r--r--    1 frmarinh  2015_paris   293 Feb 17 21:24 3d72f3619b05a65db12dc823d3181557c48740
+-r--r--r--    1 frmarinh  2015_paris   617 Feb 18 02:06 6488b687289064ec988a0990f4f87f0fe9efdc
+-r--r--r--    1 frmarinh  2015_paris  3818 Feb 18 01:56 688f685d42f55168c8d0647c7c4a1ff3341dd2
+-r--r--r--    1 frmarinh  2015_paris   602 Feb 18 01:36 6a0a5027a9c2d449fcb5dd24b4cd93d50a53ea
+
+./.git/objects/f1:
+total 22
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   182 Feb 18 00:15 03de99cfd9ba00840a5921710bedea6fecad0a
+-r--r--r--    1 frmarinh  2015_paris  2208 Feb 17 21:24 89d86632e054fe22e111a49d27012856ab34d7
+
+./.git/objects/f2:
+total 38
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:43 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 18 05:43 11e49a6eb3733b6e739e8d1bed12621b6bf5dd
+-r--r--r--    1 frmarinh  2015_paris  2142 Feb 18 05:01 64cefd3c80e7547287b8a2e59e4e3d1f59a43c
+-r--r--r--    1 frmarinh  2015_paris  3794 Feb 17 21:24 6c772e60abeb3157e2132c304e736c7661eb5f
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 18 05:01 76aba0bb0491bac3ccf9812df06547c39b2a22
+-r--r--r--    1 frmarinh  2015_paris   373 Feb 18 04:31 ca6f74db921f47660db10fe04ffa5f715d5ef9
+-r--r--r--    1 frmarinh  2015_paris   460 Feb 17 21:24 d7bfa111c56cd45a3076bab829eaab4ed42bf9
+-r--r--r--    1 frmarinh  2015_paris  2293 Feb 18 05:01 d92ed3c386f526d235a7ce69277fdfa99adf01
+
+./.git/objects/f3:
+total 17
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   310 Feb 17 21:24 014dc824b62a5ab3c39f23b07bf8dbfc675917
+
+./.git/objects/f4:
+total 30
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:36 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  1562 Feb 17 21:24 4db31d66957e94313686329ca4ead7229626f7
+-r--r--r--    1 frmarinh  2015_paris  2432 Feb 18 01:36 8fc25be57452bd3eb23f1fe2f543c1cef9fc44
+-r--r--r--    1 frmarinh  2015_paris  2232 Feb 17 21:24 bdf9af968ac86362cf1b8647c6572cc653ff63
+
+./.git/objects/f5:
+total 60
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 19 00:39 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   1451 Feb 19 00:39 24b62b94e588b6fa12e1cf482fac9dd62e3b29
+-r--r--r--    1 frmarinh  2015_paris    172 Feb 18 02:06 58ca05a4084324c8ca0a977b6456b9221f84d9
+-r--r--r--    1 frmarinh  2015_paris    145 Feb 18 00:15 c84eebe887de2d534aab603755ef28138190e7
+-r--r--r--    1 frmarinh  2015_paris  19927 Feb 18 05:01 de692f38a751923ddd33767bfad461baff6e71
+
+./.git/objects/f6:
+total 80
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  8172 Feb 17 21:24 0433fab153a876a3f773092dcc5f7c10f8d2c1
+-r--r--r--    1 frmarinh  2015_paris  2208 Feb 17 21:24 167afebfc4fc06ba311a6649ba65af373b3803
+-r--r--r--    1 frmarinh  2015_paris  2363 Feb 20 12:48 2801c2f6679b1e4a6adafbe2375be7abd417b8
+-r--r--r--    1 frmarinh  2015_paris  2411 Feb 17 21:24 3b5ef1c7b8a2d7478d3c1897d4d1b8d315ac42
+-r--r--r--    1 frmarinh  2015_paris   848 Feb 17 21:24 3d83c11266ed70a4925422df72fbfacc82d159
+-r--r--r--    1 frmarinh  2015_paris  2812 Feb 19 04:16 696d7ab9cde3efab46dae32a687ad09ce61454
+-r--r--r--    1 frmarinh  2015_paris  3157 Feb 20 12:48 8cdf8259171bd6461148ef5a94590a2a3bd403
+-r--r--r--    1 frmarinh  2015_paris  3795 Feb 17 21:24 a136ec01da10b15f3d8229cffcc63d4c371e4b
+-r--r--r--    1 frmarinh  2015_paris  2142 Feb 18 04:51 bdb7f4d8f0c6e52e066c30d2fa65e1e2f21494
+-r--r--r--    1 frmarinh  2015_paris  2491 Feb 17 21:24 efdfa4ec07c8c9d57fe9e1059108e848879648
+
+./.git/objects/f7:
+total 31
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2277 Feb 17 21:24 3059e5d675a5d86126df68b1b997757036e3f7
+-r--r--r--    1 frmarinh  2015_paris   145 Feb 18 04:41 68645f3845312650338112eae566dc8dc572d3
+-r--r--r--    1 frmarinh  2015_paris  2811 Feb 18 05:21 d6e5ae12788ff2571f18f5808697881b236957
+-r--r--r--    1 frmarinh  2015_paris  1364 Feb 17 21:24 e4bc59c0ea977fe3b0f6ef058d27725d71272f
+
+./.git/objects/f8:
+total 46
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2293 Feb 18 04:51 0912f672576fb54b6f998f5be2f0465dfa9587
+-r--r--r--    1 frmarinh  2015_paris   170 Feb 17 21:24 7f1a043ae372c40fe3102cbc5611bab2a39571
+-r--r--r--    1 frmarinh  2015_paris  3354 Feb 18 05:21 ab0bc05da5afbcefaa0335678885227be5a7d9
+-r--r--r--    1 frmarinh  2015_paris   377 Feb 17 21:24 ac9d1b31d1d48c9437753df175bd6b353cfa13
+-r--r--r--    1 frmarinh  2015_paris  2511 Feb 18 04:51 d25e791fc42f3e9fceac0d383be2d899d0cc89
+-r--r--r--    1 frmarinh  2015_paris   469 Feb 17 21:24 fc4eafe8f6a85b2a5506644e38ac75c5964636
+-r--r--r--    1 frmarinh  2015_paris  2428 Feb 19 03:01 fd5257b11b8431fd997b94a21c34d3b6ee283f
+-r--r--r--    1 frmarinh  2015_paris  2299 Feb 18 01:26 ffcb0b584bce2b4fe7369c1f856b12ebb93c35
+
+./.git/objects/f9:
+total 36
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 04:41 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2209 Feb 17 21:24 163ee4f0e578154c0778cf5b6c864a2543ee0f
+-r--r--r--    1 frmarinh  2015_paris  3354 Feb 18 04:11 1926ba545eb53ffcaf3ce684178a8b4da62839
+-r--r--r--    1 frmarinh  2015_paris  3354 Feb 18 04:41 30b4da5e20c5dad3a1ad1f336d7000ccf2aeb3
+-r--r--r--    1 frmarinh  2015_paris   371 Feb 17 21:24 3b367532e541ddb6759bbd781fb3ecc6bea047
+
+./.git/objects/fa:
+total 18
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 01:16 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   335 Feb 18 04:31 3366141cb7d8243081d8f74fb81a7932ac1c22
+-r--r--r--    1 frmarinh  2015_paris   171 Feb 18 01:16 50e1d3c5da76eadd1018f7f54eff106700e8cb
+
+./.git/objects/fb:
+total 25
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  2289 Feb 20 12:48 596a3c65a779fa9ab708ed805a8ef2a9083604
+-r--r--r--    1 frmarinh  2015_paris   491 Feb 17 21:24 a94d5bcd879e98c3fcdf42b9e1098d74d406ce
+-r--r--r--    1 frmarinh  2015_paris   563 Feb 20 12:48 ae42ac48933960e9a9e711eaf6d419e671c5bb
+-r--r--r--    1 frmarinh  2015_paris    28 Feb 20 12:48 fc0ed819ef97786257b017dfa8d1a1c330a72a
+
+./.git/objects/fc:
+total 53
+drwxr-xr-x    2 frmarinh  2015_paris   4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris   4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  14672 Feb 17 21:24 592e47a652a7fea219ed51f8927d9d36e960e9
+-r--r--r--    1 frmarinh  2015_paris   3719 Feb 17 21:24 a62602d9cb0a185988484bf654f09f3ef18462
+
+./.git/objects/fd:
+total 35
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 19 03:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   172 Feb 17 21:24 100e09c8ea8c886e230be583947989d6e98d2c
+-r--r--r--    1 frmarinh  2015_paris  2000 Feb 17 21:24 461ed6bf136a5a34431ce11f04e19fa02bb2f7
+-r--r--r--    1 frmarinh  2015_paris   392 Feb 18 04:31 5b1f5d751ab97b84cae6cfc253b539987019b9
+-r--r--r--    1 frmarinh  2015_paris  1885 Feb 19 03:01 62ee460359849d1e0e96b2a69284b67ac73517
+-r--r--r--    1 frmarinh  2015_paris   293 Feb 17 21:24 770c25faf361b835139edb745e143978fd4cea
+-r--r--r--    1 frmarinh  2015_paris  3815 Feb 18 01:46 b4a982db4b5f12a8be288c8f20b64d75ff1320
+
+./.git/objects/fe:
+total 25
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 00:15 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris   292 Feb 17 21:24 1fba19f6d643de198baef88b642b6d0dc154e6
+-r--r--r--    1 frmarinh  2015_paris  2194 Feb 18 00:15 837dc5745e5343f0dab7fbf2d3b95742d79717
+-r--r--r--    1 frmarinh  2015_paris  1194 Feb 17 21:24 f77dd79ba1e0bf94f1f1d1fc65a6d805c10f07
+
+./.git/objects/ff:
+total 37
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 18 05:01 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+-r--r--r--    1 frmarinh  2015_paris  6760 Feb 17 21:24 4133ad2e2210395d4118a02a65d19ce7ed202b
+-r--r--r--    1 frmarinh  2015_paris  2401 Feb 18 05:01 5890396b266cf90e68a2b79a248da5b9c21097
+-r--r--r--    1 frmarinh  2015_paris   314 Feb 17 21:24 97ebe2a87b161f73d99d9cc62b7dec035af993
+-r--r--r--    1 frmarinh  2015_paris   293 Feb 17 21:24 affcf70617c7ba8ee8d7ed0f5087b2efff4e48
+
+./.git/objects/info:
+total 16
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+
+./.git/objects/pack:
+total 16
+drwxr-xr-x    2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  259 frmarinh  2015_paris  4096 Feb 20 12:48 ..
+
+./.git/refs:
+total 40
+drwxr-xr-x  5 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  8 frmarinh  2015_paris  4096 Feb 20 16:06 ..
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 20 12:48 heads
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 17 21:24 remotes
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 tags
+
+./.git/refs/heads:
+total 17
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  5 frmarinh  2015_paris  4096 Feb 17 21:24 ..
+-rw-r--r--  1 frmarinh  2015_paris    41 Feb 20 12:48 master
+
+./.git/refs/remotes:
+total 24
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  5 frmarinh  2015_paris  4096 Feb 17 21:24 ..
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 20 12:48 origin
+
+./.git/refs/remotes/origin:
+total 18
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 20 12:48 .
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 17 21:24 ..
+-rw-r--r--  1 frmarinh  2015_paris    32 Feb 17 21:24 HEAD
+-rw-r--r--  1 frmarinh  2015_paris    41 Feb 20 12:48 master
+
+./.git/refs/tags:
+total 16
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  5 frmarinh  2015_paris  4096 Feb 17 21:24 ..
+
+./libft:
+total 541
+drwxr-xr-x  3 frmarinh  2015_paris   4096 Feb 20 16:06 .
+drwxr-xr-x  4 frmarinh  2015_paris   4096 Feb 20 16:11 ..
+-rw-r--r--@ 1 frmarinh  2015_paris  14340 Feb 20 10:24 .DS_Store
+-rw-r--r--  1 frmarinh  2015_paris   4096 Feb 17 21:24 ._.DS_Store
+-rw-r--r--  1 frmarinh  2015_paris   2051 Feb 17 21:24 Makefile
+-rw-r--r--  1 frmarinh  2015_paris   1477 Feb 17 21:24 ft_add_in.c
+-rw-r--r--  1 frmarinh  2015_paris   1156 Feb 20 16:06 ft_add_in.o
+-rw-r--r--  1 frmarinh  2015_paris   1418 Feb 17 21:24 ft_atoi.c
+-rw-r--r--  1 frmarinh  2015_paris   1188 Feb 20 16:06 ft_atoi.o
+-rw-r--r--  1 frmarinh  2015_paris   1022 Feb 17 21:24 ft_bzero.c
+-rw-r--r--  1 frmarinh  2015_paris    676 Feb 20 16:06 ft_bzero.o
+-rw-r--r--  1 frmarinh  2015_paris   1162 Feb 17 21:24 ft_charcat.c
+-rw-r--r--  1 frmarinh  2015_paris    864 Feb 20 16:06 ft_charcat.o
+-rw-r--r--  1 frmarinh  2015_paris   1056 Feb 17 21:24 ft_check_fd.c
+-rw-r--r--  1 frmarinh  2015_paris    704 Feb 20 16:06 ft_check_fd.o
+-rw-r--r--  1 frmarinh  2015_paris   1076 Feb 17 21:24 ft_count_lines.c
+-rw-r--r--  1 frmarinh  2015_paris    700 Feb 20 16:06 ft_count_lines.o
+-rw-r--r--  1 frmarinh  2015_paris   1029 Feb 17 21:24 ft_isalnum.c
+-rw-r--r--  1 frmarinh  2015_paris    712 Feb 20 16:06 ft_isalnum.o
+-rw-r--r--  1 frmarinh  2015_paris   1001 Feb 17 21:24 ft_isalpha.c
+-rw-r--r--  1 frmarinh  2015_paris    688 Feb 20 16:06 ft_isalpha.o
+-rw-r--r--  1 frmarinh  2015_paris    971 Feb 17 21:24 ft_isascii.c
+-rw-r--r--  1 frmarinh  2015_paris    664 Feb 20 16:06 ft_isascii.o
+-rw-r--r--  1 frmarinh  2015_paris    973 Feb 17 21:24 ft_isdigit.c
+-rw-r--r--  1 frmarinh  2015_paris    664 Feb 20 16:06 ft_isdigit.o
+-rw-r--r--  1 frmarinh  2015_paris    972 Feb 17 21:24 ft_isprint.c
+-rw-r--r--  1 frmarinh  2015_paris    664 Feb 20 16:06 ft_isprint.o
+-rw-r--r--  1 frmarinh  2015_paris   1509 Feb 17 21:24 ft_itoa.c
+-rw-r--r--  1 frmarinh  2015_paris   1188 Feb 20 16:06 ft_itoa.o
+-rw-r--r--  1 frmarinh  2015_paris   1067 Feb 17 21:24 ft_lenarray.c
+-rw-r--r--  1 frmarinh  2015_paris    712 Feb 20 16:06 ft_lenarray.o
+-rw-r--r--  1 frmarinh  2015_paris    997 Feb 17 21:24 ft_lstadd.c
+-rw-r--r--  1 frmarinh  2015_paris    636 Feb 20 16:06 ft_lstadd.o
+-rw-r--r--  1 frmarinh  2015_paris   1134 Feb 17 21:24 ft_lstaddend.c
+-rw-r--r--  1 frmarinh  2015_paris    728 Feb 20 16:06 ft_lstaddend.o
+-rw-r--r--  1 frmarinh  2015_paris   1081 Feb 17 21:24 ft_lstdel.c
+-rw-r--r--  1 frmarinh  2015_paris    732 Feb 20 16:06 ft_lstdel.o
+-rw-r--r--  1 frmarinh  2015_paris   1105 Feb 17 21:24 ft_lstdelone.c
+-rw-r--r--  1 frmarinh  2015_paris    744 Feb 20 16:06 ft_lstdelone.o
+-rw-r--r--  1 frmarinh  2015_paris   1023 Feb 17 21:24 ft_lstiter.c
+-rw-r--r--  1 frmarinh  2015_paris    704 Feb 20 16:06 ft_lstiter.o
+-rw-r--r--  1 frmarinh  2015_paris   1299 Feb 17 21:24 ft_lstmap.c
+-rw-r--r--  1 frmarinh  2015_paris    868 Feb 20 16:06 ft_lstmap.o
+-rw-r--r--  1 frmarinh  2015_paris   1340 Feb 17 21:24 ft_lstnew.c
+-rw-r--r--  1 frmarinh  2015_paris    872 Feb 20 16:06 ft_lstnew.o
+-rw-r--r--  1 frmarinh  2015_paris   1091 Feb 17 21:24 ft_memalloc.c
+-rw-r--r--  1 frmarinh  2015_paris    760 Feb 20 16:06 ft_memalloc.o
+-rw-r--r--  1 frmarinh  2015_paris   1290 Feb 17 21:24 ft_memccpy.c
+-rw-r--r--  1 frmarinh  2015_paris    792 Feb 20 16:06 ft_memccpy.o
+-rw-r--r--  1 frmarinh  2015_paris   1172 Feb 17 21:24 ft_memchr.c
+-rw-r--r--  1 frmarinh  2015_paris    724 Feb 20 16:06 ft_memchr.o
+-rw-r--r--  1 frmarinh  2015_paris   1266 Feb 17 21:24 ft_memcmp.c
+-rw-r--r--  1 frmarinh  2015_paris    796 Feb 20 16:06 ft_memcmp.o
+-rw-r--r--  1 frmarinh  2015_paris   1119 Feb 17 21:24 ft_memcpy.c
+-rw-r--r--  1 frmarinh  2015_paris    716 Feb 20 16:06 ft_memcpy.o
+-rw-r--r--  1 frmarinh  2015_paris    987 Feb 17 21:24 ft_memdel.c
+-rw-r--r--  1 frmarinh  2015_paris    676 Feb 20 16:06 ft_memdel.o
+-rw-r--r--  1 frmarinh  2015_paris   1254 Feb 17 21:24 ft_memmove.c
+-rw-r--r--  1 frmarinh  2015_paris    864 Feb 20 16:06 ft_memmove.o
+-rw-r--r--  1 frmarinh  2015_paris   1094 Feb 17 21:24 ft_memset.c
+-rw-r--r--  1 frmarinh  2015_paris    684 Feb 20 16:06 ft_memset.o
+-rw-r--r--  1 frmarinh  2015_paris    959 Feb 17 21:24 ft_putchar.c
+-rw-r--r--  1 frmarinh  2015_paris    676 Feb 20 16:06 ft_putchar.o
+-rw-r--r--  1 frmarinh  2015_paris    971 Feb 17 21:24 ft_putchar_fd.c
+-rw-r--r--  1 frmarinh  2015_paris    688 Feb 20 16:06 ft_putchar_fd.o
+-rw-r--r--  1 frmarinh  2015_paris   1030 Feb 17 21:24 ft_putendl.c
+-rw-r--r--  1 frmarinh  2015_paris    732 Feb 20 16:06 ft_putendl.o
+-rw-r--r--  1 frmarinh  2015_paris   1055 Feb 17 21:24 ft_putendl_fd.c
+-rw-r--r--  1 frmarinh  2015_paris    752 Feb 20 16:06 ft_putendl_fd.o
+-rw-r--r--  1 frmarinh  2015_paris   1096 Feb 17 21:24 ft_putnbr.c
+-rw-r--r--  1 frmarinh  2015_paris    792 Feb 20 16:06 ft_putnbr.o
+-rw-r--r--  1 frmarinh  2015_paris   1135 Feb 17 21:24 ft_putnbr_fd.c
+-rw-r--r--  1 frmarinh  2015_paris    816 Feb 20 16:06 ft_putnbr_fd.o
+-rw-r--r--  1 frmarinh  2015_paris   1031 Feb 17 21:24 ft_putstr.c
+-rw-r--r--  1 frmarinh  2015_paris    736 Feb 20 16:06 ft_putstr.o
+-rw-r--r--  1 frmarinh  2015_paris   1028 Feb 17 21:24 ft_putstr_fd.c
+-rw-r--r--  1 frmarinh  2015_paris    728 Feb 20 16:06 ft_putstr_fd.o
+-rw-r--r--  1 frmarinh  2015_paris   1025 Feb 17 21:24 ft_set_null.c
+-rw-r--r--  1 frmarinh  2015_paris    680 Feb 20 16:06 ft_set_null.o
+-rw-r--r--  1 frmarinh  2015_paris   1853 Feb 17 21:24 ft_str_replace.c
+-rw-r--r--  1 frmarinh  2015_paris   1512 Feb 20 16:06 ft_str_replace.o
+-rw-r--r--  1 frmarinh  2015_paris   1055 Feb 20 10:42 ft_strcat.c
+-rw-r--r--  1 frmarinh  2015_paris    772 Feb 20 16:06 ft_strcat.o
+-rw-r--r--  1 frmarinh  2015_paris   1066 Feb 17 21:24 ft_strchr.c
+-rw-r--r--  1 frmarinh  2015_paris    700 Feb 20 16:06 ft_strchr.o
+-rw-r--r--  1 frmarinh  2015_paris    995 Feb 17 21:24 ft_strclr.c
+-rw-r--r--  1 frmarinh  2015_paris    676 Feb 20 16:06 ft_strclr.o
+-rw-r--r--  1 frmarinh  2015_paris   1171 Feb 17 21:24 ft_strcmp.c
+-rw-r--r--  1 frmarinh  2015_paris    764 Feb 20 16:06 ft_strcmp.o
+-rw-r--r--  1 frmarinh  2015_paris   1060 Feb 17 21:24 ft_strcpy.c
+-rw-r--r--  1 frmarinh  2015_paris    692 Feb 20 16:06 ft_strcpy.o
+-rw-r--r--  1 frmarinh  2015_paris    984 Feb 17 21:24 ft_strdel.c
+-rw-r--r--  1 frmarinh  2015_paris    680 Feb 20 16:06 ft_strdel.o
+-rw-r--r--  1 frmarinh  2015_paris   1459 Feb 17 21:24 ft_strdelchar.c
+-rw-r--r--  1 frmarinh  2015_paris   1208 Feb 20 16:06 ft_strdelchar.o
+-rw-r--r--  1 frmarinh  2015_paris   1132 Feb 17 21:24 ft_strdup.c
+-rw-r--r--  1 frmarinh  2015_paris    832 Feb 20 16:06 ft_strdup.o
+-rw-r--r--  1 frmarinh  2015_paris   1242 Feb 17 21:24 ft_strequ.c
+-rw-r--r--  1 frmarinh  2015_paris    968 Feb 20 16:06 ft_strequ.o
+-rw-r--r--  1 frmarinh  2015_paris   1050 Feb 17 21:24 ft_striter.c
+-rw-r--r--  1 frmarinh  2015_paris    720 Feb 20 16:06 ft_striter.o
+-rw-r--r--  1 frmarinh  2015_paris   1068 Feb 17 21:24 ft_striteri.c
+-rw-r--r--  1 frmarinh  2015_paris    720 Feb 20 16:06 ft_striteri.o
+-rw-r--r--  1 frmarinh  2015_paris   1352 Feb 17 21:24 ft_strjoin.c
+-rw-r--r--  1 frmarinh  2015_paris   1040 Feb 20 16:06 ft_strjoin.o
+-rw-r--r--  1 frmarinh  2015_paris   1382 Feb 17 21:24 ft_strlcat.c
+-rw-r--r--  1 frmarinh  2015_paris    976 Feb 20 16:06 ft_strlcat.o
+-rw-r--r--  1 frmarinh  2015_paris   1039 Feb 17 21:24 ft_strlen.c
+-rw-r--r--  1 frmarinh  2015_paris    700 Feb 20 16:06 ft_strlen.o
+-rw-r--r--  1 frmarinh  2015_paris   1194 Feb 17 21:24 ft_strmap.c
+-rw-r--r--  1 frmarinh  2015_paris    888 Feb 20 16:06 ft_strmap.o
+-rw-r--r--  1 frmarinh  2015_paris   1244 Feb 17 21:24 ft_strmapi.c
+-rw-r--r--  1 frmarinh  2015_paris    896 Feb 20 16:06 ft_strmapi.o
+-rw-r--r--  1 frmarinh  2015_paris   1199 Feb 17 21:24 ft_strncat.c
+-rw-r--r--  1 frmarinh  2015_paris    808 Feb 20 16:06 ft_strncat.o
+-rw-r--r--  1 frmarinh  2015_paris   1140 Feb 17 21:24 ft_strncmp.c
+-rw-r--r--  1 frmarinh  2015_paris    776 Feb 20 16:06 ft_strncmp.o
+-rw-r--r--  1 frmarinh  2015_paris   1119 Feb 17 21:24 ft_strncpy.c
+-rw-r--r--  1 frmarinh  2015_paris    792 Feb 20 16:06 ft_strncpy.o
+-rw-r--r--  1 frmarinh  2015_paris   1143 Feb 17 21:24 ft_strndup.c
+-rw-r--r--  1 frmarinh  2015_paris    800 Feb 20 16:06 ft_strndup.o
+-rw-r--r--  1 frmarinh  2015_paris   1231 Feb 17 21:24 ft_strnequ.c
+-rw-r--r--  1 frmarinh  2015_paris    944 Feb 20 16:06 ft_strnequ.o
+-rw-r--r--  1 frmarinh  2015_paris   1085 Feb 17 21:24 ft_strnew.c
+-rw-r--r--  1 frmarinh  2015_paris    768 Feb 20 16:06 ft_strnew.o
+-rw-r--r--  1 frmarinh  2015_paris   1416 Feb 17 21:24 ft_strnstr.c
+-rw-r--r--  1 frmarinh  2015_paris   1168 Feb 20 16:06 ft_strnstr.o
+-rw-r--r--  1 frmarinh  2015_paris   1251 Feb 17 21:24 ft_strposition.c
+-rw-r--r--  1 frmarinh  2015_paris    884 Feb 20 16:06 ft_strposition.o
+-rw-r--r--  1 frmarinh  2015_paris   1218 Feb 17 21:24 ft_strrchr.c
+-rw-r--r--  1 frmarinh  2015_paris    768 Feb 20 16:06 ft_strrchr.o
+-rw-r--r--  1 frmarinh  2015_paris   2252 Feb 18 22:45 ft_strsplit.c
+-rw-r--r--  1 frmarinh  2015_paris   2192 Feb 20 16:06 ft_strsplit.o
+-rw-r--r--  1 frmarinh  2015_paris   1389 Feb 17 21:24 ft_strstr.c
+-rw-r--r--  1 frmarinh  2015_paris   1072 Feb 20 16:06 ft_strstr.o
+-rw-r--r--  1 frmarinh  2015_paris   1291 Feb 17 21:24 ft_strsub.c
+-rw-r--r--  1 frmarinh  2015_paris    952 Feb 20 16:06 ft_strsub.o
+-rw-r--r--  1 frmarinh  2015_paris   1664 Feb 17 21:24 ft_strtrim.c
+-rw-r--r--  1 frmarinh  2015_paris   1472 Feb 20 16:06 ft_strtrim.o
+-rw-r--r--  1 frmarinh  2015_paris    976 Feb 17 21:24 ft_tolower.c
+-rw-r--r--  1 frmarinh  2015_paris    664 Feb 20 16:06 ft_tolower.o
+-rw-r--r--  1 frmarinh  2015_paris    977 Feb 17 21:24 ft_toupper.c
+-rw-r--r--  1 frmarinh  2015_paris    664 Feb 20 16:06 ft_toupper.o
+drwxr-xr-x  2 frmarinh  2015_paris   4096 Feb 17 21:24 includes
+-rw-r--r--  1 frmarinh  2015_paris  65032 Feb 20 16:06 libft.a
+
+./libft/includes:
+total 59
+drwxr-xr-x  2 frmarinh  2015_paris  4096 Feb 17 21:24 .
+drwxr-xr-x  3 frmarinh  2015_paris  4096 Feb 20 16:06 ..
+-rw-r--r--@ 1 frmarinh  2015_paris  6148 Feb 18 02:10 .DS_Store
+-rw-r--r--  1 frmarinh  2015_paris  4096 Feb 17 21:24 ._.DS_Store
+-rw-r--r--  1 frmarinh  2015_paris  6385 Feb 20 16:00 all.h
+-rwxr-xr-x  1 frmarinh  2015_paris  4271 Feb 17 21:24 libft.h
