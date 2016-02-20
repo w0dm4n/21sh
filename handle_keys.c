@@ -90,7 +90,7 @@ void		enter_key(void)
 		if (g_cmd[(ft_strlen(g_cmd) - 1)] == '\\')
 		{
 			g_new_cmd = FALSE;
-			g_multi_line = true;
+			g_multi_line = TRUE;
 			g_cursor_pos = 0;
 			ft_putstr_fd("\n", 1);
 		}
@@ -100,7 +100,7 @@ void		enter_key(void)
 			ft_putstr_fd("\n", 1);
 			g_current_cmd++;
 			g_logs_to_print = 0;
-			g_multi_line = false;
+			g_multi_line = FALSE;
 		}
 	}
 }
