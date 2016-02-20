@@ -56,7 +56,7 @@ void	handle_special_case(char *cmd)
 	else if (count_char_number(cmd, '<'))
 	{
 		if (count_char_number(cmd, '<') <= 2)
-			handle_cmd(cmd);
+			exec_with_filedescriptor(cmd, count_char_number(cmd, '<'), '<');
 		else
 			ft_putstr_fd("21sh: parse error near `<'\n", 2);
 	}

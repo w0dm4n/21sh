@@ -34,14 +34,7 @@ char		**get_cmd_args(char **args_before, char **args_after)
 	}
 	i = 1;
 	if (args_after)
-	{
-		while (args_after[i])
-		{
-			args[args_i] = ft_strdup(args_after[i]);
-			i++;
-			args_i++;
-		}
-	}
+		args = get_args_after(args, args_after, i, args_i);
 	args[args_i] = NULL;
 	return (args);
 }

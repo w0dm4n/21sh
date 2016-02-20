@@ -57,3 +57,11 @@ char		**set_argv(char **argv, char *name)
 	}
 	return (argv);
 }
+
+void		do_ls_f(void)
+{
+	ft_putstr_fd("\n", 1);
+	g_cmd = meurs_en_enfer(g_cmd);
+	g_cmd = ft_strdup("ls -F");
+	g_new_cmd = 1;
+}

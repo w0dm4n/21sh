@@ -38,7 +38,7 @@ void		control_d(int size)
 	else
 	{
 		if (g_cmd[size - 1] == ' ')
-			ft_putstr("\nLS -F");
+			do_ls_f();
 		else if (g_cursor_pos >= (int)ft_strlen(g_cmd))
 			prompt_again_with_cmd();
 		else

@@ -14,9 +14,14 @@
 
 void		overwrite_in_suite(char *buffer, char *file, int *fd)
 {
+	int		value;
 	int		file_fd;
 
+	value = 1;
+	ioctl(fd[0], FIONBIO, &value);
 	read(fd[0], buffer, FILE_BUFFER);
+	if (!ft_strlen(buffer))
+		return ;
 	file_fd = open(file, O_RDWR);
 	write(file_fd, buffer, ft_strlen(buffer));
 	close(file_fd);
@@ -54,13 +59,18 @@ void		overwrite_in(char *cmd, char *file, char **args, int res)
 
 void		add_in_file_suite(char *buffer, char *buffer_2, char *file, int *fd)
 {
+	int value;
 	int file_fd;
 
+	value = 1;
 	file_fd = open(file, O_RDONLY);
 	read(file_fd, buffer, FILE_BUFFER);
 	close(file_fd);
 	handle_cmd(get_delete_cmd(file));
+	ioctl(fd[0], FIONBIO, &value);
 	read(fd[0], buffer_2, FILE_BUFFER);
+	if (!ft_strlen(buffer_2))
+		return ;
 	buffer = ft_strcat(buffer, buffer_2);
 	file_fd = open(file, O_CREAT, S_IRWXU | S_IRWXG | S_IRWXO);
 	close(file_fd);
@@ -112,19 +122,8 @@ void		write_in_filedescriptor(char *cmd, int nbr, char to_find)
 	cmd_to_exe = get_separated_by_char(cmd, to_find, 0, nbr);
 	file = get_separated_by_char(cmd, to_find, 1, nbr);
 	args = get_cmd_args(ft_strsplit(cmd_to_exe, ' '), ft_strsplit(file, ' '));
-	if ((res = check_cmd(get_only_name(cmd_to_exe))) < 0)
-	{
-		ft_putstr_fd("\n", 2);
+	if (!(res = check_cmd_n_file(cmd_to_exe, file, res)))
 		return ;
-	}
-	else if (!file)
-	{
-		ft_putstr_fd("21sh: parse error near ", 2);
-		write(2, "`\\", 2);
-		write(2, "n'", 2);
-		ft_putstr_fd("\n", 2);
-		return ;
-	}
 	else if (!(permissions = check_permissons_file(get_only_name(file))))
 		return ;
 	if (permissions == 2)
