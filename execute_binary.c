@@ -101,13 +101,21 @@ void		execute_binary(char *name, char *cmd_args, char **env, int res)
 {
 	char	**all_path;
 	int		i;
+	char	*get_real_cmd;
 
+	if (cmd_args)
+	{
+		if (!(get_real_cmd = ft_strnew(ft_strlen(cmd_args) + 64)))
+			return ;
+		get_real_cmd = ft_strdup(cmd_args);
+		free(cmd_args);
+	}
 	i = 0;
 	all_path = ft_strsplit(get_env("PATH"), ':');
 	while (all_path[i])
 	{
 		if (i == res)
-			launch_process(all_path[i], name, cmd_args, env);
+			launch_process(all_path[i], name, get_real_cmd, env);
 		i++;
 	}
 }
