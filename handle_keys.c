@@ -90,18 +90,22 @@ void		enter_key(void)
 		if (g_cmd[(ft_strlen(g_cmd) - 1)] == '\\')
 		{
 			g_new_cmd = FALSE;
-			g_multi_line = TRUE;
 			g_cursor_pos = 0;
-			ft_putstr_fd("\n", 1);
-			g_cmd = ft_strcat(g_cmd, " ");
+			ft_putstr_fd(COLOR_RED, 1);
+			ft_putstr_fd("\n\\ ", 1);
+			ft_putstr_fd(DEFAULT_COLOR, 1);
+			g_multi_line_data[g_multi_line] = ft_strdup(g_cmd);
+			g_cmd = meurs_en_enfer(g_cmd);
+			g_multi_line++;
 		}
 		else
 		{
+			if (g_multi_line)
+				g_multi_line_data[g_multi_line] = ft_strdup(g_cmd);
 			g_new_cmd = TRUE;
 			ft_putstr_fd("\n", 1);
 			g_current_cmd++;
 			g_logs_to_print = 0;
-			g_multi_line = FALSE;
 		}
 	}
 }

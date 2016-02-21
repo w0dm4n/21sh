@@ -104,6 +104,8 @@ void		read_user_entry(int read)
 	(read) ? (buffer = read_entry(buffer)) : print_color_n_prompt();
 	if (g_new_cmd && buffer)
 	{
+		if (g_multi_line)
+			g_cmd = get_multi_line_cmd(g_cmd);
 		handle_all_cmds(g_cmd);
 		if (g_cmd[0])
 			g_logs = add_in_front(g_logs, g_cmd);

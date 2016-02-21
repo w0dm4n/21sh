@@ -27,6 +27,7 @@
 # include <stdio.h>
 # include <sys/ioctl.h>
 # define READ_BUFFER 4096
+# define MAX_LINE 1024
 # define READ_CHAR 20
 # define LOGS_BUFFER 10024
 # define COLOR_WHITE "\e[1;37m"
@@ -66,7 +67,7 @@
 void			read_user_entry(int read);
 char			**alloc_cmd(char **current_cmd);
 int				*set_arr_zero(int *array, int to_set);
-void			grab_signal(void);
+void			grab_signal_n_alloc(void);
 void			free_cmd_n_prompt(int signo);
 int				move_cursor(int to_print);
 void			delete_current_character(void);
@@ -164,6 +165,7 @@ int				get_size(char *str);
 char			**alloc_array(char **array, char **to_alloc);
 char			**get_all_occur(char **array, char **all_occur, char *to_cmd, int size);
 char			*get_occur_extension(char *occur);
+char			*get_multi_line_cmd(char *g_cmd);
 int				g_new_cmd;
 char			*g_cmd;
 int				g_cursor_pos;
@@ -175,4 +177,5 @@ int				*g_selected_position;
 char			**g_env;
 int				g_current_process;
 int				g_multi_line;
+char			**g_multi_line_data;
 #endif

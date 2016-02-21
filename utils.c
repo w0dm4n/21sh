@@ -26,9 +26,13 @@ void	free_cmd_n_prompt(int signo)
 	}
 }
 
-void	grab_signal(void)
+void	grab_signal_n_alloc(void)
 {
 	signal(SIGINT, free_cmd_n_prompt);
+	if (!(g_selected_position = malloc(sizeof(int*) * READ_BUFFER)))
+		return ;
+	if (!(g_multi_line_data = malloc(sizeof(char) * MAX_LINE)))
+		return ;
 }
 
 void	free_array(char **array)

@@ -18,6 +18,7 @@ void	reset_all_value(void)
 	g_cursor_pos = 0;
 	g_current_cmd = 0;
 	g_logs_to_print = 0;
+	g_multi_line = 0;
 }
 
 int		main(int argc, char **argv, char **env)
@@ -32,9 +33,7 @@ int		main(int argc, char **argv, char **env)
 		ft_putstr_fd("21sh do not take any argument !\n", 2);
 	else
 	{
-		grab_signal();
-		if (!(g_selected_position = malloc(sizeof(int*) * READ_BUFFER)))
-			return (-1);
+		grab_signal_n_alloc();
 		reset_all_value();
 		if (!(g_logs = alloc_cmd(g_logs)))
 			return (-1);
