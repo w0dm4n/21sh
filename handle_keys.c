@@ -93,6 +93,7 @@ void		enter_key(void)
 			g_multi_line = TRUE;
 			g_cursor_pos = 0;
 			ft_putstr_fd("\n", 1);
+			g_cmd = ft_strcat(g_cmd, " ");
 		}
 		else
 		{
