@@ -21,4 +21,5 @@ void		clear_all_n_realloc(void)
 	ft_bzero(g_cmd, READ_BUFFER);
 	g_cursor_pos = 0;
 	g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
+	dup2(g_fd, g_closed);
 }

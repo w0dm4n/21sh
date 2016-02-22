@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "all.h"
-#include <stdio.h>
 
 int			get_fd_to(char *cmd, int start)
 {
@@ -74,6 +73,8 @@ void		dup_or_close_fd(void)
 	{
 		fd_to = get_fd_to(g_cmd, position);
 		new_fd = get_new_fd(g_cmd, position);
+		g_fd = dup(fd_to);
+		g_closed = fd_to;
 		if (new_fd == -1)
 			close(fd_to);
 		else

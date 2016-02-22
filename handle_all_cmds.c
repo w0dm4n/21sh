@@ -29,18 +29,45 @@ int		pipe_number(char *str, int i)
 void	handle_all_cmds_suite(char *cmd)
 {
 	int		i;
-	int		pipe;
+	int		pipe_nbr;
 	char	**cmd_pipe;
+	int		fd[2];
+	pid_t	pid;
+	int		what_to_do;
 
+	pipe(fd);
 	i = 0;
-	pipe = pipe_number(cmd, 0);
-	if (pipe)
+	what_to_do = 0;
+	pipe_nbr = pipe_number(cmd, 0);
+	if (pipe_nbr)
 	{
 		cmd_pipe = ft_strsplit(cmd, '|');
 		while (cmd_pipe[i])
 		{
-			ft_putstr(cmd_pipe[i]);
-			// do dup2 ect here
+			if (!what_to_do)
+			{
+				pid = fork();
+				if (pid == 0)
+				{
+					dup2(fd[1], 1);
+					close(fd[1]);
+					handle_special_case(cmd_pipe[i]);
+				}
+				what_to_do++;
+			}
+			else
+			{
+				pid = fork();
+				if (pid == 0)
+				{
+					dup2(fd[0], 0);
+					close(fd[0]);
+					handle_special_case(cmd_pipe[i]);
+					handle_cmd("sleep 1");
+					kill(pid, SIGKILL);
+				}
+				what_to_do = 0;
+			}
 			i++;
 		}
 	}

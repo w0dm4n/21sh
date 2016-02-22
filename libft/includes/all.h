@@ -192,4 +192,6 @@ int				g_current_process;
 int				g_multi_line;
 char			**g_multi_line_data;
 struct termios	*g_term;
+int				g_fd;
+int				g_closed;
 #endif
