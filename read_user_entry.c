@@ -75,8 +75,7 @@ char		*read_entry(char *buff)
 
 	ascii_value = 0;
 	cmd_size = 0;
-	if (!(term = malloc(sizeof(struct termios))))
-		return (NULL);
+	term = g_term;
 	if (!(tgetent(NULL, getenv("TERM"))))
 		return (NULL);
 	tcgetattr(0, term);
@@ -104,6 +103,7 @@ void		read_user_entry(int read)
 	(read) ? (buffer = read_entry(buffer)) : print_color_n_prompt();
 	if (g_new_cmd && buffer)
 	{
+		dup_or_close_fd();
 		handle_wildcards();
 		if (g_multi_line)
 			g_cmd = get_multi_line_cmd(g_cmd);
@@ -111,13 +111,7 @@ void		read_user_entry(int read)
 		if (g_cmd[0] && ft_is_one_printable(g_cmd))
 			g_logs = add_in_front(g_logs, g_cmd);
 		print_color_n_prompt();
-		g_new_cmd = FALSE;
-		free(g_cmd);
-		if (!(g_cmd = (char*)malloc(sizeof(char) * READ_BUFFER)))
-			return ;
-		ft_bzero(g_cmd, READ_BUFFER);
-		g_cursor_pos = 0;
-		g_selected_position = set_arr_zero(g_selected_position, READ_BUFFER);
+		clear_all_n_realloc();
 	}
 	ft_bzero(buffer, READ_CHAR);
 	read_user_entry(TRUE);

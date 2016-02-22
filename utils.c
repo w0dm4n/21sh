@@ -33,6 +33,8 @@ void	grab_signal_n_alloc(void)
 		return ;
 	if (!(g_multi_line_data = malloc(sizeof(char) * MAX_LINE)))
 		return ;
+	if (!(g_term = malloc(sizeof(struct termios))))
+		return ;
 }
 
 void	free_array(char **array)

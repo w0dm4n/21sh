@@ -16,8 +16,6 @@ int		interesting(char *cmd, char *occurence, int array_len)
 {
 	char *extension;
 
-	if (array_len == 1)
-		return (1);
 	extension = get_occur_extension(occurence);
 	if (!ft_strcmp(cmd, "cat") ||
 		!ft_strcmp(cmd, "vim") ||
@@ -27,6 +25,11 @@ int		interesting(char *cmd, char *occurence, int array_len)
 		!ft_strcmp(cmd, "more"))
 	{
 		if (!ft_strcmp(extension, ".c"))
+			return (1);
+	}
+	else
+	{
+		if (array_len)
 			return (1);
 	}
 	return (0);
