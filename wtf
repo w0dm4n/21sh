@@ -1,92 +1,198 @@
-otal 1622
-drwxr-xr-x   4 frmarinh  2015_paris    4096 Feb 20 15:55 .
-drwxr-xr-x  15 frmarinh  2015_paris    4096 Feb 20 10:13 ..
--rw-r--r--@  1 frmarinh  2015_paris   34820 Feb 20 15:54 .DS_Store
--rw-r--r--   1 frmarinh  2015_paris    4096 Feb 17 21:24 ._.DS_Store
-drwxr-xr-x   8 frmarinh  2015_paris    4096 Feb 20 15:54 .git
--rwxr-xr-x   1 frmarinh  2015_paris   66804 Feb 20 15:54 21sh
--rwxr-xr-x   1 frmarinh  2015_paris    1415 Feb 20 14:07 4
--rw-r--r--   1 frmarinh  2015_paris    2004 Feb 20 12:30 Makefile
--rwxr-xr-x   1 frmarinh  2015_paris       0 Feb 20 14:49 OH
--rw-r--r--   1 frmarinh  2015_paris      17 Feb 20 15:50 \
--rwxr-xr-x   1 frmarinh  2015_paris       6 Feb 20 12:54 bonjourp
--rw-r--r--   1 frmarinh  2015_paris    1928 Feb 18 01:19 chdir_command.c
--rw-r--r--   1 frmarinh  2015_paris    5756 Feb 20 15:54 chdir_command.o
--rw-r--r--   1 frmarinh  2015_paris    1439 Feb 17 21:24 chdir_command_ext.c
--rw-r--r--   1 frmarinh  2015_paris    4516 Feb 20 15:54 chdir_command_ext.o
--rw-r--r--   1 frmarinh  2015_paris    2359 Feb 17 21:24 check_access_folder.c
--rw-r--r--   1 frmarinh  2015_paris    8148 Feb 20 15:54 check_access_folder.o
--rw-r--r--   1 frmarinh  2015_paris    2917 Feb 18 00:11 check_chars.c
--rw-r--r--   1 frmarinh  2015_paris    7176 Feb 20 15:54 check_chars.o
--rw-r--r--   1 frmarinh  2015_paris    2081 Feb 18 00:11 check_chars_ext.c
--rw-r--r--   1 frmarinh  2015_paris    5372 Feb 20 15:54 check_chars_ext.o
--rw-r--r--   1 frmarinh  2015_paris    1455 Feb 19 04:29 check_cmd.c
--rw-r--r--   1 frmarinh  2015_paris    4512 Feb 20 15:54 check_cmd.o
--rw-r--r--   1 frmarinh  2015_paris    2024 Feb 17 21:24 check_execve.c
--rw-r--r--   1 frmarinh  2015_paris    7616 Feb 20 15:54 check_execve.o
--rw-r--r--   1 frmarinh  2015_paris    1542 Feb 17 21:24 cmd_logs.c
--rw-r--r--   1 frmarinh  2015_paris    4884 Feb 20 15:54 cmd_logs.o
--rw-r--r--   1 frmarinh  2015_paris    1679 Feb 17 21:24 cursor_movement.c
--rw-r--r--   1 frmarinh  2015_paris    5484 Feb 20 15:54 cursor_movement.o
--rw-r--r--   1 frmarinh  2015_paris    1607 Feb 17 21:24 cursor_movement_ext.c
--rw-r--r--   1 frmarinh  2015_paris    5460 Feb 20 15:54 cursor_movement_ext.o
--rw-r--r--   1 frmarinh  2015_paris    1567 Feb 17 21:24 cursor_movement_ext_2.c
--rw-r--r--   1 frmarinh  2015_paris    5540 Feb 20 15:54 cursor_movement_ext_2.o
--rw-r--r--   1 frmarinh  2015_paris    1551 Feb 18 01:19 do_cmd.c
--rw-r--r--   1 frmarinh  2015_paris    4784 Feb 20 15:54 do_cmd.o
--rw-r--r--   1 frmarinh  2015_paris    2741 Feb 17 21:24 env_v.c
--rw-r--r--   1 frmarinh  2015_paris    7220 Feb 20 15:54 env_v.o
--rw-r--r--   1 frmarinh  2015_paris    2750 Feb 20 15:50 exec_with_filedescriptor.c
--rw-r--r--   1 frmarinh  2015_paris    9032 Feb 20 15:54 exec_with_filedescriptor.o
--rw-r--r--   1 frmarinh  2015_paris    2681 Feb 19 00:09 execute_binary.c
--rw-r--r--   1 frmarinh  2015_paris    7280 Feb 20 15:54 execute_binary.o
--rw-r--r--   1 frmarinh  2015_paris    1776 Feb 17 21:24 execute_binary_from_current_folder.c
--rw-r--r--   1 frmarinh  2015_paris    5024 Feb 20 15:54 execute_binary_from_current_folder.o
--rw-r--r--   1 frmarinh  2015_paris    1736 Feb 18 02:09 execute_from_asked_dir.c
--rw-r--r--   1 frmarinh  2015_paris    5260 Feb 20 15:54 execute_from_asked_dir.o
--rwxr-xr-x   1 frmarinh  2015_paris   87515 Feb 20 15:02 fewfwe
--rw-r--r--   1 frmarinh  2015_paris    2485 Feb 17 21:24 get_path.c
--rw-r--r--   1 frmarinh  2015_paris    6340 Feb 20 15:54 get_path.o
--rw-r--r--   1 frmarinh  2015_paris    1881 Feb 18 05:13 get_separated_by_char.c
--rw-r--r--   1 frmarinh  2015_paris    5172 Feb 20 15:54 get_separated_by_char.o
--rw-r--r--   1 frmarinh  2015_paris    1820 Feb 18 04:27 handle_all_cmds.c
--rw-r--r--   1 frmarinh  2015_paris    5216 Feb 20 15:54 handle_all_cmds.o
--rw-r--r--   1 frmarinh  2015_paris    2686 Feb 18 01:37 handle_array.c
--rw-r--r--   1 frmarinh  2015_paris    6692 Feb 20 15:54 handle_array.o
--rw-r--r--   1 frmarinh  2015_paris    1699 Feb 17 21:24 handle_array_ext.c
--rw-r--r--   1 frmarinh  2015_paris    4932 Feb 20 15:54 handle_array_ext.o
--rw-r--r--   1 frmarinh  2015_paris    1898 Feb 20 15:00 handle_cmd.c
--rw-r--r--   1 frmarinh  2015_paris    5248 Feb 20 15:54 handle_cmd.o
--rw-r--r--   1 frmarinh  2015_paris    2341 Feb 20 12:22 handle_keys.c
--rw-r--r--   1 frmarinh  2015_paris    6772 Feb 20 15:54 handle_keys.o
--rw-r--r--   1 frmarinh  2015_paris    1560 Feb 17 21:24 handle_keys_suite.c
--rw-r--r--   1 frmarinh  2015_paris    5236 Feb 20 15:54 handle_keys_suite.o
--rw-r--r--   1 frmarinh  2015_paris    1504 Feb 17 21:24 handle_keys_suite_2.c
--rw-r--r--   1 frmarinh  2015_paris    5056 Feb 20 15:54 handle_keys_suite_2.o
--rw-r--r--   1 frmarinh  2015_paris    1811 Feb 20 12:31 handle_special_case.c
--rw-r--r--   1 frmarinh  2015_paris    5240 Feb 20 15:54 handle_special_case.o
-drwxr-xr-x   3 frmarinh  2015_paris    4096 Feb 20 15:54 libft
--rw-r--r--   1 frmarinh  2015_paris    1631 Feb 18 04:05 main.c
--rw-r--r--   1 frmarinh  2015_paris    4784 Feb 20 15:54 main.o
--rwxr-xr-x   1 frmarinh  2015_paris       0 Feb 19 00:23 o
--rw-r--r--   1 frmarinh  2015_paris    3365 Feb 18 02:06 read_user_entry.c
--rw-r--r--   1 frmarinh  2015_paris    8888 Feb 20 15:54 read_user_entry.o
--rw-r--r--   1 frmarinh  2015_paris    2119 Feb 17 21:24 refresh_stdout.c
--rw-r--r--   1 frmarinh  2015_paris    5900 Feb 20 15:54 refresh_stdout.o
--rw-r--r--   1 frmarinh  2015_paris    1997 Feb 17 21:24 setenv_command.c
--rw-r--r--   1 frmarinh  2015_paris    5240 Feb 20 15:54 setenv_command.o
--rwxr-xr-x   1 frmarinh  2015_paris  227456 Feb 20 15:44 test
--rw-r--r--   1 frmarinh  2015_paris    2266 Feb 17 21:24 unsetenv_command.c
--rw-r--r--   1 frmarinh  2015_paris    5928 Feb 20 15:54 unsetenv_command.o
--rw-r--r--   1 frmarinh  2015_paris    1691 Feb 17 21:24 utils.c
--rw-r--r--   1 frmarinh  2015_paris    5468 Feb 20 15:54 utils.o
--rw-r--r--   1 frmarinh  2015_paris    1585 Feb 20 12:22 utils_ext.c
--rw-r--r--   1 frmarinh  2015_paris    5436 Feb 20 15:54 utils_ext.o
--rwxr-xr-x   1 frmarinh  2015_paris       0 Feb 20 15:00 wfweefw
--rw-r--r--   1 frmarinh  2015_paris    3851 Feb 20 15:54 write_in_filedescriptor.c
--rw-r--r--   1 frmarinh  2015_paris    9364 Feb 20 15:54 write_in_filedescriptor.o
--rw-r--r--   1 frmarinh  2015_paris    2807 Feb 20 14:11 write_in_filedescriptor_suite.c
--rw-r--r--   1 frmarinh  2015_paris    8936 Feb 20 15:54 write_in_filedescriptor_suite.o
--rw-r--r--   1 frmarinh  2015_paris    1879 Feb 20 14:57 write_in_filedescriptor_suite_ext.c
--rw-r--r--   1 frmarinh  2015_paris    5728 Feb 20 15:54 write_in_filedescriptor_suite_ext.o
--rwxr-xr-x   1 frmarinh  2015_paris   65536 Feb 20 15:55 wtf
+21sh
+4
+<
+Makefile
+OH
+\
+bonjour
+bonjourp
+cecinaaucunsens
+chdir_command.c
+chdir_command.o
+chdir_command_ext.c
+chdir_command_ext.o
+check_access_folder.c
+check_access_folder.o
+check_chars.c
+check_chars.o
+check_chars_ext.c
+check_chars_ext.o
+check_cmd.c
+check_cmd.o
+check_execve.c
+check_execve.o
+cmd_logs.c
+cmd_logs.o
+cursor_movement.c
+cursor_movement.o
+cursor_movement_ext.c
+cursor_movement_ext.o
+cursor_movement_ext_2.c
+cursor_movement_ext_2.o
+do_cmd.c
+do_cmd.o
+env_v.c
+env_v.o
+exec_with_filedescriptor.c
+exec_with_filedescriptor.o
+execute_binary.c
+execute_binary.o
+execute_binary_from_current_folder.c
+execute_binary_from_current_folder.o
+execute_from_asked_dir.c
+execute_from_asked_dir.o
+fewfwe
+get_path.c
+get_path.o
+get_separated_by_char.c
+get_separated_by_char.o
+handle_all_cmds.c
+handle_all_cmds.o
+handle_array.c
+handle_array.o
+handle_array_ext.c
+handle_array_ext.o
+handle_cmd.c
+handle_cmd.o
+handle_keys.c
+handle_keys.o
+handle_keys_suite.c
+handle_keys_suite.o
+handle_keys_suite_2.c
+handle_keys_suite_2.o
+handle_multi_line.c
+handle_multi_line.o
+handle_special_case.c
+handle_special_case.o
+libft
+lol
+main.c
+main.o
+o
+read_user_entry.c
+read_user_entry.o
+refresh_stdout.c
+refresh_stdout.o
+seek_and_print.c
+seek_and_print.o
+seek_and_print_suite.c
+seek_and_print_suite.o
+setenv_command.c
+setenv_command.o
+test
+unsetenv_command.c
+unsetenv_command.o
+utils.c
+utils.o
+utils_ext.c
+utils_ext.o
+utils_suite_ext.c
+utils_suite_ext.o
+wfweefw
+write_in_filedescriptor.c
+write_in_filedescriptor.o
+write_in_filedescriptor_suite.c
+write_in_filedescriptor_suite.o
+write_in_filedescriptor_suite_ext.c
+write_in_filedescriptor_suite_ext.o
+wtf
+wtfexit
+#21sh
+4
+<
+Makefile
+OH
+\
+bonjour
+bonjourp
+cecinaaucunsens
+chdir_command.c
+chdir_command.o
+chdir_command_ext.c
+chdir_command_ext.o
+check_access_folder.c
+check_access_folder.o
+check_chars.c
+check_chars.o
+check_chars_ext.c
+check_chars_ext.o
+check_cmd.c
+check_cmd.o
+check_execve.c
+check_execve.o
+cmd_logs.c
+cmd_logs.o
+cursor_movement.c
+cursor_movement.o
+cursor_movement_ext.c
+cursor_movement_ext.o
+cursor_movement_ext_2.c
+cursor_movement_ext_2.o
+do_cmd.c
+do_cmd.o
+env_v.c
+env_v.o
+exec_with_filedescriptor.c
+exec_with_filedescriptor.o
+execute_binary.c
+execute_binary.o
+execute_binary_from_current_folder.c
+execute_binary_from_current_folder.o
+execute_from_asked_dir.c
+execute_from_asked_dir.o
+fewfwe
+get_path.c
+get_path.o
+get_separated_by_char.c
+get_separated_by_char.o
+handle_all_cmds.c
+handle_all_cmds.o
+handle_array.c
+handle_array.o
+handle_array_ext.c
+handle_array_ext.o
+handle_cmd.c
+handle_cmd.o
+handle_keys.c
+handle_keys.o
+handle_keys_suite.c
+handle_keys_suite.o
+handle_keys_suite_2.c
+handle_keys_suite_2.o
+handle_multi_line.c
+handle_multi_line.o
+handle_special_case.c
+handle_special_case.o
+libft
+lol
+main.c
+main.o
+o
+read_user_entry.c
+read_user_entry.o
+refresh_stdout.c
+refresh_stdout.o
+seek_and_print.c
+seek_and_print.o
+seek_and_print_suite.c
+seek_and_print_suite.o
+setenv_command.c
+setenv_command.o
+test
+unsetenv_command.c
+unsetenv_command.o
+utils.c
+utils.o
+utils_ext.c
+utils_ext.o
+utils_suite_ext.c
+utils_suite_ext.o
+wfweefw
+write_in_filedescriptor.c
+write_in_filedescriptor.o
+write_in_filedescriptor_suite.c
+write_in_filedescriptor_suite.o
+write_in_filedescriptor_suite_ext.c
+write_in_filedescriptor_suite_ext.o
+wtf
+wtfexit

@@ -60,3 +60,15 @@ char	*get_multi_line_cmd(char *g_cmd)
 	handle_all_cmds(g_cmd);
 	return (g_cmd);
 }
+
+void	handle_multi_line_cmd(void)
+{
+	g_new_cmd = FALSE;
+	g_cursor_pos = 0;
+	ft_putstr_fd(COLOR_RED, 1);
+	ft_putstr_fd("\n\\ ", 1);
+	ft_putstr_fd(DEFAULT_COLOR, 1);
+	g_multi_line_data[g_multi_line] = ft_strdup(g_cmd);
+	g_cmd = meurs_en_enfer(g_cmd);
+	g_multi_line++;
+}

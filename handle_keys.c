@@ -88,16 +88,7 @@ void		enter_key(void)
 	else
 	{
 		if (g_cmd[(ft_strlen(g_cmd) - 1)] == '\\')
-		{
-			g_new_cmd = FALSE;
-			g_cursor_pos = 0;
-			ft_putstr_fd(COLOR_RED, 1);
-			ft_putstr_fd("\n\\ ", 1);
-			ft_putstr_fd(DEFAULT_COLOR, 1);
-			g_multi_line_data[g_multi_line] = ft_strdup(g_cmd);
-			g_cmd = meurs_en_enfer(g_cmd);
-			g_multi_line++;
-		}
+			handle_multi_line_cmd();
 		else
 		{
 			if (g_multi_line)

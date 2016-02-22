@@ -36,19 +36,17 @@ static int		check_if_f_exist_n_perm(char *file_name)
 	}
 }
 
-void		get_file_n_exec(char *cmd, char *file_name, char **args, int res)
+void			get_file_n_exec(char *cmd, char *file_name, char **args, int res)
 {
 	char	*file_content;
 	int		fd;
 	int		fd_dup[2];
 	pid_t	pid;
 	int		child;
-	int		new;		
 
 	if (!(file_content = malloc(sizeof(char) * FILE_BUFFER)))
 		return ;
 	args = add_full_name(args, get_path_and_name(res, cmd));
-	new = dup(0);
 	pipe(fd_dup);
 	fd = open(file_name, O_RDONLY);
 	read(fd, file_content, FILE_BUFFER);
