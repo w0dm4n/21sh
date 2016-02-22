@@ -35,7 +35,7 @@ int		ft_is_one_printable(char *str)
 	how_much = 0;
 	while (str[i])
 	{
-		if (ft_isalnum(str[i]) || str[i] != '.' || str[i] != '_')
+		if (ft_isalnum(str[i]) || str[i] == '.' || str[i] == '_')
 			how_much++;
 		i++;
 	}
