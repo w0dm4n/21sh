@@ -96,20 +96,62 @@ char	*add_file_from_the_current_directory(char *cmd, int start, int end)
 
 char	*get_file_extension(char *cmd, int start, int end)
 {
-	
+	char	*file_extension;
+	int		size;
+	int		i;
+
+	i = 0;
+	size = ((end - start) + 1);
+	if (!(file_extension = malloc(sizeof(char) * size)))
+		return (NULL);
+	while (cmd[start] && cmd[start] != '.')
+		start++;
+	while (start <= end && cmd[start])
+	{
+		file_extension[i] = cmd[start];
+		i++;
+		start++;
+	}
+	return (file_extension);
 }
+
+char	*add_file_with_ext(DIR *dir, char *extension, char *cmd)
+{
+	struct dirent	*files;
+	char			*curr_ext;
+
+	extension = NULL;
+	if (!(curr_ext = malloc(sizeof(char) * MAX_LINE)))
+		return (NULL);
+	cmd = ft_strcat(cmd, " ");
+	while ((files = readdir(dir)) != NULL)
+	{
+		if (ft_is_all_print(files->d_name) && files->d_name[0] != '.')
+		{
+			curr_ext = get_file_extension(files->d_name, 0, ft_strlen(files->d_name));
+			ft_putstr(curr_ext);
+			/*if (!ft_strcmp(extension, curr_ext))
+			{
+				cmd = ft_strcat(cmd, ft_strdup(files->d_name));
+				cmd = ft_strcat(cmd, " ");
+			}*/
+			ft_bzero(curr_ext, MAX_LINE);
+		}
+	}
+	free(curr_ext);
+	return (cmd);
+}
+
 
 char	*add_file_with_good_extension(char *cmd, int start, int end)
 {
-	char	**get_all_good_files;
-	char	*get_extension;
+	char	*extension;
 
-	if (!(get_all_good_files = malloc(sizeof(char*) * MAX_LINE)))
-		return (NULL);
-	if (!(get_extension = malloc(sizeof(char*) * MAX_LINE)))
-		return (NULL);
-	get_extension = get_extension(cmd, start, end);
+	extension = get_file_extension(cmd, start, end);
 	cmd = del_char_in(cmd, start, end);
+	cmd = add_file_with_ext(opendir("."), extension, cmd);
+	//ft_putstr(cmd);
+	exit(0);
 	return (cmd);
 }
 
