@@ -94,6 +94,25 @@ char	*add_file_from_the_current_directory(char *cmd, int start, int end)
 	return (cmd);
 }
 
+char	*get_file_extension(char *cmd, int start, int end)
+{
+	
+}
+
+char	*add_file_with_good_extension(char *cmd, int start, int end)
+{
+	char	**get_all_good_files;
+	char	*get_extension;
+
+	if (!(get_all_good_files = malloc(sizeof(char*) * MAX_LINE)))
+		return (NULL);
+	if (!(get_extension = malloc(sizeof(char*) * MAX_LINE)))
+		return (NULL);
+	get_extension = get_extension(cmd, start, end);
+	cmd = del_char_in(cmd, start, end);
+	return (cmd);
+}
+
 void	handle_wildcards(void)
 {
 	int		start;
@@ -110,9 +129,7 @@ void	handle_wildcards(void)
 		{
 			wildcards = get_value(start, end, wildcards, g_cmd);
 			if (ft_strchr(wildcards, '.'))
-			{
-
-			}
+				g_cmd = add_file_with_good_extension(g_cmd, start, end);
 			else
 				g_cmd = add_file_from_the_current_directory(g_cmd, start, end);
 		}
