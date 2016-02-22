@@ -177,6 +177,8 @@ char			*add_file(DIR *dir, char *cmd);
 char			*del_char_in(char *cmd, int start, int end);
 char			*get_file_extension(char *cmd, int start, int end);
 void			clear_all_n_realloc(void);
+void			dup_or_close_fd(void);
+char			*del_char_in(char *cmd, int start, int end);
 int				g_new_cmd;
 char			*g_cmd;
 int				g_cursor_pos;
