@@ -63,8 +63,6 @@ void	handle_all_cmds_suite(char *cmd)
 					dup2(fd[0], 0);
 					close(fd[0]);
 					handle_special_case(cmd_pipe[i]);
-					handle_cmd("sleep 1");
-					kill(pid, SIGKILL);
 				}
 				what_to_do = 0;
 			}
